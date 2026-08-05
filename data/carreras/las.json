@@ -1,0 +1,565 @@
+{
+  "slug": "las",
+  "nombre": "Licenciatura en Análisis de Sistemas",
+  "resolucion": "LAS-Plan-1986-Act-2016",
+  "totalCreditos": 214,
+  "duracionCuatrimestres": 9,
+  "creditosElectivosRequeridos": 28,
+  "cbc": {
+    "materias": [
+      {
+        "id": "icse",
+        "nombre": "Introducción al Conocimiento de la Sociedad y el Estado",
+        "creditos": 4,
+        "horasSemanales": 4,
+        "correlativas": [],
+        "cuatrimestre": 0
+      },
+      {
+        "id": "ipc",
+        "nombre": "Introducción al Pensamiento Científico",
+        "creditos": 4,
+        "horasSemanales": 4,
+        "correlativas": [],
+        "cuatrimestre": 0
+      },
+      {
+        "id": "am-a",
+        "nombre": "Análisis Matemático A",
+        "creditos": 9,
+        "horasSemanales": 9,
+        "correlativas": [],
+        "cuatrimestre": 0
+      },
+      {
+        "id": "algebra-a",
+        "nombre": "Álgebra A",
+        "creditos": 9,
+        "horasSemanales": 9,
+        "correlativas": [],
+        "cuatrimestre": 0
+      },
+      {
+        "id": "fisica",
+        "nombre": "Física",
+        "creditos": 6,
+        "horasSemanales": 6,
+        "correlativas": [],
+        "cuatrimestre": 0
+      },
+      {
+        "id": "quimica-cbc",
+        "nombre": "Química",
+        "creditos": 6,
+        "horasSemanales": 6,
+        "correlativas": [],
+        "cuatrimestre": 0
+      }
+    ]
+  },
+  "cuatrimestres": [
+    {
+      "numero": 3,
+      "materias": [
+        {
+          "id": "am-ii",
+          "nombre": "Análisis Matemático II",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "algebra-ii",
+          "nombre": "Álgebra II",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "alg-prog-i",
+          "nombre": "Algoritmos y Programación I",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [],
+          "requiereCBC": true
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "materias": [
+        {
+          "id": "mat-discreta",
+          "nombre": "Matemática Discreta",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "org-computador",
+          "nombre": "Organización del Computador",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [
+            "alg-prog-i"
+          ]
+        },
+        {
+          "id": "alg-prog-ii",
+          "nombre": "Algoritmos y Programación II",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "alg-prog-i"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "materias": [
+        {
+          "id": "prob-estadistica",
+          "nombre": "Probabilidad y Estadística B",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "am-ii",
+            "algebra-ii"
+          ]
+        },
+        {
+          "id": "estr-proc-org",
+          "nombre": "Estructuras y Procesos Organizacionales",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [],
+          "correlativasCreditos": 22
+        },
+        {
+          "id": "org-datos",
+          "nombre": "Organización de Datos",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "org-computador",
+            "alg-prog-ii"
+          ]
+        },
+        {
+          "id": "alg-prog-iii",
+          "nombre": "Algoritmos y Programación III",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "alg-prog-ii"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "materias": [
+        {
+          "id": "economia-org",
+          "nombre": "Economía de las Organizaciones",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "prob-estadistica",
+            "estr-proc-org"
+          ]
+        },
+        {
+          "id": "sist-operativos",
+          "nombre": "Sistemas Operativos",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "org-datos"
+          ]
+        },
+        {
+          "id": "met-mod-ing-sw-i",
+          "nombre": "Métodos y Modelos en la Ingeniería de Software I",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "alg-prog-iii",
+            "org-datos"
+          ]
+        },
+        {
+          "id": "taller-prog",
+          "nombre": "Taller de Programación",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "alg-prog-iii",
+            "org-computador"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "materias": [
+        {
+          "id": "mod-opt-i",
+          "nombre": "Modelos y Optimización I",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "am-ii",
+            "algebra-ii",
+            "mat-discreta",
+            "alg-prog-ii"
+          ]
+        },
+        {
+          "id": "met-mod-ing-sw-ii",
+          "nombre": "Métodos y Modelos en la Ingeniería de Software II",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "met-mod-ing-sw-i"
+          ]
+        },
+        {
+          "id": "base-datos",
+          "nombre": "Base de Datos",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "met-mod-ing-sw-i"
+          ]
+        },
+        {
+          "id": "adm-org",
+          "nombre": "Administración de las Organizaciones",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "economia-org",
+            "met-mod-ing-sw-i"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 8,
+      "materias": [
+        {
+          "id": "mod-opt-ii",
+          "nombre": "Modelos y Optimización II",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "prob-estadistica",
+            "mod-opt-i"
+          ]
+        },
+        {
+          "id": "adm-ctrl-proy",
+          "nombre": "Administración y Control de Proyectos Informáticos I",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "adm-org",
+            "met-mod-ing-sw-ii"
+          ]
+        },
+        {
+          "id": "dis-op-serv-inf",
+          "nombre": "Diseño, Operación y Gestión de Servicios Informáticos",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "adm-org",
+            "met-mod-ing-sw-ii"
+          ]
+        },
+        {
+          "id": "redes-aplic-dist",
+          "nombre": "Redes y Aplicaciones Distribuidas",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "base-datos",
+            "sist-operativos"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 9,
+      "materias": [
+        {
+          "id": "tif",
+          "nombre": "Trabajo Profesional de Licenciatura",
+          "creditos": 12,
+          "horasSemanales": 12,
+          "correlativas": [
+            "adm-ctrl-proy",
+            "dis-op-serv-inf",
+            "redes-aplic-dist"
+          ],
+          "tipo": "tif"
+        },
+        {
+          "id": "legislacion-ep",
+          "nombre": "Legislación y Ejercicio Profesional en Sistemas e Informática",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [],
+          "correlativasCreditos": 100
+        },
+        {
+          "id": "estandares-calidad",
+          "nombre": "Estándares de Calidad y Modelos de Referencia",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "adm-ctrl-proy"
+          ]
+        }
+      ]
+    }
+  ],
+  "electivas": [
+    {
+      "id": "cripto-seg-inf",
+      "nombre": "Criptografía y Seguridad Informática",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "redes-aplic-dist"
+      ]
+    },
+    {
+      "id": "macroeconomia",
+      "nombre": "Macroeconomía y Estructura Económica Argentina",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "estr-proc-org"
+      ]
+    },
+    {
+      "id": "mod-opt-iii",
+      "nombre": "Modelos y Optimización III",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "mod-opt-ii"
+      ]
+    },
+    {
+      "id": "emprendimientos",
+      "nombre": "Emprendimientos en Ingeniería",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [
+        "adm-ctrl-proy"
+      ]
+    },
+    {
+      "id": "analisis-casos",
+      "nombre": "Análisis de Casos",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [
+        "mod-opt-ii"
+      ]
+    },
+    {
+      "id": "analisis-numerico",
+      "nombre": "Análisis Numérico I",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "am-ii",
+        "algebra-ii",
+        "alg-prog-i"
+      ]
+    },
+    {
+      "id": "teoria-algoritmos",
+      "nombre": "Teoría de Algoritmos I",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "mat-discreta",
+        "alg-prog-ii"
+      ]
+    },
+    {
+      "id": "teoria-lenguajes-prog",
+      "nombre": "Teoría de Lenguajes de Programación",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "alg-prog-ii"
+      ]
+    },
+    {
+      "id": "simulacion",
+      "nombre": "Simulación",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "prob-estadistica",
+        "alg-prog-ii"
+      ]
+    },
+    {
+      "id": "ia",
+      "nombre": "Inteligencia Artificial",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "alg-prog-iii"
+      ]
+    },
+    {
+      "id": "eval-impl-sist",
+      "nombre": "Evaluación e Implantación de Sistemas",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "adm-ctrl-proy"
+      ]
+    },
+    {
+      "id": "eval-proy-riesgos",
+      "nombre": "Evaluación de Proyectos y Manejo de Riesgos",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "adm-ctrl-proy"
+      ]
+    },
+    {
+      "id": "prog-concurrente",
+      "nombre": "Técnicas de Programación Concurrente I",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "sist-operativos"
+      ]
+    },
+    {
+      "id": "lenguajes-formales",
+      "nombre": "Lenguajes Formales",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "mat-discreta"
+      ]
+    },
+    {
+      "id": "lenguajes-prog",
+      "nombre": "Lenguajes de Programación",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "lenguajes-formales"
+      ]
+    },
+    {
+      "id": "innovacion-tecnol",
+      "nombre": "Innovación Tecnológica",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "adm-ctrl-proy"
+      ]
+    },
+    {
+      "id": "dev-apps-mainframe",
+      "nombre": "Desarrollo de Aplicaciones Mainframe",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "base-datos",
+        "alg-prog-ii"
+      ]
+    },
+    {
+      "id": "auditoria-sist",
+      "nombre": "Auditoría de Sistemas",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "adm-ctrl-proy"
+      ]
+    },
+    {
+      "id": "dis-dev-interfaces",
+      "nombre": "Diseño y Desarrollo de Interfaces de Usuario",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "met-mod-ing-sw-i"
+      ]
+    },
+    {
+      "id": "bases-datos-multidim",
+      "nombre": "Bases de Datos Multidimensionales",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "base-datos"
+      ]
+    },
+    {
+      "id": "mineria-datos",
+      "nombre": "Minería de Datos",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "base-datos"
+      ]
+    },
+    {
+      "id": "dev-nuevas-tecnol",
+      "nombre": "Desarrollo con Nuevas Tecnologías",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "alg-prog-iii"
+      ]
+    },
+    {
+      "id": "sem-sist-info-gestion",
+      "nombre": "Seminario de Sistemas de Información y Gestión",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "adm-org",
+        "met-mod-ing-sw-ii"
+      ]
+    },
+    {
+      "id": "sem-metod-dev",
+      "nombre": "Seminario de Metodologías de Desarrollo de Sistemas",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "met-mod-ing-sw-ii"
+      ]
+    },
+    {
+      "id": "arquitecturas-config",
+      "nombre": "Arquitecturas y Configuraciones",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "sist-operativos"
+      ]
+    }
+  ]
+}

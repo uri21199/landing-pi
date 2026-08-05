@@ -1,0 +1,632 @@
+{
+  "slug": "mecanica",
+  "nombre": "Ingeniería Mecánica",
+  "resolucion": "ACS-2024-113-Mecanica-Plan-2020",
+  "totalCreditos": 250,
+  "duracionCuatrimestres": 11,
+  "creditosElectivosRequeridos": 14,
+  "cbc": {
+    "materias": [
+      {
+        "id": "icse",
+        "nombre": "Introducción al Conocimiento de la Sociedad y el Estado",
+        "creditos": 4,
+        "horasSemanales": 4,
+        "correlativas": [],
+        "cuatrimestre": 0
+      },
+      {
+        "id": "ipc",
+        "nombre": "Introducción al Pensamiento Científico",
+        "creditos": 4,
+        "horasSemanales": 4,
+        "correlativas": [],
+        "cuatrimestre": 0
+      },
+      {
+        "id": "am-a",
+        "nombre": "Análisis Matemático A",
+        "creditos": 9,
+        "horasSemanales": 9,
+        "correlativas": [],
+        "cuatrimestre": 0
+      },
+      {
+        "id": "algebra-a",
+        "nombre": "Álgebra A",
+        "creditos": 9,
+        "horasSemanales": 9,
+        "correlativas": [],
+        "cuatrimestre": 0
+      },
+      {
+        "id": "fisica",
+        "nombre": "Física",
+        "creditos": 6,
+        "horasSemanales": 6,
+        "correlativas": [],
+        "cuatrimestre": 0
+      },
+      {
+        "id": "pc",
+        "nombre": "Pensamiento Computacional",
+        "creditos": 6,
+        "horasSemanales": 6,
+        "correlativas": [],
+        "cuatrimestre": 0
+      }
+    ]
+  },
+  "cuatrimestres": [
+    {
+      "numero": 3,
+      "materias": [
+        {
+          "id": "am-ii",
+          "nombre": "Análisis Matemático II",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "intro-ing-mec",
+          "nombre": "Introducción a la Ingeniería Mecánica",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "fisica-sist-part",
+          "nombre": "Física de los Sistemas de Partículas",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "quim-basica",
+          "nombre": "Química Básica",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [],
+          "requiereCBC": true
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "materias": [
+        {
+          "id": "conoc-mat-metal",
+          "nombre": "Conocimiento de Materiales Metálicos",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "quim-basica"
+          ]
+        },
+        {
+          "id": "diseno-mecanico",
+          "nombre": "Diseño Mecánico",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "intro-ing-mec"
+          ]
+        },
+        {
+          "id": "algebra-lineal",
+          "nombre": "Álgebra Lineal",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "mec-clasica",
+          "nombre": "Mecánica Clásica del Cuerpo Rígido",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "fisica-sist-part"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "materias": [
+        {
+          "id": "mecanismos",
+          "nombre": "Mecanismos",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "mec-clasica"
+          ]
+        },
+        {
+          "id": "intro-cd",
+          "nombre": "Introducción a la Ciencia de Datos",
+          "creditos": 3,
+          "horasSemanales": 3,
+          "correlativas": [
+            "algebra-lineal"
+          ]
+        },
+        {
+          "id": "intro-mec-sol-def",
+          "nombre": "Introducción a la Mecánica del Sólido Deformable",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "mec-clasica"
+          ]
+        },
+        {
+          "id": "termodinamica",
+          "nombre": "Termodinámica",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "quim-basica"
+          ]
+        },
+        {
+          "id": "am-iii",
+          "nombre": "Análisis Matemático III",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "am-ii"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "materias": [
+        {
+          "id": "elec-mag",
+          "nombre": "Electricidad y Magnetismo",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "am-ii",
+            "fisica-sist-part"
+          ]
+        },
+        {
+          "id": "modelacion-numerica",
+          "nombre": "Modelación Numérica",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "am-ii",
+            "algebra-lineal"
+          ]
+        },
+        {
+          "id": "conoc-mat-no-metal",
+          "nombre": "Conocimiento de Materiales No Metálicos",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "quim-basica"
+          ]
+        },
+        {
+          "id": "prob-estadistica",
+          "nombre": "Probabilidad y Estadística",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "am-ii",
+            "algebra-lineal"
+          ]
+        },
+        {
+          "id": "legislacion-ep",
+          "nombre": "Legislación y Ejercicio Profesional",
+          "creditos": 2,
+          "horasSemanales": 2,
+          "correlativas": [],
+          "correlativasCreditos": 100
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "materias": [
+        {
+          "id": "ensayos-industriales",
+          "nombre": "Ensayos Industriales",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "intro-mec-sol-def",
+            "conoc-mat-metal"
+          ]
+        },
+        {
+          "id": "electrotecnia-gral",
+          "nombre": "Electrotecnia General",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "elec-mag"
+          ]
+        },
+        {
+          "id": "economia-org",
+          "nombre": "Economía y Organización",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "intro-ing-mec"
+          ]
+        },
+        {
+          "id": "taller-manufactura-mec",
+          "nombre": "Taller de Manufactura Mecánica",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "conoc-mat-metal"
+          ]
+        },
+        {
+          "id": "mec-fluidos",
+          "nombre": "Mecánica de Fluidos",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "intro-mec-sol-def",
+            "termodinamica",
+            "am-iii"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 8,
+      "materias": [
+        {
+          "id": "taller-electronica",
+          "nombre": "Taller de Electrónica",
+          "creditos": 3,
+          "horasSemanales": 3,
+          "correlativas": [
+            "elec-mag"
+          ]
+        },
+        {
+          "id": "proy-instrumentacion",
+          "nombre": "Proyecto de Instrumentación",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "economia-org",
+            "prob-estadistica",
+            "diseno-mecanico"
+          ]
+        },
+        {
+          "id": "maq-termicas",
+          "nombre": "Máquinas Térmicas",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "termodinamica"
+          ]
+        },
+        {
+          "id": "impacto-social-amb",
+          "nombre": "Impacto Social, Ambiental y Desarrollo Sustentable",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [],
+          "correlativasCreditos": 100
+        },
+        {
+          "id": "tecnol-mecanica",
+          "nombre": "Tecnología Mecánica",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "taller-manufactura-mec",
+            "conoc-mat-no-metal"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 9,
+      "materias": [
+        {
+          "id": "sist-almacenamiento",
+          "nombre": "Sistemas de Almacenamiento",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "ensayos-industriales"
+          ]
+        },
+        {
+          "id": "transf-calor-masa",
+          "nombre": "Transferencia de Calor y Masa y sus Instalaciones",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "mec-fluidos"
+          ]
+        },
+        {
+          "id": "dano-fractura",
+          "nombre": "Daño y Fractura de Elementos Mecánicos",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "ensayos-industriales"
+          ]
+        },
+        {
+          "id": "maq-electricas",
+          "nombre": "Máquinas Eléctricas",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "electrotecnia-gral"
+          ]
+        },
+        {
+          "id": "sist-control-autom",
+          "nombre": "Sistemas de Control y Automatización",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "taller-electronica",
+            "mec-clasica",
+            "am-iii"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 10,
+      "materias": [
+        {
+          "id": "turbomaquinas",
+          "nombre": "Turbomáquinas",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "mec-fluidos"
+          ]
+        },
+        {
+          "id": "proy-inst-industriales",
+          "nombre": "Proyecto de Instalaciones Industriales",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "mec-fluidos",
+            "maq-electricas"
+          ]
+        },
+        {
+          "id": "tif-i",
+          "nombre": "Trabajo Integrador Final I",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "proy-instrumentacion",
+            "impacto-social-amb"
+          ],
+          "tipo": "tif"
+        }
+      ]
+    },
+    {
+      "numero": 11,
+      "materias": [
+        {
+          "id": "elem-maquinas",
+          "nombre": "Elementos de Máquinas",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "mecanismos",
+            "intro-mec-sol-def",
+            "modelacion-numerica"
+          ]
+        },
+        {
+          "id": "mantenimiento-calidad",
+          "nombre": "Mantenimiento y Calidad",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "conoc-mat-metal",
+            "economia-org"
+          ]
+        },
+        {
+          "id": "tif-ii",
+          "nombre": "Trabajo Integrador Final II",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [
+            "proy-instrumentacion",
+            "impacto-social-amb"
+          ],
+          "tipo": "tif"
+        }
+      ]
+    }
+  ],
+  "electivas": [
+    {
+      "id": "proy-maquinas",
+      "nombre": "Proyecto de Máquinas",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "correlativasCreditos": 150
+    },
+    {
+      "id": "diseno-maq-herr",
+      "nombre": "Diseño de Máquinas Herramientas",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "correlativasCreditos": 150
+    },
+    {
+      "id": "cnc",
+      "nombre": "Control Numérico Computarizado",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [],
+      "correlativasCreditos": 150
+    },
+    {
+      "id": "combustion",
+      "nombre": "Combustión",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [],
+      "correlativasCreditos": 150
+    },
+    {
+      "id": "tecnol-frio",
+      "nombre": "Tecnología del Frío",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "correlativasCreditos": 150
+    },
+    {
+      "id": "tecnol-calor-av",
+      "nombre": "Tecnología del Calor Avanzada",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "correlativasCreditos": 150
+    },
+    {
+      "id": "trat-termicos-sup",
+      "nombre": "Tratamientos Térmicos y de Superficie",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "correlativasCreditos": 150
+    },
+    {
+      "id": "mat-metal-aplic",
+      "nombre": "Materiales Metálicos y sus Aplicaciones",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "correlativasCreditos": 150
+    },
+    {
+      "id": "opdime",
+      "nombre": "Optimización de Diseños Mecánicos",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [],
+      "correlativasCreditos": 150
+    },
+    {
+      "id": "mec-comp-fluidos",
+      "nombre": "Introducción a la Mecánica Computacional en Fluidos",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "correlativasCreditos": 150
+    },
+    {
+      "id": "mec-comp-solidos",
+      "nombre": "Introducción a la Mecánica Computacional en Sólidos",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "correlativasCreditos": 150
+    },
+    {
+      "id": "robotica",
+      "nombre": "Robótica",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [],
+      "correlativasCreditos": 150
+    },
+    {
+      "id": "vision-comp",
+      "nombre": "Visión por Computadora",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "correlativasCreditos": 150
+    },
+    {
+      "id": "intro-biomat",
+      "nombre": "Introducción a los Biomateriales",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "correlativasCreditos": 150
+    },
+    {
+      "id": "sim-sist-biom",
+      "nombre": "Simulación de Sistemas Biomecánicos",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [],
+      "correlativasCreditos": 150
+    },
+    {
+      "id": "intro-ia",
+      "nombre": "Introducción a Inteligencia Artificial",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [
+        "prob-estadistica",
+        "intro-cd"
+      ]
+    },
+    {
+      "id": "analisis-datos",
+      "nombre": "Análisis de Datos",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [
+        "prob-estadistica",
+        "intro-cd"
+      ]
+    },
+    {
+      "id": "aprendizaje-maquina",
+      "nombre": "Aprendizaje de Máquina",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [
+        "analisis-datos",
+        "intro-ia"
+      ]
+    },
+    {
+      "id": "aprendizaje-maquina-prof",
+      "nombre": "Aprendizaje de Máquina Profundo",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [
+        "analisis-datos",
+        "intro-ia"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,753 @@
+{
+  "slug": "industrial",
+  "nombre": "Ingeniería Industrial",
+  "resolucion": "RESCS-2024-63-Industrial-Plan-2023",
+  "totalCreditos": 236,
+  "duracionCuatrimestres": 10,
+  "creditosElectivosRequeridos": 24,
+  "cbc": {
+    "materias": [
+      {
+        "id": "icse",
+        "nombre": "Intro. al Conocimiento de la Sociedad y el Estado",
+        "creditos": 4,
+        "horasSemanales": 4,
+        "correlativas": [],
+        "cuatrimestre": null
+      },
+      {
+        "id": "ipc",
+        "nombre": "Intro. al Pensamiento Científico",
+        "creditos": 4,
+        "horasSemanales": 4,
+        "correlativas": [],
+        "cuatrimestre": null
+      },
+      {
+        "id": "am-a",
+        "nombre": "Análisis Matemático A",
+        "creditos": 9,
+        "horasSemanales": 9,
+        "correlativas": [],
+        "cuatrimestre": null
+      },
+      {
+        "id": "algebra-a",
+        "nombre": "Álgebra A",
+        "creditos": 9,
+        "horasSemanales": 9,
+        "correlativas": [],
+        "cuatrimestre": null
+      },
+      {
+        "id": "fisica",
+        "nombre": "Física",
+        "creditos": 6,
+        "horasSemanales": 6,
+        "correlativas": [],
+        "cuatrimestre": null
+      },
+      {
+        "id": "pc",
+        "nombre": "Pensamiento Computacional",
+        "creditos": 6,
+        "horasSemanales": 6,
+        "correlativas": [],
+        "cuatrimestre": null
+      }
+    ]
+  },
+  "cuatrimestres": [
+    {
+      "numero": 3,
+      "materias": [
+        {
+          "id": "am-ii",
+          "nombre": "Análisis Matemático II",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [],
+          "cuatrimestre": 3,
+          "requiereCBC": true
+        },
+        {
+          "id": "fisica-sist-part",
+          "nombre": "Física de los Sistemas de Partículas",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [],
+          "cuatrimestre": 3,
+          "requiereCBC": true
+        },
+        {
+          "id": "principios-ing-ind",
+          "nombre": "Principios de Ingeniería Industrial",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [],
+          "cuatrimestre": 3,
+          "requiereCBC": true
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "materias": [
+        {
+          "id": "algebra-lineal",
+          "nombre": "Álgebra Lineal",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [],
+          "cuatrimestre": 4,
+          "requiereCBC": true
+        },
+        {
+          "id": "quim-basica",
+          "nombre": "Química Básica",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [],
+          "cuatrimestre": 4,
+          "requiereCBC": true
+        },
+        {
+          "id": "estatica-res-mat",
+          "nombre": "Estática y Resistencia de Materiales",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "am-ii",
+            "fisica-sist-part"
+          ],
+          "cuatrimestre": 4,
+          "requiereCBC": false
+        },
+        {
+          "id": "org-dir-empresaria",
+          "nombre": "Organización y Dirección Empresaria",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "principios-ing-ind"
+          ],
+          "cuatrimestre": 4,
+          "requiereCBC": false
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "materias": [
+        {
+          "id": "probabilidad",
+          "nombre": "Probabilidad",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "am-ii"
+          ],
+          "cuatrimestre": 5,
+          "requiereCBC": false
+        },
+        {
+          "id": "economia",
+          "nombre": "Economía",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "am-ii",
+            "principios-ing-ind"
+          ],
+          "cuatrimestre": 5,
+          "requiereCBC": false
+        },
+        {
+          "id": "materiales-aplic-i",
+          "nombre": "Materiales y Aplicaciones I",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "quim-basica",
+            "estatica-res-mat",
+            "principios-ing-ind"
+          ],
+          "cuatrimestre": 5,
+          "requiereCBC": false
+        },
+        {
+          "id": "transf-energia",
+          "nombre": "Transformación de la Energía",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [
+            "am-ii",
+            "fisica-sist-part",
+            "quim-basica"
+          ],
+          "cuatrimestre": 5,
+          "requiereCBC": false
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "materias": [
+        {
+          "id": "electr-mag",
+          "nombre": "Electricidad y Magnetismo",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "am-ii",
+            "fisica-sist-part"
+          ],
+          "cuatrimestre": 6,
+          "requiereCBC": false
+        },
+        {
+          "id": "desarrollo-economico",
+          "nombre": "Desarrollo Económico",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "economia"
+          ],
+          "cuatrimestre": 6,
+          "requiereCBC": false
+        },
+        {
+          "id": "estadistica-aplic",
+          "nombre": "Estadística Aplicada",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [
+            "probabilidad"
+          ],
+          "cuatrimestre": 6,
+          "requiereCBC": false
+        },
+        {
+          "id": "gestion-integral-cdv",
+          "nombre": "Gestión Integral de la Cadena de Valor",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [
+            "org-dir-empresaria"
+          ],
+          "cuatrimestre": 6,
+          "requiereCBC": false
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "materias": [
+        {
+          "id": "electrotecnia-maq-inst-elec",
+          "nombre": "Electrotecnia, Máquinas e Instalaciones Eléctricas",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "electr-mag"
+          ],
+          "cuatrimestre": 7,
+          "requiereCBC": false
+        },
+        {
+          "id": "investigacion-operativa",
+          "nombre": "Investigación Operativa",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [
+            "algebra-lineal",
+            "probabilidad"
+          ],
+          "cuatrimestre": 7,
+          "requiereCBC": false
+        },
+        {
+          "id": "sistemas-contables-gestion",
+          "nombre": "Sistemas Contables y Gestión de Costos",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "economia",
+            "gestion-integral-cdv"
+          ],
+          "cuatrimestre": 7,
+          "requiereCBC": false
+        },
+        {
+          "id": "industrias-digitales",
+          "nombre": "Industrias Digitales",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "estadistica-aplic"
+          ],
+          "cuatrimestre": 7,
+          "requiereCBC": false
+        },
+        {
+          "id": "ing-amb-sust-cuidado-planeta",
+          "nombre": "Ingeniería Ambiental, Sustentabilidad y Cuidado del Planeta",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [],
+          "cuatrimestre": 7,
+          "requiereCBC": false,
+          "correlativasCreditos": 100
+        }
+      ]
+    },
+    {
+      "numero": 8,
+      "materias": [
+        {
+          "id": "ingenieria-economica",
+          "nombre": "Ingeniería Económica",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "desarrollo-economico",
+            "sistemas-contables-gestion"
+          ],
+          "cuatrimestre": 8,
+          "requiereCBC": false
+        },
+        {
+          "id": "equipos-sis-autom-ind",
+          "nombre": "Equipos y Sistemas para Automatización Industrial",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "electrotecnia-maq-inst-elec",
+            "materiales-aplic-i"
+          ],
+          "cuatrimestre": 8,
+          "requiereCBC": false
+        },
+        {
+          "id": "industrias-quimicas",
+          "nombre": "Industrias Químicas",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "materiales-aplic-i",
+            "transf-energia"
+          ],
+          "cuatrimestre": 8,
+          "requiereCBC": false
+        },
+        {
+          "id": "transf-materiales",
+          "nombre": "Transformación de Materiales",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [
+            "materiales-aplic-i"
+          ],
+          "cuatrimestre": 8,
+          "requiereCBC": false
+        },
+        {
+          "id": "higiene-seguridad",
+          "nombre": "Higiene y Seguridad",
+          "creditos": 2,
+          "horasSemanales": 2,
+          "correlativas": [],
+          "cuatrimestre": 8,
+          "requiereCBC": false,
+          "correlativasCreditos": 100
+        }
+      ]
+    },
+    {
+      "numero": 9,
+      "materias": [
+        {
+          "id": "industrias-extractivas",
+          "nombre": "Industrias Extractivas",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "transf-energia",
+            "materiales-aplic-i"
+          ],
+          "cuatrimestre": 9,
+          "requiereCBC": false
+        },
+        {
+          "id": "proyecto-industrial",
+          "nombre": "Proyecto Industrial",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [
+            "electrotecnia-maq-inst-elec",
+            "materiales-aplic-i",
+            "transf-energia",
+            "higiene-seguridad",
+            "ing-amb-sust-cuidado-planeta"
+          ],
+          "cuatrimestre": 9,
+          "requiereCBC": false
+        },
+        {
+          "id": "tif",
+          "nombre": "Trabajo Integrador Final",
+          "creditos": 12,
+          "horasSemanales": 12,
+          "correlativas": [],
+          "cuatrimestre": 9,
+          "requiereCBC": false,
+          "correlativasCreditos": 140,
+          "nota": "Se cursa en Q9 y Q10 (6+6 cr). Requiere 192 h de práctica profesional.",
+          "tipo": "tif"
+        }
+      ]
+    },
+    {
+      "numero": 10,
+      "materias": [
+        {
+          "id": "legislacion-ejerc-prof",
+          "nombre": "Legislación y Ejercicio Profesional",
+          "creditos": 2,
+          "horasSemanales": 2,
+          "correlativas": [],
+          "cuatrimestre": 10,
+          "requiereCBC": false,
+          "correlativasCreditos": 100
+        }
+      ]
+    }
+  ],
+  "electivas": [
+    {
+      "id": "gestion-financiera-pres",
+      "nombre": "Gestión Financiera y Presupuestaria",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "sistemas-contables-gestion"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "analisis-casos",
+      "nombre": "Análisis de Casos",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "investigacion-operativa"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "ciencia-datos-toma-dec",
+      "nombre": "Ciencia de Datos para la Toma de Decisiones",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "estadistica-aplic"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "estadistica-aplic-sup",
+      "nombre": "Estadística Aplicada Superior",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "estadistica-aplic"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "investigacion-operativa-sup",
+      "nombre": "Investigación Operativa Superior",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "investigacion-operativa"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "capital-humano",
+      "nombre": "Capital Humano y Comportamiento Organizacional",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "org-dir-empresaria"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "comercializacion-ps",
+      "nombre": "Comercialización de Productos y Servicios",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "gestion-integral-cdv"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "gerenc-calidad",
+      "nombre": "Gerenciamiento de la Calidad",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "gestion-integral-cdv"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "informatica-gestion-emp",
+      "nombre": "Informática para la Gestión de Empresas",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "industrias-digitales"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "logistica-supply-chain",
+      "nombre": "Logística y Supply Chain",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "gestion-integral-cdv"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "innovacion-gestion-proy",
+      "nombre": "Innovación y Gestión de Proyectos",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "desarrollo-economico",
+        "gestion-integral-cdv"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "emprendimientos-ing",
+      "nombre": "Emprendimientos en Ingeniería",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "cuatrimestre": null,
+      "requiereCBC": false,
+      "correlativasCreditos": 100
+    },
+    {
+      "id": "diseno-producto",
+      "nombre": "Diseño de Producto",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "gestion-integral-cdv",
+        "materiales-aplic-i"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "diseno-producto-digital",
+      "nombre": "Diseño de Producto Digital",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "industrias-digitales"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "ing-dev-envases-embalajes",
+      "nombre": "Ingeniería y Desarrollo de Envases y Embalajes",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "cuatrimestre": null,
+      "requiereCBC": false,
+      "correlativasCreditos": 100
+    },
+    {
+      "id": "agroindustria-bioeconomia",
+      "nombre": "Agroindustria y Bioeconomía",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "cuatrimestre": null,
+      "requiereCBC": false,
+      "correlativasCreditos": 100
+    },
+    {
+      "id": "biopolimeros-ind-plasticas",
+      "nombre": "Biopolímeros e Industrias Plásticas",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "industrias-quimicas"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "industria-automotriz",
+      "nombre": "Industria Automotriz",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "gestion-integral-cdv"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "industrias-celulosa-papel",
+      "nombre": "Industrias de Celulosa y Papel",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "industrias-quimicas"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "industrias-alimentacion",
+      "nombre": "Industrias de la Alimentación",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "industrias-quimicas"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "industrias-petroliferas",
+      "nombre": "Industrias Petrolíferas",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "industrias-quimicas"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "industrias-textiles",
+      "nombre": "Industrias Textiles",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "gestion-integral-cdv"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "mantenimiento-ing-planta",
+      "nombre": "Mantenimiento e Ingeniería de Planta",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "gestion-integral-cdv"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "materiales-aplic-ii",
+      "nombre": "Materiales y Aplicaciones II",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "materiales-aplic-i"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "intro-transicion-energ",
+      "nombre": "Introducción a la Transición Energética",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "cuatrimestre": null,
+      "requiereCBC": false,
+      "correlativasCreditos": 120
+    },
+    {
+      "id": "energias-renovables",
+      "nombre": "Energías Renovables",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "cuatrimestre": null,
+      "requiereCBC": false,
+      "correlativasCreditos": 120
+    },
+    {
+      "id": "uso-eficiente-energia",
+      "nombre": "Uso Eficiente de la Energía",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "cuatrimestre": null,
+      "requiereCBC": false,
+      "correlativasCreditos": 120
+    },
+    {
+      "id": "fuentes-conv-transicion",
+      "nombre": "Fuentes Convencionales en la Transición Energética",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "cuatrimestre": null,
+      "requiereCBC": false,
+      "correlativasCreditos": 120
+    },
+    {
+      "id": "tec-emergentes-transicion",
+      "nombre": "Tecnologías Emergentes en la Transición Energética",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "cuatrimestre": null,
+      "requiereCBC": false,
+      "correlativasCreditos": 120
+    },
+    {
+      "id": "taller-manufactura",
+      "nombre": "Taller de Manufactura",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [
+        "principios-ing-ind",
+        "materiales-aplic-i"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    }
+  ]
+}

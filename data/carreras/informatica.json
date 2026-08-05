@@ -1,0 +1,642 @@
+{
+  "slug": "informatica",
+  "nombre": "Ingeniería en Informática",
+  "resolucion": "RESCD-2023-526-Informatica-Plan-2023",
+  "totalCreditos": 226,
+  "duracionCuatrimestres": 10,
+  "creditosElectivosRequeridos": 24,
+  "cbc": {
+    "materias": [
+      {
+        "id": "icse",
+        "nombre": "Intro. al Conocimiento de la Sociedad y el Estado",
+        "creditos": 4,
+        "horasSemanales": 4,
+        "correlativas": [],
+        "cuatrimestre": null
+      },
+      {
+        "id": "ipc",
+        "nombre": "Intro. al Pensamiento Científico",
+        "creditos": 4,
+        "horasSemanales": 4,
+        "correlativas": [],
+        "cuatrimestre": null
+      },
+      {
+        "id": "am-a",
+        "nombre": "Análisis Matemático A",
+        "creditos": 9,
+        "horasSemanales": 9,
+        "correlativas": [],
+        "cuatrimestre": null
+      },
+      {
+        "id": "algebra-a",
+        "nombre": "Álgebra A",
+        "creditos": 9,
+        "horasSemanales": 9,
+        "correlativas": [],
+        "cuatrimestre": null
+      },
+      {
+        "id": "fisica",
+        "nombre": "Física",
+        "creditos": 6,
+        "horasSemanales": 6,
+        "correlativas": [],
+        "cuatrimestre": null
+      },
+      {
+        "id": "pc",
+        "nombre": "Pensamiento Computacional",
+        "creditos": 6,
+        "horasSemanales": 6,
+        "correlativas": [],
+        "cuatrimestre": null
+      }
+    ]
+  },
+  "cuatrimestres": [
+    {
+      "numero": 3,
+      "materias": [
+        {
+          "id": "am-ii",
+          "nombre": "Análisis Matemático II",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [],
+          "cuatrimestre": 3,
+          "requiereCBC": true
+        },
+        {
+          "id": "fund-programacion",
+          "nombre": "Fundamentos de Programación",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [],
+          "cuatrimestre": 3,
+          "requiereCBC": true
+        },
+        {
+          "id": "intro-dev-software",
+          "nombre": "Introducción al Desarrollo de Software",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [],
+          "cuatrimestre": 3,
+          "requiereCBC": true
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "materias": [
+        {
+          "id": "algebra-lineal",
+          "nombre": "Álgebra Lineal",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [],
+          "cuatrimestre": 4,
+          "requiereCBC": true
+        },
+        {
+          "id": "organizacion-computador",
+          "nombre": "Organización del Computador",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "intro-dev-software",
+            "fund-programacion"
+          ],
+          "cuatrimestre": 4,
+          "requiereCBC": false
+        },
+        {
+          "id": "algoritmos-ed",
+          "nombre": "Algoritmos y Estructuras de Datos",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "fund-programacion"
+          ],
+          "cuatrimestre": 4,
+          "requiereCBC": false
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "materias": [
+        {
+          "id": "pye",
+          "nombre": "Probabilidad y Estadística",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "am-ii",
+            "algebra-lineal"
+          ],
+          "cuatrimestre": 5,
+          "requiereCBC": false
+        },
+        {
+          "id": "teoria-algoritmos",
+          "nombre": "Teoría de Algoritmos",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "algoritmos-ed",
+            "intro-dev-software"
+          ],
+          "cuatrimestre": 5,
+          "requiereCBC": false
+        },
+        {
+          "id": "sistemas-operativos",
+          "nombre": "Sistemas Operativos",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "organizacion-computador"
+          ],
+          "cuatrimestre": 5,
+          "requiereCBC": false
+        },
+        {
+          "id": "paradigmas-prog",
+          "nombre": "Paradigmas de Programación",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "algoritmos-ed",
+            "intro-dev-software"
+          ],
+          "cuatrimestre": 5,
+          "requiereCBC": false
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "materias": [
+        {
+          "id": "base-datos",
+          "nombre": "Base de Datos",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "organizacion-computador",
+            "paradigmas-prog"
+          ],
+          "cuatrimestre": 6,
+          "requiereCBC": false
+        },
+        {
+          "id": "modelacion-numerica",
+          "nombre": "Modelación Numérica",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "am-ii",
+            "algebra-lineal",
+            "algoritmos-ed"
+          ],
+          "cuatrimestre": 6,
+          "requiereCBC": false
+        },
+        {
+          "id": "taller-programacion",
+          "nombre": "Taller de Programación",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [
+            "organizacion-computador",
+            "paradigmas-prog"
+          ],
+          "cuatrimestre": 6,
+          "requiereCBC": false
+        },
+        {
+          "id": "ingenieria-software-i",
+          "nombre": "Ingeniería de Software I",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [
+            "paradigmas-prog"
+          ],
+          "cuatrimestre": 6,
+          "requiereCBC": false
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "materias": [
+        {
+          "id": "ciencia-datos",
+          "nombre": "Ciencia de Datos",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "pye",
+            "base-datos",
+            "modelacion-numerica",
+            "teoria-algoritmos"
+          ],
+          "cuatrimestre": 7,
+          "requiereCBC": false
+        },
+        {
+          "id": "gestion-dev-si",
+          "nombre": "Gestión del Desarrollo de Sistemas Informáticos",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "ingenieria-software-i"
+          ],
+          "cuatrimestre": 7,
+          "requiereCBC": false
+        },
+        {
+          "id": "prog-concurrente",
+          "nombre": "Programación Concurrente",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "sistemas-operativos",
+            "taller-programacion"
+          ],
+          "cuatrimestre": 7,
+          "requiereCBC": false
+        },
+        {
+          "id": "redes",
+          "nombre": "Redes",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "sistemas-operativos"
+          ],
+          "cuatrimestre": 7,
+          "requiereCBC": false
+        }
+      ]
+    },
+    {
+      "numero": 8,
+      "materias": [
+        {
+          "id": "fisica-informatica",
+          "nombre": "Física para Informática",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [],
+          "cuatrimestre": 8,
+          "requiereCBC": false,
+          "correlativasCreditos": 120
+        },
+        {
+          "id": "empresas-bt-i",
+          "nombre": "Empresas de Base Tecnológica I",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [],
+          "cuatrimestre": 8,
+          "requiereCBC": false,
+          "correlativasCreditos": 120
+        },
+        {
+          "id": "ingenieria-software-ii",
+          "nombre": "Ingeniería de Software II",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [
+            "base-datos",
+            "ingenieria-software-i",
+            "taller-programacion"
+          ],
+          "cuatrimestre": 8,
+          "requiereCBC": false
+        },
+        {
+          "id": "sistemas-distribuidos-i",
+          "nombre": "Sistemas Distribuidos I",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "prog-concurrente",
+            "redes"
+          ],
+          "cuatrimestre": 8,
+          "requiereCBC": false
+        }
+      ]
+    },
+    {
+      "numero": 9,
+      "materias": [
+        {
+          "id": "taller-seg-info",
+          "nombre": "Taller de Seguridad Informática",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [
+            "redes"
+          ],
+          "cuatrimestre": 9,
+          "requiereCBC": false
+        },
+        {
+          "id": "tif",
+          "nombre": "Trabajo Integrador Final",
+          "creditos": 12,
+          "horasSemanales": 12,
+          "correlativas": [],
+          "cuatrimestre": 9,
+          "requiereCBC": false,
+          "correlativasCreditos": 140,
+          "nota": "Se cursa en Q9 y Q10 (6+6 cr). Requiere 192 h de práctica profesional.",
+          "tipo": "tif"
+        }
+      ]
+    },
+    {
+      "numero": 10,
+      "materias": [
+        {
+          "id": "empresas-bt-ii",
+          "nombre": "Empresas de Base Tecnológica II",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "empresas-bt-i"
+          ],
+          "cuatrimestre": 10,
+          "requiereCBC": false
+        }
+      ]
+    }
+  ],
+  "electivas": [
+    {
+      "id": "lenguajes-comp-i",
+      "nombre": "Lenguajes y Compiladores I",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "organizacion-computador",
+        "paradigmas-prog",
+        "teoria-algoritmos"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "fund-mat-criptografia",
+      "nombre": "Fundamentos Matemáticos de la Criptografía",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "algebra-lineal"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "criptografia-i",
+      "nombre": "Criptografía I",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "algebra-lineal",
+        "teoria-algoritmos"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "criptografia-ii",
+      "nombre": "Criptografía II",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "fund-mat-criptografia",
+        "criptografia-i"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "sistemas-distribuidos-ii",
+      "nombre": "Sistemas Distribuidos II",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "sistemas-distribuidos-i"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "tec-ing-inversa",
+      "nombre": "Técnicas de Ingeniería Inversa",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "criptografia-i",
+        "taller-seg-info"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "criptoanal",
+      "nombre": "Criptoanálisis",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "criptografia-i",
+        "taller-seg-info"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "ingenieria-datos",
+      "nombre": "Ingeniería de Datos",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "ciencia-datos",
+        "ingenieria-software-ii"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "optimizacion-convexa",
+      "nombre": "Optimización Convexa",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "ciencia-datos"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "aprendizaje-automatico",
+      "nombre": "Aprendizaje Automático",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "ciencia-datos"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "aprendizaje-profundo",
+      "nombre": "Aprendizaje Profundo",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "aprendizaje-automatico"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "aprendizaje-refuerzo",
+      "nombre": "Aprendizaje por Refuerzo",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "aprendizaje-automatico"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "simulacion",
+      "nombre": "Simulación",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "pye",
+        "modelacion-numerica"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "sistemas-complejos",
+      "nombre": "Sistemas Complejos",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "pye",
+        "modelacion-numerica"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "redes-complejas",
+      "nombre": "Redes Complejas",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "sistemas-complejos",
+        "teoria-alg-juegos"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "teoria-alg-juegos",
+      "nombre": "Teoría Algorítmica de Juegos",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "pye",
+        "teoria-algoritmos"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "teoria-computabilidad",
+      "nombre": "Teoría de Computabilidad",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "lenguajes-comp-i",
+        "teoria-algoritmos"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "teoria-informacion",
+      "nombre": "Teoría de la Información",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "pye",
+        "teoria-algoritmos"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "computacion-cuantica",
+      "nombre": "Computación Cuántica",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "pye"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "lenguajes-comp-ii",
+      "nombre": "Lenguajes y Compiladores II",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "lenguajes-comp-i",
+        "sistemas-operativos"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "am-iii",
+      "nombre": "Análisis Matemático III",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "am-ii",
+        "algebra-lineal"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "arquitectura-software",
+      "nombre": "Arquitectura de Software",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "ingenieria-software-i"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "slug": "civil",
+  "nombre": "Ingeniería Civil",
+  "planVigente": "Plan 2023 (Res. CD 720/23) — vigente para ingresantes 2023 en adelante",
+  "fuente": "https://www.fi.uba.ar/grado/carreras/ingenieria-civil/plan-de-estudios",
+  "totalCreditos": 251,
+  "duracionCuatrimestres": 11,
+  "creditosElectivosRequeridos": 24,
+  "cbc": {
+    "nombreCorto": "CBC",
+    "creditos": 38,
+    "materias": [
+      { "id": "icse", "nombre": "Introducción al Conocimiento de la Sociedad y el Estado", "tipo": "obligatoria", "cuatrimestre": 1, "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": [] },
+      { "id": "ipc", "nombre": "Introducción al Pensamiento Científico", "tipo": "obligatoria", "cuatrimestre": 1, "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": [] },
+      { "id": "am-a", "nombre": "Análisis Matemático A", "tipo": "obligatoria", "cuatrimestre": 1, "creditos": 9, "horasSemanales": 9, "horasTotales": 144, "correlativas": [] },
+      { "id": "algebra-a", "nombre": "Álgebra A", "tipo": "obligatoria", "cuatrimestre": 1, "creditos": 9, "horasSemanales": 9, "horasTotales": 144, "correlativas": [] },
+      { "id": "fisica", "nombre": "Física", "tipo": "obligatoria", "cuatrimestre": 1, "creditos": 6, "horasSemanales": 6, "horasTotales": 96, "correlativas": [] },
+      { "id": "pc", "nombre": "Pensamiento Computacional", "tipo": "obligatoria", "cuatrimestre": 1, "creditos": 6, "horasSemanales": 6, "horasTotales": 96, "correlativas": [] }
+    ]
+  },
+  "cuatrimestres": [
+    {
+      "numero": 3,
+      "materias": [
+        { "id": "am-ii", "nombre": "Análisis Matemático II", "tipo": "obligatoria", "cuatrimestre": 3, "creditos": 8, "horasSemanales": 8, "horasTotales": 128, "correlativas": [], "requiereCBC": true },
+        { "id": "iic", "nombre": "Introducción a la Ingeniería Civil", "tipo": "obligatoria", "cuatrimestre": 3, "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": [], "requiereCBC": true, "nota": "Proyecto Inicial de la carrera." },
+        { "id": "fsp", "nombre": "Física de los Sistemas de Partículas", "tipo": "obligatoria", "cuatrimestre": 3, "creditos": 6, "horasSemanales": 6, "horasTotales": 96, "correlativas": [], "requiereCBC": true }
+      ]
+    },
+    {
+      "numero": 4,
+      "materias": [
+        { "id": "algebra-lineal", "nombre": "Álgebra Lineal", "tipo": "obligatoria", "cuatrimestre": 4, "creditos": 8, "horasSemanales": 8, "horasTotales": 128, "correlativas": [], "requiereCBC": true },
+        { "id": "quimica-basica", "nombre": "Química Básica", "tipo": "obligatoria", "cuatrimestre": 4, "creditos": 6, "horasSemanales": 6, "horasTotales": 96, "correlativas": [], "requiereCBC": true },
+        { "id": "estatica", "nombre": "Estática", "tipo": "obligatoria", "cuatrimestre": 4, "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["fsp"] },
+        { "id": "itmu", "nombre": "Introducción al Transporte, la Movilidad y el Urbanismo", "tipo": "obligatoria", "cuatrimestre": 4, "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["iic"] }
+      ]
+    },
+    {
+      "numero": 5,
+      "materias": [
+        { "id": "pye", "nombre": "Probabilidad y Estadística", "tipo": "obligatoria", "cuatrimestre": 5, "creditos": 6, "horasSemanales": 6, "horasTotales": 96, "correlativas": ["am-ii", "algebra-lineal"] },
+        { "id": "resistencia-materiales", "nombre": "Resistencia de Materiales", "tipo": "obligatoria", "cuatrimestre": 5, "creditos": 8, "horasSemanales": 8, "horasTotales": 128, "correlativas": ["estatica", "am-ii"] },
+        { "id": "hidraulica-general", "nombre": "Hidráulica General", "tipo": "obligatoria", "cuatrimestre": 5, "creditos": 6, "horasSemanales": 6, "horasTotales": 96, "correlativas": ["am-ii", "fsp"] },
+        { "id": "modelacion-numerica", "nombre": "Modelación Numérica", "tipo": "obligatoria", "cuatrimestre": 5, "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["am-ii", "algebra-lineal"] }
+      ]
+    },
+    {
+      "numero": 6,
+      "materias": [
+        { "id": "electricidad-magnetismo", "nombre": "Electricidad y Magnetismo", "tipo": "obligatoria", "cuatrimestre": 6, "creditos": 6, "horasSemanales": 6, "horasTotales": 96, "correlativas": ["am-ii", "fsp"] },
+        { "id": "calor-termodinamica", "nombre": "Calor y Termodinámica", "tipo": "obligatoria", "cuatrimestre": 6, "creditos": 2, "horasSemanales": 2, "horasTotales": 32, "correlativas": ["am-ii", "fsp"] },
+        { "id": "analisis-estructural", "nombre": "Análisis Estructural", "tipo": "obligatoria", "cuatrimestre": 6, "creditos": 6, "horasSemanales": 6, "horasTotales": 96, "correlativas": ["resistencia-materiales"], "nota": "Proyecto Intermedio de la carrera." },
+        { "id": "comportamiento-materiales", "nombre": "Comportamiento de Materiales", "tipo": "obligatoria", "cuatrimestre": 6, "creditos": 8, "horasSemanales": 8, "horasTotales": 128, "correlativas": ["quimica-basica", "resistencia-materiales"] },
+        { "id": "hidraulica-aplicada", "nombre": "Hidráulica Aplicada", "tipo": "obligatoria", "cuatrimestre": 6, "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["hidraulica-general"] }
+      ]
+    },
+    {
+      "numero": 7,
+      "materias": [
+        { "id": "mecanica-suelos", "nombre": "Mecánica de Suelos y Geología", "tipo": "obligatoria", "cuatrimestre": 7, "creditos": 8, "horasSemanales": 8, "horasTotales": 128, "correlativas": ["resistencia-materiales", "hidraulica-general"] },
+        { "id": "icd-civil", "nombre": "Introducción a la Ciencia de Datos para Ingeniería Civil", "tipo": "obligatoria", "cuatrimestre": 7, "creditos": 3, "horasSemanales": 3, "horasTotales": 48, "correlativas": ["pye"] },
+        { "id": "diseno-geometrico", "nombre": "Diseño Geométrico de Obras Lineales", "tipo": "obligatoria", "cuatrimestre": 7, "creditos": 3, "horasSemanales": 3, "horasTotales": 48, "correlativas": ["itmu"] },
+        { "id": "construcciones-arquitectura", "nombre": "Construcciones Civiles y Arquitectura", "tipo": "obligatoria", "cuatrimestre": 7, "creditos": 6, "horasSemanales": 6, "horasTotales": 96, "correlativas": ["electricidad-magnetismo"] },
+        { "id": "topografia-geodesia", "nombre": "Topografía y Geodesia", "tipo": "obligatoria", "cuatrimestre": 7, "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["iic"] }
+      ]
+    },
+    {
+      "numero": 8,
+      "materias": [
+        { "id": "economia-evaluacion", "nombre": "Economía y Evaluación de Proyectos de Ingeniería Civil", "tipo": "obligatoria", "cuatrimestre": 8, "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": [], "correlativasCreditos": 118 },
+        { "id": "materiales-viales-i", "nombre": "Materiales Viales y Pavimentos I", "tipo": "obligatoria", "cuatrimestre": 8, "creditos": 3, "horasSemanales": 3, "horasTotales": 48, "correlativas": ["itmu", "mecanica-suelos", "comportamiento-materiales"] },
+        { "id": "hidrologia-aplicada", "nombre": "Hidrología Aplicada", "tipo": "obligatoria", "cuatrimestre": 8, "creditos": 6, "horasSemanales": 6, "horasTotales": 96, "correlativas": ["icd-civil", "hidraulica-aplicada", "modelacion-numerica"] },
+        { "id": "hormigon-i", "nombre": "Hormigón I", "tipo": "obligatoria", "cuatrimestre": 8, "creditos": 8, "horasSemanales": 8, "horasTotales": 128, "correlativas": ["analisis-estructural", "comportamiento-materiales"] }
+      ]
+    },
+    {
+      "numero": 9,
+      "materias": [
+        { "id": "transporte-guiado-i", "nombre": "Sistemas de Transporte Guiado I", "tipo": "obligatoria", "cuatrimestre": 9, "creditos": 3, "horasSemanales": 3, "horasTotales": 48, "correlativas": ["diseno-geometrico", "mecanica-suelos", "comportamiento-materiales"] },
+        { "id": "puertos-vias-i", "nombre": "Puertos y Vías Navegables I", "tipo": "obligatoria", "cuatrimestre": 9, "creditos": 3, "horasSemanales": 3, "horasTotales": 48, "correlativas": ["itmu", "mecanica-suelos"] },
+        { "id": "aeropuertos-i", "nombre": "Aeropuertos I", "tipo": "obligatoria", "cuatrimestre": 9, "creditos": 2, "horasSemanales": 2, "horasTotales": 32, "correlativas": ["diseno-geometrico", "topografia-geodesia", "materiales-viales-i"] },
+        { "id": "ing-sanitaria-i", "nombre": "Ingeniería Sanitaria I", "tipo": "obligatoria", "cuatrimestre": 9, "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["quimica-basica", "hidraulica-aplicada"] },
+        { "id": "estructuras-metalicas", "nombre": "Estructuras Metálicas", "tipo": "obligatoria", "cuatrimestre": 9, "creditos": 6, "horasSemanales": 6, "horasTotales": 96, "correlativas": ["analisis-estructural", "comportamiento-materiales"] }
+      ]
+    },
+    {
+      "numero": 10,
+      "materias": [
+        { "id": "tif", "nombre": "Trabajo Profesional o Tesis de Ingeniería Civil", "tipo": "tif", "cuatrimestre": 10, "creditos": 12, "horasSemanales": 6, "horasTotales": 192, "correlativas": ["analisis-estructural"], "correlativasCreditos": 158, "nota": "Se cursa a lo largo del 10º y 11º cuatrimestre. Incluye 192 hs de práctica profesional supervisada." },
+        { "id": "instalaciones-obras", "nombre": "Instalaciones de las Obras Civiles", "tipo": "obligatoria", "cuatrimestre": 10, "creditos": 6, "horasSemanales": 6, "horasTotales": 96, "correlativas": ["construcciones-arquitectura", "calor-termodinamica"] },
+        { "id": "cimentaciones", "nombre": "Cimentaciones", "tipo": "obligatoria", "cuatrimestre": 10, "creditos": 3, "horasSemanales": 3, "horasTotales": 48, "correlativas": ["hormigon-i", "mecanica-suelos"] },
+        { "id": "hormigon-ii", "nombre": "Hormigón II", "tipo": "obligatoria", "cuatrimestre": 10, "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["hormigon-i"] }
+      ]
+    },
+    {
+      "numero": 11,
+      "materias": [
+        { "id": "legislacion", "nombre": "Legislación y Ejercicio Profesional", "tipo": "obligatoria", "cuatrimestre": 11, "creditos": 2, "horasSemanales": 2, "horasTotales": 32, "correlativas": [], "correlativasCreditos": 138 },
+        { "id": "higiene-seguridad", "nombre": "Higiene y Seguridad", "tipo": "obligatoria", "cuatrimestre": 11, "creditos": 2, "horasSemanales": 2, "horasTotales": 32, "correlativas": [], "correlativasCreditos": 138 },
+        { "id": "gestion-socioambiental", "nombre": "Gestión Socioambiental de las Obras Civiles", "tipo": "obligatoria", "cuatrimestre": 11, "creditos": 3, "horasSemanales": 3, "horasTotales": 48, "correlativas": [], "correlativasCreditos": 138, "nota": "Se recomienda haber cursado Química Básica (no es correlativa obligatoria)." },
+        { "id": "gerenciamiento-obras", "nombre": "Gerenciamiento y Organización de Obras Civiles", "tipo": "obligatoria", "cuatrimestre": 11, "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["economia-evaluacion"] }
+      ]
+    }
+  ],
+  "electivas": [
+    { "id": "mecanica-solido", "nombre": "Mecánica del Sólido", "tipo": "electiva", "creditos": 6, "horasSemanales": 6, "horasTotales": 96, "correlativas": ["analisis-estructural"], "area": "Estructuras" },
+    { "id": "dinamica-estructuras", "nombre": "Dinámica de las Estructuras", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["analisis-estructural"], "area": "Estructuras" },
+    { "id": "analisis-sismico", "nombre": "Análisis Sísmico de Estructuras", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["hormigon-i"], "area": "Estructuras" },
+    { "id": "mef", "nombre": "Método de los Elementos Finitos", "tipo": "electiva", "creditos": 6, "horasSemanales": 6, "horasTotales": 96, "correlativas": ["analisis-estructural"], "area": "Estructuras" },
+    { "id": "seguridad-estructural", "nombre": "Seguridad Estructural", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["pye", "hormigon-i"], "area": "Estructuras" },
+    { "id": "analisis-experimental-estructuras", "nombre": "Análisis Experimental de Estructuras", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["analisis-estructural"], "area": "Estructuras" },
+    { "id": "interaccion-terreno-estructura", "nombre": "Interacción Terreno-Estructura", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["mecanica-suelos"], "area": "Geotecnia" },
+    { "id": "geotecnia-numerica", "nombre": "Geotecnia Numérica", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["mecanica-suelos", "modelacion-numerica"], "area": "Geotecnia" },
+    { "id": "materiales-viales-ii", "nombre": "Materiales Viales y Pavimentos II", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["materiales-viales-i"], "area": "Transporte" },
+    { "id": "diseno-vial", "nombre": "Diseño Vial Rural y Urbano", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["diseno-geometrico"], "area": "Transporte" },
+    { "id": "puertos-vias-ii", "nombre": "Puertos y Vías Navegables II", "tipo": "electiva", "creditos": 3, "horasSemanales": 3, "horasTotales": 48, "correlativas": ["puertos-vias-i"], "area": "Transporte" },
+    { "id": "transporte-guiado-ii", "nombre": "Sistemas de Transporte Guiado II", "tipo": "electiva", "creditos": 3, "horasSemanales": 3, "horasTotales": 48, "correlativas": ["transporte-guiado-i"], "area": "Transporte" },
+    { "id": "aeropuertos-ii", "nombre": "Aeropuertos II", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["aeropuertos-i"], "area": "Transporte" },
+    { "id": "planeamiento-transporte", "nombre": "Planeamiento del Transporte", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["itmu", "economia-evaluacion"], "area": "Transporte" },
+    { "id": "transito-seguridad-vial", "nombre": "Tránsito y Seguridad Vial", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["diseno-geometrico"], "area": "Transporte" },
+    { "id": "ingenieria-territorial-urbana", "nombre": "Ingeniería Territorial y Urbana", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["itmu"], "correlativasCreditos": 118, "area": "Transporte" },
+    { "id": "sistemas-inteligentes-transporte", "nombre": "Sistemas Inteligentes de Transporte", "tipo": "electiva", "creditos": 3, "horasSemanales": 3, "horasTotales": 48, "correlativas": ["itmu"], "correlativasCreditos": 118, "area": "Transporte" },
+    { "id": "ciencia-datos-transporte", "nombre": "Ciencia de Datos Aplicada al Transporte", "tipo": "electiva", "creditos": 3, "horasSemanales": 3, "horasTotales": 48, "correlativas": ["itmu", "icd-civil"], "area": "Datos" },
+    { "id": "centrales-hidraulicas", "nombre": "Centrales Hidráulicas", "tipo": "electiva", "creditos": 6, "horasSemanales": 6, "horasTotales": 96, "correlativas": ["hidrologia-aplicada"], "area": "Hidráulica" },
+    { "id": "modelos-hidraulicos", "nombre": "Modelos Hidráulicos", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["hidrologia-aplicada"], "area": "Hidráulica" },
+    { "id": "hidraulica-fluvial", "nombre": "Hidráulica Fluvial", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["mecanica-suelos", "hidrologia-aplicada"], "area": "Hidráulica" },
+    { "id": "hidraulica-maritima", "nombre": "Hidráulica Marítima", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["mecanica-suelos", "hidraulica-aplicada"], "area": "Hidráulica" },
+    { "id": "planificacion-recursos-hidricos", "nombre": "Planificación de Recursos Hídricos", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["hidrologia-aplicada"], "area": "Hidráulica" },
+    { "id": "construcciones-hidraulicas", "nombre": "Construcciones Hidráulicas", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["hidrologia-aplicada"], "area": "Hidráulica" },
+    { "id": "aprovechamientos-hidraulicos", "nombre": "Aprovechamientos Hidráulicos", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["hidraulica-aplicada"], "area": "Hidráulica" },
+    { "id": "ing-sanitaria-aplicada", "nombre": "Ingeniería Sanitaria Aplicada", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["ing-sanitaria-i"], "area": "Hidráulica" },
+    { "id": "presas", "nombre": "Presas", "tipo": "electiva", "creditos": 6, "horasSemanales": 6, "horasTotales": 96, "correlativas": ["hidrologia-aplicada"], "area": "Hidráulica" },
+    { "id": "arquitectura-urbanismo", "nombre": "Arquitectura y Urbanismo", "tipo": "electiva", "creditos": 6, "horasSemanales": 6, "horasTotales": 96, "correlativas": ["construcciones-arquitectura"], "area": "Construcciones" },
+    { "id": "estructuras-metalicas-avanzadas", "nombre": "Estructuras Metálicas Avanzadas", "tipo": "electiva", "creditos": 6, "horasSemanales": 6, "horasTotales": 96, "correlativas": ["estructuras-metalicas"], "area": "Estructuras" },
+    { "id": "tecnologia-hormigon", "nombre": "Tecnología del Hormigón", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["comportamiento-materiales"], "area": "Construcciones" },
+    { "id": "patologia-construccion", "nombre": "Patología de la Construcción", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["construcciones-arquitectura", "hormigon-ii"], "area": "Construcciones" },
+    { "id": "estructuras-madera", "nombre": "Estructuras de Madera", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["comportamiento-materiales", "estructuras-metalicas"], "area": "Estructuras" },
+    { "id": "sistemas-constructivos", "nombre": "Sistemas Constructivos", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["construcciones-arquitectura"], "area": "Construcciones" },
+    { "id": "sistemas-estructurales", "nombre": "Sistemas Estructurales", "tipo": "electiva", "creditos": 6, "horasSemanales": 6, "horasTotales": 96, "correlativas": ["hormigon-ii", "estructuras-metalicas"], "area": "Estructuras" },
+    { "id": "diseno-estructural", "nombre": "Diseño Estructural", "tipo": "electiva", "creditos": 6, "horasSemanales": 6, "horasTotales": 96, "correlativas": ["mecanica-suelos", "hormigon-i"], "area": "Estructuras" },
+    { "id": "inspeccion-hormigon", "nombre": "Inspección y Ejecución de Estructuras de Hormigón", "tipo": "electiva", "creditos": 6, "horasSemanales": 6, "horasTotales": 96, "correlativas": ["hormigon-i"], "area": "Construcciones" },
+    { "id": "am-iii", "nombre": "Análisis Matemático III", "tipo": "electiva", "creditos": 6, "horasSemanales": 6, "horasTotales": 96, "correlativas": ["am-ii", "algebra-lineal"], "area": "Ciencias Básicas" },
+    { "id": "gerenciamiento-calidad", "nombre": "Gerenciamiento de la Calidad", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["economia-evaluacion"], "area": "Gestión" },
+    { "id": "capital-humano", "nombre": "Capital Humano y Comportamiento Organizacional", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["economia-evaluacion"], "area": "Gestión" },
+    { "id": "comercializacion", "nombre": "Comercialización de Productos y Servicios", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["economia-evaluacion"], "area": "Gestión" },
+    { "id": "emprendimientos-ingenieria", "nombre": "Emprendimientos en Ingeniería", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": ["economia-evaluacion"], "area": "Gestión" },
+    { "id": "intro-transicion-energetica", "nombre": "Introducción a la Transición Energética", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": [], "correlativasCreditos": 120, "area": "Energía" },
+    { "id": "energias-renovables", "nombre": "Energías Renovables", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": [], "correlativasCreditos": 120, "area": "Energía" },
+    { "id": "uso-eficiente-energia", "nombre": "Uso Eficiente de la Energía", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": [], "correlativasCreditos": 120, "area": "Energía" },
+    { "id": "fuentes-convencionales-energia", "nombre": "Fuentes Convencionales en la Transición Energética", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": [], "correlativasCreditos": 120, "area": "Energía" },
+    { "id": "tecnologias-emergentes-energia", "nombre": "Tecnologías Emergentes en la Transición Energética", "tipo": "electiva", "creditos": 4, "horasSemanales": 4, "horasTotales": 64, "correlativas": [], "correlativasCreditos": 120, "area": "Energía" },
+    { "id": "intro-ia", "nombre": "Introducción a la Inteligencia Artificial", "tipo": "electiva", "creditos": 3, "horasSemanales": 3, "horasTotales": 48, "correlativas": ["pye", "icd-civil"], "area": "Datos" },
+    { "id": "analisis-datos", "nombre": "Análisis de Datos", "tipo": "electiva", "creditos": 3, "horasSemanales": 3, "horasTotales": 48, "correlativas": ["pye", "icd-civil"], "area": "Datos" },
+    { "id": "aprendizaje-maquina", "nombre": "Aprendizaje de Máquina", "tipo": "electiva", "creditos": 3, "horasSemanales": 3, "horasTotales": 48, "correlativas": ["analisis-datos", "intro-ia"], "area": "Datos" },
+    { "id": "aprendizaje-maquina-profundo", "nombre": "Aprendizaje de Máquina Profundo", "tipo": "electiva", "creditos": 3, "horasSemanales": 3, "horasTotales": 48, "correlativas": ["analisis-datos", "intro-ia"], "area": "Datos" }
+  ]
+}

@@ -1,0 +1,744 @@
+{
+  "slug": "electricista",
+  "nombre": "Ingeniería en Energía Eléctrica",
+  "planVigente": "Plan 2024 (ACS-2024-112-UBA-SG#REC)",
+  "fuente": "https://www.fi.uba.ar/grado/carreras/ingenieria-electricista/plan-de-estudios",
+  "totalCreditos": 250,
+  "duracionCuatrimestres": 11,
+  "creditosElectivosRequeridos": 18,
+  "cbc": {
+    "nombreCorto": "CBC",
+    "creditos": 38,
+    "materias": [
+      {
+        "id": "icse",
+        "nombre": "Introducción al Conocimiento de la Sociedad y el Estado",
+        "tipo": "obligatoria",
+        "cuatrimestre": 1,
+        "creditos": 4,
+        "horasSemanales": 4,
+        "horasTotales": 64,
+        "correlativas": []
+      },
+      {
+        "id": "ipc",
+        "nombre": "Introducción al Pensamiento Científico",
+        "tipo": "obligatoria",
+        "cuatrimestre": 1,
+        "creditos": 4,
+        "horasSemanales": 4,
+        "horasTotales": 64,
+        "correlativas": []
+      },
+      {
+        "id": "am-a",
+        "nombre": "Análisis Matemático A",
+        "tipo": "obligatoria",
+        "cuatrimestre": 1,
+        "creditos": 9,
+        "horasSemanales": 9,
+        "horasTotales": 144,
+        "correlativas": []
+      },
+      {
+        "id": "algebra-a",
+        "nombre": "Álgebra A",
+        "tipo": "obligatoria",
+        "cuatrimestre": 1,
+        "creditos": 9,
+        "horasSemanales": 9,
+        "horasTotales": 144,
+        "correlativas": []
+      },
+      {
+        "id": "fisica",
+        "nombre": "Física",
+        "tipo": "obligatoria",
+        "cuatrimestre": 1,
+        "creditos": 6,
+        "horasSemanales": 6,
+        "horasTotales": 96,
+        "correlativas": []
+      },
+      {
+        "id": "pc",
+        "nombre": "Pensamiento Computacional",
+        "tipo": "obligatoria",
+        "cuatrimestre": 1,
+        "creditos": 6,
+        "horasSemanales": 6,
+        "horasTotales": 96,
+        "correlativas": []
+      }
+    ]
+  },
+  "cuatrimestres": [
+    {
+      "numero": 3,
+      "materias": [
+        {
+          "id": "am-ii",
+          "nombre": "Análisis Matemático II",
+          "tipo": "obligatoria",
+          "cuatrimestre": 3,
+          "creditos": 8,
+          "horasSemanales": 8,
+          "horasTotales": 128,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "quim-basica",
+          "nombre": "Química Básica",
+          "tipo": "obligatoria",
+          "cuatrimestre": 3,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "fsp",
+          "nombre": "Física de los Sistemas de Partículas",
+          "tipo": "obligatoria",
+          "cuatrimestre": 3,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "intro-ing-electrica",
+          "nombre": "Introducción a la Ingeniería en Energía Eléctrica",
+          "tipo": "obligatoria",
+          "cuatrimestre": 3,
+          "creditos": 4,
+          "horasSemanales": 4,
+          "horasTotales": 64,
+          "correlativas": [],
+          "requiereCBC": true,
+          "nota": "Proyecto Inicial de la carrera."
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "materias": [
+        {
+          "id": "electr-mag-calor",
+          "nombre": "Electricidad, Magnetismo y Calor",
+          "tipo": "obligatoria",
+          "cuatrimestre": 4,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "fsp",
+            "am-ii"
+          ]
+        },
+        {
+          "id": "algebra-lineal",
+          "nombre": "Álgebra Lineal",
+          "tipo": "obligatoria",
+          "cuatrimestre": 4,
+          "creditos": 8,
+          "horasSemanales": 8,
+          "horasTotales": 128,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "estatica-resistencia",
+          "nombre": "Estática y Resistencia de Materiales",
+          "tipo": "obligatoria",
+          "cuatrimestre": 4,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "fsp",
+            "am-ii"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "materias": [
+        {
+          "id": "fisica-solidos-nuclear",
+          "nombre": "Física de Sólidos y Nuclear",
+          "tipo": "obligatoria",
+          "cuatrimestre": 5,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "electr-mag-calor",
+            "quim-basica"
+          ]
+        },
+        {
+          "id": "modelacion-numerica",
+          "nombre": "Modelación Numérica",
+          "tipo": "obligatoria",
+          "cuatrimestre": 5,
+          "creditos": 4,
+          "horasSemanales": 4,
+          "horasTotales": 64,
+          "correlativas": [
+            "am-ii",
+            "algebra-lineal"
+          ]
+        },
+        {
+          "id": "pye",
+          "nombre": "Probabilidad y Estadística",
+          "tipo": "obligatoria",
+          "cuatrimestre": 5,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "am-ii",
+            "algebra-lineal"
+          ]
+        },
+        {
+          "id": "electrotecnia",
+          "nombre": "Electrotecnia",
+          "tipo": "obligatoria",
+          "cuatrimestre": 5,
+          "creditos": 8,
+          "horasSemanales": 8,
+          "horasTotales": 128,
+          "correlativas": [
+            "electr-mag-calor",
+            "intro-ing-electrica"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "materias": [
+        {
+          "id": "am-iii",
+          "nombre": "Análisis Matemático III",
+          "tipo": "obligatoria",
+          "cuatrimestre": 6,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "am-ii",
+            "algebra-lineal"
+          ]
+        },
+        {
+          "id": "campos-electromag",
+          "nombre": "Campos Electromagnéticos",
+          "tipo": "obligatoria",
+          "cuatrimestre": 6,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "modelacion-numerica",
+            "electrotecnia"
+          ]
+        },
+        {
+          "id": "circuitos-control",
+          "nombre": "Circuitos y Sistemas de Control",
+          "tipo": "obligatoria",
+          "cuatrimestre": 6,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "electrotecnia"
+          ]
+        },
+        {
+          "id": "medidas-electricas",
+          "nombre": "Medidas Eléctricas",
+          "tipo": "obligatoria",
+          "cuatrimestre": 6,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "pye",
+            "electrotecnia"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "materias": [
+        {
+          "id": "higiene-seguridad",
+          "nombre": "Higiene y Seguridad",
+          "tipo": "obligatoria",
+          "cuatrimestre": 7,
+          "creditos": 2,
+          "horasSemanales": 2,
+          "horasTotales": 32,
+          "correlativas": [],
+          "correlativasCreditos": 100
+        },
+        {
+          "id": "termodinamica-mfm",
+          "nombre": "Termodinámica, Mecánica de Fluidos y Máquinas",
+          "tipo": "obligatoria",
+          "cuatrimestre": 7,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "electr-mag-calor"
+          ]
+        },
+        {
+          "id": "maquinas-electricas-i",
+          "nombre": "Máquinas Eléctricas I",
+          "tipo": "obligatoria",
+          "cuatrimestre": 7,
+          "creditos": 8,
+          "horasSemanales": 8,
+          "horasTotales": 128,
+          "correlativas": [
+            "electrotecnia"
+          ]
+        },
+        {
+          "id": "tec-materiales-elec",
+          "nombre": "Tecnología de Materiales Eléctricos",
+          "tipo": "obligatoria",
+          "cuatrimestre": 7,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "fisica-solidos-nuclear",
+            "medidas-electricas"
+          ]
+        },
+        {
+          "id": "taller-electronica",
+          "nombre": "Taller de Electrónica",
+          "tipo": "obligatoria",
+          "cuatrimestre": 7,
+          "creditos": 3,
+          "horasSemanales": 3,
+          "horasTotales": 48,
+          "correlativas": [
+            "electrotecnia"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 8,
+      "materias": [
+        {
+          "id": "diagnosticos-electricos",
+          "nombre": "Diagnósticos Eléctricos y Ensayos",
+          "tipo": "obligatoria",
+          "cuatrimestre": 8,
+          "creditos": 4,
+          "horasSemanales": 4,
+          "horasTotales": 64,
+          "correlativas": [
+            "tec-materiales-elec"
+          ]
+        },
+        {
+          "id": "maquinas-electricas-ii",
+          "nombre": "Máquinas Eléctricas II",
+          "tipo": "obligatoria",
+          "cuatrimestre": 8,
+          "creditos": 8,
+          "horasSemanales": 8,
+          "horasTotales": 128,
+          "correlativas": [
+            "circuitos-control",
+            "maquinas-electricas-i"
+          ]
+        },
+        {
+          "id": "mecanica-aplicada",
+          "nombre": "Mecánica Aplicada",
+          "tipo": "obligatoria",
+          "cuatrimestre": 8,
+          "creditos": 4,
+          "horasSemanales": 4,
+          "horasTotales": 64,
+          "correlativas": [
+            "estatica-resistencia"
+          ]
+        },
+        {
+          "id": "instalaciones-bt-lumino",
+          "nombre": "Instalaciones de Baja Tensión y Luminotecnia",
+          "tipo": "obligatoria",
+          "cuatrimestre": 8,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "maquinas-electricas-i",
+            "higiene-seguridad"
+          ]
+        },
+        {
+          "id": "intro-cd",
+          "nombre": "Introducción a la Ciencia de Datos",
+          "tipo": "obligatoria",
+          "cuatrimestre": 8,
+          "creditos": 3,
+          "horasSemanales": 3,
+          "horasTotales": 48,
+          "correlativas": [
+            "algebra-lineal"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 9,
+      "materias": [
+        {
+          "id": "sis-elec-potencia",
+          "nombre": "Sistemas Eléctricos de Potencia",
+          "tipo": "obligatoria",
+          "cuatrimestre": 9,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "maquinas-electricas-i",
+            "campos-electromag"
+          ]
+        },
+        {
+          "id": "conversion-estatica",
+          "nombre": "Conversión Estática de la Energía Eléctrica",
+          "tipo": "obligatoria",
+          "cuatrimestre": 9,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "taller-electronica",
+            "am-iii"
+          ]
+        },
+        {
+          "id": "economia-energia",
+          "nombre": "Economía de la Energía Eléctrica",
+          "tipo": "obligatoria",
+          "cuatrimestre": 9,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [],
+          "correlativasCreditos": 150
+        },
+        {
+          "id": "legislacion-ejercicio",
+          "nombre": "Legislación y Ejercicio Profesional",
+          "tipo": "obligatoria",
+          "cuatrimestre": 9,
+          "creditos": 2,
+          "horasSemanales": 2,
+          "horasTotales": 32,
+          "correlativas": [],
+          "correlativasCreditos": 100
+        }
+      ]
+    },
+    {
+      "numero": 10,
+      "materias": [
+        {
+          "id": "transmision-distribucion",
+          "nombre": "Transmisión y Distribución de la Energía Eléctrica",
+          "tipo": "obligatoria",
+          "cuatrimestre": 10,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "mecanica-aplicada",
+            "diagnosticos-electricos"
+          ]
+        },
+        {
+          "id": "generacion-energia",
+          "nombre": "Generación de Energía Eléctrica",
+          "tipo": "obligatoria",
+          "cuatrimestre": 10,
+          "creditos": 8,
+          "horasSemanales": 8,
+          "horasTotales": 128,
+          "correlativas": [
+            "termodinamica-mfm",
+            "maquinas-electricas-i"
+          ]
+        },
+        {
+          "id": "tif",
+          "nombre": "Trabajo Integrador Final de Ingeniería en Energía Eléctrica",
+          "tipo": "tif",
+          "cuatrimestre": 10,
+          "creditos": 12,
+          "horasSemanales": 6,
+          "horasTotales": 192,
+          "correlativas": [
+            "instalaciones-bt-lumino"
+          ],
+          "correlativasCreditos": 150,
+          "nota": "Se desarrolla a lo largo del 10º y 11º cuatrimestre. Incluye 192 hs de práctica profesional supervisada."
+        }
+      ]
+    },
+    {
+      "numero": 11,
+      "materias": [
+        {
+          "id": "protecciones-electricas",
+          "nombre": "Protecciones Eléctricas y Equipos de Maniobra",
+          "tipo": "obligatoria",
+          "cuatrimestre": 11,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "sis-elec-potencia"
+          ]
+        }
+      ]
+    }
+  ],
+  "electivas": [
+    {
+      "id": "accionamientos-electricos",
+      "nombre": "Accionamientos Eléctricos",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "maquinas-electricas-ii",
+        "conversion-estatica"
+      ],
+      "area": "Potencia"
+    },
+    {
+      "id": "din-sis-potencia",
+      "nombre": "Dinámica de Sistemas Eléctricos de Potencia",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "sis-elec-potencia",
+        "maquinas-electricas-ii"
+      ],
+      "area": "Potencia"
+    },
+    {
+      "id": "telecontrol-comunicaciones",
+      "nombre": "Telecontrol y Comunicaciones",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "sis-elec-potencia"
+      ],
+      "area": "Potencia"
+    },
+    {
+      "id": "estaciones-transformadoras",
+      "nombre": "Estaciones Transformadoras y de Distribución",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "transmision-distribucion"
+      ],
+      "area": "Potencia"
+    },
+    {
+      "id": "construcciones-electromec",
+      "nombre": "Construcciones Electromecánicas",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "diagnosticos-electricos",
+        "maquinas-electricas-i"
+      ],
+      "area": "Potencia"
+    },
+    {
+      "id": "proyecto-centrales-hidro",
+      "nombre": "Proyecto de Centrales Hidroeléctricas",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "generacion-energia"
+      ],
+      "area": "Generación"
+    },
+    {
+      "id": "proyecto-centrales-fv-eolicas",
+      "nombre": "Proyecto de Centrales Fotovoltaicas y Eólicas",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "generacion-energia"
+      ],
+      "area": "Generación"
+    },
+    {
+      "id": "abastecimiento-auxiliar",
+      "nombre": "Abastecimiento Auxiliar de la Energía Eléctrica",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "instalaciones-bt-lumino",
+        "conversion-estatica"
+      ],
+      "area": "Potencia"
+    },
+    {
+      "id": "energia-nuclear",
+      "nombre": "Energía Nuclear",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "fisica-solidos-nuclear"
+      ],
+      "area": "Generación"
+    },
+    {
+      "id": "energias-renovables",
+      "nombre": "Energías Renovables",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [],
+      "correlativasCreditos": 120,
+      "area": "Energía"
+    },
+    {
+      "id": "uso-eficiente-energia",
+      "nombre": "Uso Eficiente de la Energía",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [],
+      "correlativasCreditos": 120,
+      "area": "Energía"
+    },
+    {
+      "id": "tec-emergentes-transicion",
+      "nombre": "Tecnologías Emergentes en la Transición Energética",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [],
+      "correlativasCreditos": 120,
+      "area": "Energía"
+    },
+    {
+      "id": "intro-transicion-energetica",
+      "nombre": "Introducción a la Transición Energética",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [],
+      "correlativasCreditos": 120,
+      "area": "Energía"
+    },
+    {
+      "id": "fuentes-convencionales",
+      "nombre": "Fuentes Convencionales en la Transición Energética",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [],
+      "correlativasCreditos": 120,
+      "area": "Energía"
+    },
+    {
+      "id": "metrologia-calibracion",
+      "nombre": "Metrología y Técnicas de Calibración Eléctrica",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "medidas-electricas"
+      ],
+      "area": "Medición"
+    },
+    {
+      "id": "regulacion-servicios",
+      "nombre": "Regulación de Servicios Públicos",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [],
+      "correlativasCreditos": 150,
+      "area": "Gestión"
+    },
+    {
+      "id": "gerenciamiento-calidad",
+      "nombre": "Gerenciamiento de la Calidad",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "economia-energia"
+      ],
+      "area": "Gestión"
+    },
+    {
+      "id": "investigacion-operativa",
+      "nombre": "Investigación Operativa",
+      "tipo": "electiva",
+      "creditos": 8,
+      "horasSemanales": 8,
+      "horasTotales": 128,
+      "correlativas": [],
+      "correlativasCreditos": 150,
+      "area": "Gestión"
+    }
+  ]
+}

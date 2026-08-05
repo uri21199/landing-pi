@@ -1,0 +1,582 @@
+{
+  "slug": "quimica",
+  "nombre": "Ingeniería Química",
+  "resolucion": "RESCD-2023-880-Quimica-Plan-2023",
+  "totalCreditos": 231,
+  "duracionCuatrimestres": 11,
+  "creditosElectivosRequeridos": 14,
+  "cbc": {
+    "materias": [
+      {
+        "id": "icse",
+        "nombre": "Introducción al Conocimiento de la Sociedad y el Estado",
+        "creditos": 4,
+        "horasSemanales": 4,
+        "correlativas": [],
+        "cuatrimestre": 0
+      },
+      {
+        "id": "ipc",
+        "nombre": "Introducción al Pensamiento Científico",
+        "creditos": 4,
+        "horasSemanales": 4,
+        "correlativas": [],
+        "cuatrimestre": 0
+      },
+      {
+        "id": "am-a",
+        "nombre": "Análisis Matemático A",
+        "creditos": 9,
+        "horasSemanales": 9,
+        "correlativas": [],
+        "cuatrimestre": 0
+      },
+      {
+        "id": "algebra-a",
+        "nombre": "Álgebra A",
+        "creditos": 9,
+        "horasSemanales": 9,
+        "correlativas": [],
+        "cuatrimestre": 0
+      },
+      {
+        "id": "fisica",
+        "nombre": "Física",
+        "creditos": 6,
+        "horasSemanales": 6,
+        "correlativas": [],
+        "cuatrimestre": 0
+      },
+      {
+        "id": "pc",
+        "nombre": "Pensamiento Computacional",
+        "creditos": 6,
+        "horasSemanales": 6,
+        "correlativas": [],
+        "cuatrimestre": 0
+      }
+    ]
+  },
+  "cuatrimestres": [
+    {
+      "numero": 3,
+      "materias": [
+        {
+          "id": "am-ii",
+          "nombre": "Análisis Matemático II",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "quim-general",
+          "nombre": "Química General",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "intro-ing-quimica",
+          "nombre": "Introducción a Ingeniería Química",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [],
+          "requiereCBC": true
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "materias": [
+        {
+          "id": "algebra-lineal",
+          "nombre": "Álgebra Lineal",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "fisica-sist-part",
+          "nombre": "Física de los Sistemas de Partículas",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "quim-inorganica",
+          "nombre": "Química Inorgánica",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "quim-general"
+          ]
+        },
+        {
+          "id": "fund-proc-quimicos",
+          "nombre": "Fundamentos de Procesos Químicos",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "intro-ing-quimica",
+            "quim-general"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "materias": [
+        {
+          "id": "elec-mag",
+          "nombre": "Electricidad y Magnetismo",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "fisica-sist-part",
+            "am-ii"
+          ]
+        },
+        {
+          "id": "optica",
+          "nombre": "Óptica",
+          "creditos": 2,
+          "horasSemanales": 2,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "modelacion-numerica",
+          "nombre": "Modelación Numérica",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "am-ii",
+            "algebra-lineal"
+          ]
+        },
+        {
+          "id": "termod-procesos",
+          "nombre": "Termodinámica de los Procesos",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [
+            "am-ii",
+            "fund-proc-quimicos"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "materias": [
+        {
+          "id": "quim-organica",
+          "nombre": "Química Orgánica",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [
+            "quim-inorganica"
+          ]
+        },
+        {
+          "id": "prob-estadistica",
+          "nombre": "Probabilidad y Estadística",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "am-ii",
+            "algebra-lineal"
+          ]
+        },
+        {
+          "id": "fenomenos-transporte",
+          "nombre": "Fenómenos de Transporte",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [
+            "termod-procesos"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "materias": [
+        {
+          "id": "ou-cant-mov-energia",
+          "nombre": "Operaciones Unitarias de Transferencia de Cantidad de Movimiento y Energía",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [
+            "modelacion-numerica",
+            "fenomenos-transporte"
+          ]
+        },
+        {
+          "id": "quim-fisica",
+          "nombre": "Química Física",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "termod-procesos",
+            "elec-mag"
+          ]
+        },
+        {
+          "id": "intro-cd",
+          "nombre": "Introducción a la Ciencia de Datos",
+          "creditos": 3,
+          "horasSemanales": 3,
+          "correlativas": [
+            "algebra-lineal"
+          ]
+        },
+        {
+          "id": "quim-anal-inst",
+          "nombre": "Química Analítica Instrumental",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "optica",
+            "quim-organica",
+            "prob-estadistica"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 8,
+      "materias": [
+        {
+          "id": "lab-op-procesos",
+          "nombre": "Laboratorio de Operaciones y Procesos",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "ou-cant-mov-energia"
+          ]
+        },
+        {
+          "id": "ou-trans-materia",
+          "nombre": "Operaciones Unitarias de Transferencia de Materia",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [
+            "fenomenos-transporte"
+          ]
+        },
+        {
+          "id": "inst-plantas-proc",
+          "nombre": "Instalaciones de Plantas de Procesos",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "ou-cant-mov-energia"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 9,
+      "materias": [
+        {
+          "id": "diseno-reactores",
+          "nombre": "Diseño de Reactores",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [
+            "modelacion-numerica",
+            "quim-fisica"
+          ]
+        },
+        {
+          "id": "din-ctrl-procesos",
+          "nombre": "Dinámica y Control de Procesos",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [
+            "ou-cant-mov-energia",
+            "ou-trans-materia"
+          ]
+        },
+        {
+          "id": "eval-proy-plantas",
+          "nombre": "Evaluación de Proyectos de Plantas Químicas",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [],
+          "correlativasCreditos": 120
+        }
+      ]
+    },
+    {
+      "numero": 10,
+      "materias": [
+        {
+          "id": "ing-bioprocesos",
+          "nombre": "Ingeniería de Bioprocesos",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "diseno-reactores",
+            "quim-organica"
+          ]
+        },
+        {
+          "id": "diseno-procesos",
+          "nombre": "Diseño de Procesos",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "ou-trans-materia"
+          ]
+        },
+        {
+          "id": "tif-i",
+          "nombre": "Trabajo Integrador Final I",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "lab-op-procesos",
+            "eval-proy-plantas",
+            "din-ctrl-procesos"
+          ],
+          "tipo": "tif"
+        }
+      ]
+    },
+    {
+      "numero": 11,
+      "materias": [
+        {
+          "id": "emis-contam-quim",
+          "nombre": "Emisiones de Contaminantes Químicos y Biológicos",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "ou-trans-materia"
+          ]
+        },
+        {
+          "id": "legislacion-ep",
+          "nombre": "Legislación y Ejercicio Profesional",
+          "creditos": 2,
+          "horasSemanales": 2,
+          "correlativas": [],
+          "correlativasCreditos": 100
+        },
+        {
+          "id": "tif-ii",
+          "nombre": "Trabajo Integrador Final II",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "tif-i"
+          ],
+          "tipo": "tif"
+        }
+      ]
+    }
+  ],
+  "electivas": [
+    {
+      "id": "tecnol-mitig-emis",
+      "nombre": "Tecnologías para la Mitigación de Emisiones de Carbono",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "correlativasCreditos": 140
+    },
+    {
+      "id": "integ-efic-energ",
+      "nombre": "Integración y Eficiencia Energética de Procesos",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "ou-cant-mov-energia"
+      ]
+    },
+    {
+      "id": "hidrogeno-vector",
+      "nombre": "Hidrógeno como Vector Energético y Aplicaciones Industriales",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "fenomenos-transporte",
+        "quim-fisica"
+      ]
+    },
+    {
+      "id": "biopolimeros",
+      "nombre": "Biopolímeros",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "fenomenos-transporte"
+      ]
+    },
+    {
+      "id": "dis-av-reactores",
+      "nombre": "Diseño Avanzado de Reactores Químicos",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "diseno-reactores"
+      ]
+    },
+    {
+      "id": "bioproc-industriales",
+      "nombre": "Bioprocesos Industriales",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "ing-bioprocesos"
+      ]
+    },
+    {
+      "id": "microbiol-industrial",
+      "nombre": "Microbiología Industrial",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "quim-organica",
+        "ing-bioprocesos"
+      ]
+    },
+    {
+      "id": "intro-plan-interactiva",
+      "nombre": "Introducción a la Planificación Interactiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "correlativasCreditos": 120
+    },
+    {
+      "id": "gestion-recursos",
+      "nombre": "Gestión de Recursos",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "eval-proy-plantas"
+      ]
+    },
+    {
+      "id": "ctrl-estadist-proc",
+      "nombre": "Control Estadístico de Procesos",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "prob-estadistica"
+      ]
+    },
+    {
+      "id": "seis-sigma",
+      "nombre": "Seis Sigma y Diseño de Experimentos",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "prob-estadistica"
+      ]
+    },
+    {
+      "id": "intro-trans-energ",
+      "nombre": "Introducción a la Transición Energética",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "correlativasCreditos": 120
+    },
+    {
+      "id": "energias-renovables",
+      "nombre": "Energías Renovables",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "correlativasCreditos": 120
+    },
+    {
+      "id": "uso-efic-energia",
+      "nombre": "Uso Eficiente de la Energía",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "correlativasCreditos": 120
+    },
+    {
+      "id": "fuentes-conv-trans",
+      "nombre": "Fuentes Convencionales en la Transición Energética",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "correlativasCreditos": 120
+    },
+    {
+      "id": "tecnol-emerg-trans",
+      "nombre": "Tecnologías Emergentes en la Transición Energética",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "correlativasCreditos": 120
+    },
+    {
+      "id": "termodin-estadistica",
+      "nombre": "Termodinámica Estadística",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "quim-fisica"
+      ]
+    },
+    {
+      "id": "termodin-no-equilibrio",
+      "nombre": "Termodinámica de No-Equilibrio",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "fenomenos-transporte",
+        "quim-fisica"
+      ]
+    },
+    {
+      "id": "electroquimica",
+      "nombre": "Electroquímica",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "fenomenos-transporte",
+        "quim-fisica"
+      ]
+    },
+    {
+      "id": "ind-quim-petroquimica",
+      "nombre": "Industrias Químicas y Petroquímica",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "ou-trans-materia"
+      ]
+    },
+    {
+      "id": "ind-alimentarias",
+      "nombre": "Industrias Alimentarias",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "ou-cant-mov-energia"
+      ]
+    },
+    {
+      "id": "conoc-materiales-i",
+      "nombre": "Conocimiento de Materiales I",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "quim-inorganica"
+      ]
+    }
+  ]
+}

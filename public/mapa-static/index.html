@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="theme-color" content="#2d5269">
+  <title>Mapa FIUBA — Paseo Colón</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       HEADER: Título + Buscador
+  ══════════════════════════════════════ -->
+  <header class="header" id="header">
+    <div class="header__top">
+      <h1 class="header__title">Mapa FIUBA</h1>
+      <span class="header__sub">Sede Paseo Colón</span>
+    </div>
+    <div class="search-wrapper" id="search-wrapper">
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 20 20" fill="none">
+          <circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <input
+          type="search"
+          id="search-input"
+          class="search-input"
+          placeholder="Buscar aula, comedor, secretaría..."
+          autocomplete="off"
+          autocorrect="off"
+          autocapitalize="off"
+          spellcheck="false"
+          aria-label="Buscar espacio"
+          aria-autocomplete="list"
+          aria-controls="search-results"
+        >
+        <button class="search-clear" id="search-clear" aria-label="Limpiar búsqueda" hidden>
+          <svg viewBox="0 0 16 16" fill="none">
+            <path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+      <ul class="search-results" id="search-results" role="listbox" aria-label="Resultados de búsqueda"></ul>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════
+       NAV DE PISOS
+  ══════════════════════════════════════ -->
+  <nav class="floor-nav" id="floor-nav" role="tablist" aria-label="Seleccionar piso">
+    <!-- Generado por JS desde PISOS -->
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       CAPAS DEL MAPA (toggle)
+  ══════════════════════════════════════ -->
+  <section class="layer-controls" id="layer-controls" aria-label="Capas visibles del mapa">
+    <div class="layer-controls__track">
+      <button class="layer-btn" data-layer="aula"        aria-pressed="false">🏫 Aulas</button>
+      <button class="layer-btn" data-layer="espacio"     aria-pressed="false">🏢 Espacios FIUBA</button>
+      <button class="layer-btn" data-layer="laboratorio" aria-pressed="false">🔬 Laboratorio</button>
+      <button class="layer-btn" data-layer="bano"        aria-pressed="false">🚻 Baños</button>
+      <button class="layer-btn" data-layer="evacuacion"  aria-pressed="false">🚨 Evacuación</button>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CONTENEDOR DEL MAPA (SVG)
+  ══════════════════════════════════════ -->
+  <main class="map-container" id="map-container" role="main" aria-label="Mapa de la facultad">
+
+    <div class="svg-wrapper" id="svg-wrapper">
+      <div class="map-placeholder" id="map-placeholder">
+        <div class="map-placeholder__icon">🗺️</div>
+        <p>Cargando mapa…</p>
+      </div>
+    </div>
+
+    <!-- Controles de zoom -->
+    <div class="zoom-controls" role="group" aria-label="Controles de zoom">
+      <button class="zoom-btn" id="zoom-in"    aria-label="Acercar">+</button>
+      <button class="zoom-btn" id="zoom-reset" aria-label="Restablecer vista" title="Restablecer">⊙</button>
+      <button class="zoom-btn" id="zoom-out"   aria-label="Alejar">−</button>
+    </div>
+
+    <!-- Indicador de piso activo (móvil) -->
+    <div class="floor-badge" id="floor-badge" aria-live="polite"></div>
+
+  </main>
+
+  <!-- ══════════════════════════════════════
+       PANEL DE DETALLE (al seleccionar un espacio)
+  ══════════════════════════════════════ -->
+  <aside class="detail-panel" id="detail-panel" role="complementary" aria-label="Detalle del espacio" aria-hidden="true">
+    <div class="detail-panel__inner">
+      <button class="detail-close" id="detail-close" aria-label="Cerrar detalle">✕</button>
+      <div class="detail-icon" id="detail-icon"></div>
+      <h2 class="detail-name"  id="detail-name"></h2>
+      <p  class="detail-meta"  id="detail-meta"></p>
+    </div>
+  </aside>
+
+  <!-- ══════════════════════════════════════
+       TOAST
+  ══════════════════════════════════════ -->
+  <div class="toast" id="toast" role="alert" aria-live="assertive" aria-atomic="true"></div>
+
+  <!-- ══════════════════════════════════════
+       BANNER DE CAPTACIÓN
+  ══════════════════════════════════════ -->
+  <footer class="capture-banner" id="capture-banner" aria-label="Lista de espera">
+    <button class="capture-close" id="capture-close" aria-label="Cerrar banner">✕</button>
+    <div class="capture-banner__content">
+      <p class="capture-banner__text">
+        ¿Querés estar al tanto de nuestras herramientas?<br>
+        <strong>Sumate a la lista de espera</strong> y te avisamos cuando lancemos.
+      </p>
+      <a
+        class="capture-cta"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdm0SppB-V4eOuv2lhDepXGr7b7F2wHIGKIBjH0-mj00ZuQ3A/viewform"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Sumarme →</a>
+    </div>
+  </footer>
+
+  <!-- Botón flotante Mesa de Proyecto -->
+  <button class="mesa-fab" id="mesa-fab" aria-label="Ir a Mesa de Proyecto de Ingeniería">⚙️ Mesa PI</button>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

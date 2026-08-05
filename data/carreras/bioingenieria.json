@@ -1,0 +1,678 @@
+{
+  "slug": "bioingenieria",
+  "nombre": "Bioingeniería",
+  "resolucion": "ACS-2024-372-Bioingenieria-Plan-2024",
+  "totalCreditos": 250,
+  "duracionCuatrimestres": 11,
+  "creditosElectivosRequeridos": 16,
+  "cbc": {
+    "materias": [
+      {
+        "id": "icse",
+        "nombre": "Introducción al Conocimiento de la Sociedad y el Estado",
+        "creditos": 4,
+        "horasSemanales": 4,
+        "correlativas": [],
+        "cuatrimestre": 0
+      },
+      {
+        "id": "ipc",
+        "nombre": "Introducción al Pensamiento Científico",
+        "creditos": 4,
+        "horasSemanales": 4,
+        "correlativas": [],
+        "cuatrimestre": 0
+      },
+      {
+        "id": "am-a",
+        "nombre": "Análisis Matemático A",
+        "creditos": 9,
+        "horasSemanales": 9,
+        "correlativas": [],
+        "cuatrimestre": 0
+      },
+      {
+        "id": "algebra-a",
+        "nombre": "Álgebra A",
+        "creditos": 9,
+        "horasSemanales": 9,
+        "correlativas": [],
+        "cuatrimestre": 0
+      },
+      {
+        "id": "fisica",
+        "nombre": "Física",
+        "creditos": 6,
+        "horasSemanales": 6,
+        "correlativas": [],
+        "cuatrimestre": 0
+      },
+      {
+        "id": "pc",
+        "nombre": "Pensamiento Computacional",
+        "creditos": 6,
+        "horasSemanales": 6,
+        "correlativas": [],
+        "cuatrimestre": 0
+      }
+    ]
+  },
+  "cuatrimestres": [
+    {
+      "numero": 3,
+      "materias": [
+        {
+          "id": "am-ii",
+          "nombre": "Análisis Matemático II",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "quim-basica",
+          "nombre": "Química Básica",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "intro-bioing",
+          "nombre": "Introducción a la Bioingeniería",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "anatomia-histol",
+          "nombre": "Anatomía e Histología Funcional",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [],
+          "requiereCBC": true
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "materias": [
+        {
+          "id": "fisica-sist-part",
+          "nombre": "Física de los Sistemas de Partículas",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "alg-prog",
+          "nombre": "Algoritmos y Programación",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "planif-proyectos",
+          "nombre": "Planificación de Proyectos",
+          "creditos": 2,
+          "horasSemanales": 2,
+          "correlativas": [
+            "intro-bioing"
+          ]
+        },
+        {
+          "id": "algebra-lineal",
+          "nombre": "Álgebra Lineal",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [],
+          "requiereCBC": true
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "materias": [
+        {
+          "id": "quim-comp-org",
+          "nombre": "Química de los Compuestos Orgánicos",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "quim-basica"
+          ]
+        },
+        {
+          "id": "prob-estadistica",
+          "nombre": "Probabilidad y Estadística",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "am-ii",
+            "algebra-lineal"
+          ]
+        },
+        {
+          "id": "senales-sistemas",
+          "nombre": "Señales y Sistemas",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "am-ii",
+            "algebra-lineal"
+          ]
+        },
+        {
+          "id": "elec-mag-calor",
+          "nombre": "Electricidad, Magnetismo y Calor",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "am-ii",
+            "fisica-sist-part"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "materias": [
+        {
+          "id": "sist-mol-cel-tis",
+          "nombre": "Sistemas Moleculares, Celulares y Tisulares",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "quim-comp-org",
+            "anatomia-histol"
+          ]
+        },
+        {
+          "id": "fis-sol-nuc",
+          "nombre": "Física de Sólidos y Nuclear",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "elec-mag-calor",
+            "quim-basica",
+            "prob-estadistica"
+          ]
+        },
+        {
+          "id": "control-automatico",
+          "nombre": "Control Automático",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "elec-mag-calor",
+            "senales-sistemas"
+          ]
+        },
+        {
+          "id": "analisis-circuitos",
+          "nombre": "Análisis de Circuitos",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "intro-bioing",
+            "elec-mag-calor"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "materias": [
+        {
+          "id": "proc-estocasticos",
+          "nombre": "Procesos Estocásticos",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "prob-estadistica",
+            "senales-sistemas"
+          ]
+        },
+        {
+          "id": "intro-disp-elec",
+          "nombre": "Introducción a los Dispositivos Electrónicos",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "intro-bioing"
+          ]
+        },
+        {
+          "id": "sist-fisiol",
+          "nombre": "Sistemas Fisiológicos y sus Modelos",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [
+            "sist-mol-cel-tis",
+            "control-automatico"
+          ]
+        },
+        {
+          "id": "intro-mec-continuo",
+          "nombre": "Introducción a la Mecánica del Continuo",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "algebra-lineal",
+            "elec-mag-calor"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 8,
+      "materias": [
+        {
+          "id": "taller-proc-sen",
+          "nombre": "Taller de Procesamiento de Señales",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "proc-estocasticos"
+          ]
+        },
+        {
+          "id": "circ-microelec",
+          "nombre": "Circuitos Microelectrónicos",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "intro-disp-elec",
+            "analisis-circuitos"
+          ]
+        },
+        {
+          "id": "intro-sist-emb",
+          "nombre": "Introducción a los Sistemas Embebidos",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "alg-prog",
+            "analisis-circuitos"
+          ]
+        },
+        {
+          "id": "gestion-proy",
+          "nombre": "Gestión de Proyectos",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "planif-proyectos"
+          ]
+        },
+        {
+          "id": "legislacion-ep",
+          "nombre": "Legislación y Ejercicio Profesional",
+          "creditos": 2,
+          "horasSemanales": 2,
+          "correlativas": [],
+          "correlativasCreditos": 100
+        }
+      ]
+    },
+    {
+      "numero": 9,
+      "materias": [
+        {
+          "id": "intro-biomec",
+          "nombre": "Introducción a la Biomecánica",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "sist-fisiol",
+            "intro-mec-continuo"
+          ]
+        },
+        {
+          "id": "instrum-eq-diag",
+          "nombre": "Instrumentación y Equipamiento para Diagnóstico y Tratamiento",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "sist-fisiol",
+            "circ-microelec"
+          ]
+        },
+        {
+          "id": "intro-biomat",
+          "nombre": "Introducción a los Biomateriales",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "sist-fisiol",
+            "fis-sol-nuc"
+          ]
+        },
+        {
+          "id": "anal-proc-sen-bioing",
+          "nombre": "Análisis y Procesamiento de Señales en Bioingeniería",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "sist-fisiol",
+            "proc-estocasticos"
+          ]
+        },
+        {
+          "id": "higiene-seg",
+          "nombre": "Higiene y Seguridad",
+          "creditos": 2,
+          "horasSemanales": 2,
+          "correlativas": [
+            "quim-basica"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 10,
+      "materias": [
+        {
+          "id": "imagenes-bioing",
+          "nombre": "Imágenes en Bioingeniería",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "sist-fisiol",
+            "senales-sistemas",
+            "fis-sol-nuc"
+          ]
+        },
+        {
+          "id": "tecnol-asistencia-protesis",
+          "nombre": "Tecnología de Asistencia y Prótesis",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "intro-biomec",
+            "intro-biomat",
+            "intro-sist-emb",
+            "circ-microelec"
+          ]
+        },
+        {
+          "id": "tif-i",
+          "nombre": "Trabajo Integrador Final I",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "gestion-proy",
+            "instrum-eq-diag",
+            "taller-proc-sen",
+            "intro-biomat"
+          ],
+          "tipo": "tif"
+        }
+      ]
+    },
+    {
+      "numero": 11,
+      "materias": [
+        {
+          "id": "ing-clinica-hosp",
+          "nombre": "Ingeniería Clínica y Hospitalaria",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "instrum-eq-diag",
+            "legislacion-ep",
+            "higiene-seg",
+            "imagenes-bioing"
+          ]
+        },
+        {
+          "id": "tif-ii",
+          "nombre": "Trabajo Integrador Final II",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "gestion-proy",
+            "instrum-eq-diag",
+            "taller-proc-sen",
+            "intro-biomat"
+          ],
+          "tipo": "tif"
+        }
+      ]
+    }
+  ],
+  "electivas": [
+    {
+      "id": "ing-cel-tejidos",
+      "nombre": "Ingeniería Celular y de Tejidos",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "sist-mol-cel-tis"
+      ]
+    },
+    {
+      "id": "biomat-implantes",
+      "nombre": "Biomateriales e Implantes para Rehabilitación y Regeneración de Tejidos",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "intro-biomat"
+      ]
+    },
+    {
+      "id": "biomecanica-aplic",
+      "nombre": "Biomecánica y Aplicaciones Biomédicas",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "intro-biomec"
+      ]
+    },
+    {
+      "id": "estadistica-bioing",
+      "nombre": "Estadística para Bioingeniería",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "prob-estadistica"
+      ]
+    },
+    {
+      "id": "nanotecnologia",
+      "nombre": "Nanotecnología en Bioingeniería",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "fis-sol-nuc",
+        "quim-comp-org",
+        "intro-biomat"
+      ]
+    },
+    {
+      "id": "intro-robotica",
+      "nombre": "Introducción a la Robótica, Actuadores y Sensores",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "control-automatico"
+      ]
+    },
+    {
+      "id": "proc-imagenes-biomed",
+      "nombre": "Procesamiento de Imágenes Biomédicas",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "imagenes-bioing"
+      ]
+    },
+    {
+      "id": "neuroingenieria-ihc",
+      "nombre": "Neuroingeniería e Interfaces Humano Computadora",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "proc-estocasticos",
+        "sist-fisiol",
+        "alg-prog"
+      ]
+    },
+    {
+      "id": "bioinformatica",
+      "nombre": "Bioinformática",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "sist-mol-cel-tis",
+        "alg-prog",
+        "prob-estadistica"
+      ]
+    },
+    {
+      "id": "intro-neurociencias",
+      "nombre": "Introducción a las Neurociencias y sus Modelos",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "proc-estocasticos",
+        "sist-fisiol",
+        "alg-prog"
+      ]
+    },
+    {
+      "id": "genomica-proteomica",
+      "nombre": "Genómica y Proteómica",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "sist-mol-cel-tis",
+        "alg-prog",
+        "prob-estadistica"
+      ]
+    },
+    {
+      "id": "redes-neuronales",
+      "nombre": "Redes Neuronales Biológicas y Artificiales",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "proc-estocasticos",
+        "alg-prog"
+      ]
+    },
+    {
+      "id": "proc-habla",
+      "nombre": "Procesamiento del Habla",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "taller-proc-sen"
+      ]
+    },
+    {
+      "id": "tecnol-eq-ing-clinica",
+      "nombre": "Tecnologías y Equipamiento de la Ingeniería Clínica",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "ing-clinica-hosp"
+      ]
+    },
+    {
+      "id": "gestion-estandares-ing-clin",
+      "nombre": "Gestión y Estándares de la Ingeniería Clínica e Informática Médica",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "ing-clinica-hosp"
+      ]
+    },
+    {
+      "id": "infra-inst-hosp",
+      "nombre": "Infraestructura e Instalaciones Hospitalarias",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "ing-clinica-hosp"
+      ]
+    },
+    {
+      "id": "gerenm-calidad",
+      "nombre": "Gerenciamiento de la Calidad",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "gestion-proy"
+      ]
+    },
+    {
+      "id": "capital-humano",
+      "nombre": "Capital Humano y Comportamiento Organizacional",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "gestion-proy"
+      ]
+    },
+    {
+      "id": "comercializ-prod",
+      "nombre": "Comercialización de Productos y Servicios",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "gestion-proy"
+      ]
+    },
+    {
+      "id": "emprendimientos",
+      "nombre": "Emprendimientos en Ingeniería",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "gestion-proy"
+      ]
+    },
+    {
+      "id": "intro-ia",
+      "nombre": "Introducción a la Inteligencia Artificial",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [
+        "taller-proc-sen"
+      ]
+    },
+    {
+      "id": "analisis-datos",
+      "nombre": "Análisis de Datos",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [
+        "taller-proc-sen"
+      ]
+    },
+    {
+      "id": "aprendizaje-maquina",
+      "nombre": "Aprendizaje de Máquina",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [
+        "intro-ia",
+        "analisis-datos"
+      ]
+    },
+    {
+      "id": "aprendizaje-maquina-prof",
+      "nombre": "Aprendizaje de Máquina Profundo",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [
+        "intro-ia",
+        "analisis-datos"
+      ]
+    }
+  ]
+}

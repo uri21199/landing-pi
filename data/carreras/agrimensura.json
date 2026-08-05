@@ -1,0 +1,730 @@
+{
+  "slug": "agrimensura",
+  "nombre": "Ingeniería en Agrimensura",
+  "resolucion": "RESCD-2023-881-Agrimensura-Plan-2023",
+  "totalCreditos": 227,
+  "duracionCuatrimestres": 10,
+  "creditosElectivosRequeridos": 16,
+  "cbc": {
+    "materias": [
+      {
+        "id": "icse",
+        "nombre": "Intro. al Conocimiento de la Sociedad y el Estado",
+        "creditos": 4,
+        "horasSemanales": 4,
+        "correlativas": [],
+        "cuatrimestre": null
+      },
+      {
+        "id": "ipc",
+        "nombre": "Intro. al Pensamiento Científico",
+        "creditos": 4,
+        "horasSemanales": 4,
+        "correlativas": [],
+        "cuatrimestre": null
+      },
+      {
+        "id": "am-a",
+        "nombre": "Análisis Matemático A",
+        "creditos": 9,
+        "horasSemanales": 9,
+        "correlativas": [],
+        "cuatrimestre": null
+      },
+      {
+        "id": "algebra-a",
+        "nombre": "Álgebra A",
+        "creditos": 9,
+        "horasSemanales": 9,
+        "correlativas": [],
+        "cuatrimestre": null
+      },
+      {
+        "id": "fisica",
+        "nombre": "Física",
+        "creditos": 6,
+        "horasSemanales": 6,
+        "correlativas": [],
+        "cuatrimestre": null
+      },
+      {
+        "id": "pc",
+        "nombre": "Pensamiento Computacional",
+        "creditos": 6,
+        "horasSemanales": 6,
+        "correlativas": [],
+        "cuatrimestre": null
+      }
+    ]
+  },
+  "cuatrimestres": [
+    {
+      "numero": 3,
+      "materias": [
+        {
+          "id": "am-ii",
+          "nombre": "Análisis Matemático II",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [],
+          "cuatrimestre": 3,
+          "requiereCBC": true
+        },
+        {
+          "id": "sistemas-coord",
+          "nombre": "Sistemas de Coordenadas",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [],
+          "cuatrimestre": 3,
+          "requiereCBC": true
+        },
+        {
+          "id": "sist-rep-agrim",
+          "nombre": "Sistemas de Representación Orientado a la Agrimensura",
+          "creditos": 3,
+          "horasSemanales": 3,
+          "correlativas": [],
+          "cuatrimestre": 3,
+          "requiereCBC": true
+        },
+        {
+          "id": "dibujo-cart-top",
+          "nombre": "Dibujo Cartográfico y Topográfico",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [],
+          "cuatrimestre": 3,
+          "requiereCBC": true
+        },
+        {
+          "id": "intro-ing-agrim",
+          "nombre": "Introducción a la Ingeniería en Agrimensura",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [],
+          "cuatrimestre": 3,
+          "requiereCBC": true
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "materias": [
+        {
+          "id": "pye",
+          "nombre": "Probabilidad y Estadística",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "am-ii",
+            "sistemas-coord"
+          ],
+          "cuatrimestre": 4,
+          "requiereCBC": false
+        },
+        {
+          "id": "instrumental-top",
+          "nombre": "Instrumental Topográfico",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "dibujo-cart-top"
+          ],
+          "cuatrimestre": 4,
+          "requiereCBC": false
+        },
+        {
+          "id": "derecho-agrim",
+          "nombre": "Derecho para Agrimensura",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [],
+          "cuatrimestre": 4,
+          "requiereCBC": true
+        },
+        {
+          "id": "economia-org",
+          "nombre": "Economía y Organización",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "intro-ing-agrim"
+          ],
+          "cuatrimestre": 4,
+          "requiereCBC": false
+        },
+        {
+          "id": "elementos-const",
+          "nombre": "Elementos de Construcción",
+          "creditos": 3,
+          "horasSemanales": 3,
+          "correlativas": [
+            "dibujo-cart-top"
+          ],
+          "cuatrimestre": 4,
+          "requiereCBC": false
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "materias": [
+        {
+          "id": "intro-cd",
+          "nombre": "Introducción a la Ciencia de Datos",
+          "creditos": 3,
+          "horasSemanales": 3,
+          "correlativas": [
+            "sistemas-coord"
+          ],
+          "cuatrimestre": 5,
+          "requiereCBC": false
+        },
+        {
+          "id": "metodos-top",
+          "nombre": "Métodos Topográficos",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "instrumental-top",
+            "sist-rep-agrim"
+          ],
+          "cuatrimestre": 5,
+          "requiereCBC": false
+        },
+        {
+          "id": "calc-compensacion",
+          "nombre": "Cálculo de Compensación",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "instrumental-top",
+            "pye"
+          ],
+          "cuatrimestre": 5,
+          "requiereCBC": false
+        },
+        {
+          "id": "cartografia",
+          "nombre": "Cartografía",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "sistemas-coord"
+          ],
+          "cuatrimestre": 5,
+          "requiereCBC": false
+        },
+        {
+          "id": "geodesia-astron",
+          "nombre": "Geodesia Astronómica y Mediciones Precisas",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "instrumental-top"
+          ],
+          "cuatrimestre": 5,
+          "requiereCBC": false
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "materias": [
+        {
+          "id": "fisica-sist-part",
+          "nombre": "Física de los Sistemas de Partículas",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [],
+          "cuatrimestre": 6,
+          "requiereCBC": true
+        },
+        {
+          "id": "relevamientos-top",
+          "nombre": "Relevamientos Topográficos",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [
+            "metodos-top",
+            "calc-compensacion"
+          ],
+          "cuatrimestre": 6,
+          "requiereCBC": false
+        },
+        {
+          "id": "geodesia-geom-sat",
+          "nombre": "Geodesia Geométrica y Satelital",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "geodesia-astron",
+            "metodos-top"
+          ],
+          "cuatrimestre": 6,
+          "requiereCBC": false
+        },
+        {
+          "id": "fotogrametria",
+          "nombre": "Fotogrametría",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "cartografia",
+            "intro-cd"
+          ],
+          "cuatrimestre": 6,
+          "requiereCBC": false
+        },
+        {
+          "id": "normativa-mensura",
+          "nombre": "Normativa de Mensura y Propiedad Horizontal",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "derecho-agrim",
+            "instrumental-top"
+          ],
+          "cuatrimestre": 6,
+          "requiereCBC": false
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "materias": [
+        {
+          "id": "electr-mag",
+          "nombre": "Electricidad y Magnetismo",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "am-ii",
+            "fisica-sist-part"
+          ],
+          "cuatrimestre": 7,
+          "requiereCBC": false
+        },
+        {
+          "id": "georrefer-top-geod",
+          "nombre": "Georreferenciación de Trabajos Topográficos y Geodésicos",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [
+            "relevamientos-top",
+            "geodesia-geom-sat",
+            "cartografia"
+          ],
+          "cuatrimestre": 7,
+          "requiereCBC": false
+        },
+        {
+          "id": "fotogrametria-digital",
+          "nombre": "Fotogrametría Digital",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "fotogrametria"
+          ],
+          "cuatrimestre": 7,
+          "requiereCBC": false
+        },
+        {
+          "id": "aplic-legal-agrim",
+          "nombre": "Aplicación Legal de la Agrimensura",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "normativa-mensura",
+            "economia-org"
+          ],
+          "cuatrimestre": 7,
+          "requiereCBC": false
+        },
+        {
+          "id": "geog-fis-geologia",
+          "nombre": "Geografía Física y Geología",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "fisica-sist-part"
+          ],
+          "cuatrimestre": 7,
+          "requiereCBC": false
+        }
+      ]
+    },
+    {
+      "numero": 8,
+      "materias": [
+        {
+          "id": "sig",
+          "nombre": "Sistemas de Información Geográfica",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "cartografia"
+          ],
+          "cuatrimestre": 8,
+          "requiereCBC": false
+        },
+        {
+          "id": "catastro",
+          "nombre": "Catastro",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "normativa-mensura"
+          ],
+          "cuatrimestre": 8,
+          "requiereCBC": false
+        },
+        {
+          "id": "mensuras",
+          "nombre": "Mensuras",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "relevamientos-top",
+            "normativa-mensura"
+          ],
+          "cuatrimestre": 8,
+          "requiereCBC": false
+        },
+        {
+          "id": "teledeteccion-agrim",
+          "nombre": "Teledetección para Agrimensura",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "cartografia",
+            "electr-mag"
+          ],
+          "cuatrimestre": 8,
+          "requiereCBC": false
+        },
+        {
+          "id": "inform-rural",
+          "nombre": "Información Rural",
+          "creditos": 3,
+          "horasSemanales": 3,
+          "correlativas": [
+            "aplic-legal-agrim"
+          ],
+          "cuatrimestre": 8,
+          "requiereCBC": false
+        },
+        {
+          "id": "topogr-obra",
+          "nombre": "Topografía de Obra",
+          "creditos": 3,
+          "horasSemanales": 3,
+          "correlativas": [
+            "relevamientos-top"
+          ],
+          "cuatrimestre": 8,
+          "requiereCBC": false
+        }
+      ]
+    },
+    {
+      "numero": 9,
+      "materias": [
+        {
+          "id": "mensuras-aplic",
+          "nombre": "Mensuras Aplicadas",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "georrefer-top-geod",
+            "mensuras",
+            "aplic-legal-agrim"
+          ],
+          "cuatrimestre": 9,
+          "requiereCBC": false
+        },
+        {
+          "id": "valuaciones",
+          "nombre": "Valuaciones",
+          "creditos": 3,
+          "horasSemanales": 3,
+          "correlativas": [
+            "catastro",
+            "elementos-const"
+          ],
+          "cuatrimestre": 9,
+          "requiereCBC": false
+        },
+        {
+          "id": "tec-info-geoespacial",
+          "nombre": "Tecnologías de Información Geoespacial",
+          "creditos": 3,
+          "horasSemanales": 3,
+          "correlativas": [
+            "sig"
+          ],
+          "cuatrimestre": 9,
+          "requiereCBC": false
+        },
+        {
+          "id": "planeam-urb-isa",
+          "nombre": "Planeamiento Urbano e Impacto Social y Ambiental",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "aplic-legal-agrim"
+          ],
+          "cuatrimestre": 9,
+          "requiereCBC": false
+        },
+        {
+          "id": "tif",
+          "nombre": "Trabajo Integrador Final",
+          "creditos": 12,
+          "horasSemanales": 12,
+          "correlativas": [
+            "mensuras"
+          ],
+          "cuatrimestre": 9,
+          "requiereCBC": false,
+          "nota": "Se cursa en Q9 y Q10 (6+6 cr). Requiere 192 h de práctica profesional.",
+          "tipo": "tif"
+        }
+      ]
+    },
+    {
+      "numero": 10,
+      "materias": []
+    }
+  ],
+  "electivas": [
+    {
+      "id": "geoestadistica",
+      "nombre": "Geoestadística",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "calc-compensacion",
+        "intro-cd"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "sistematiz-agr-san",
+      "nombre": "Sistematización Agrícola y Saneamiento",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "metodos-top"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "teledeteccion-avanz",
+      "nombre": "Teledetección Avanzada",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "teledeteccion-agrim"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "oceanografia-fisica",
+      "nombre": "Oceanografía Física",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "fisica-sist-part"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "levant-hidrograficos",
+      "nombre": "Levantamientos Hidrográficos",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "metodos-top"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "diseno-geom-obras-lin",
+      "nombre": "Diseño Geométrico de Obras Lineales",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [
+        "relevamientos-top"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "microgeodesia",
+      "nombre": "Microgeodesia",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "geodesia-astron",
+        "relevamientos-top"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "herram-rep-planos-dig",
+      "nombre": "Herramientas para la Representación de Planos Digitales",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "dibujo-cart-top"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "geologia-general",
+      "nombre": "Geología General",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "geog-fis-geologia"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "geodesia-fisica",
+      "nombre": "Geodesia Física",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "electr-mag",
+        "geodesia-geom-sat"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "calc-avanz-marcos",
+      "nombre": "Cálculo Avanzado de Marcos de Referencia",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "georrefer-top-geod"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "geomagnetismo-aeronomia",
+      "nombre": "Geomagnetismo y Aeronomía",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "electr-mag"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "gerenc-calidad",
+      "nombre": "Gerenciamiento de la Calidad",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "economia-org"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "capital-humano",
+      "nombre": "Capital Humano y Comportamiento Organizacional",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "economia-org"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "comercializacion-ps",
+      "nombre": "Comercialización de Productos y Servicios",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "economia-org"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "emprendimientos-ing",
+      "nombre": "Emprendimientos en Ingeniería",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "economia-org"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "intro-ia",
+      "nombre": "Introducción a la Inteligencia Artificial",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [
+        "pye",
+        "intro-cd"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "analisis-datos",
+      "nombre": "Análisis de Datos",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [
+        "pye",
+        "intro-cd"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "aprendizaje-maquina",
+      "nombre": "Aprendizaje de Máquina",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [
+        "analisis-datos",
+        "intro-ia"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    },
+    {
+      "id": "aprendizaje-maquina-profundo",
+      "nombre": "Aprendizaje de Máquina Profundo",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [
+        "analisis-datos",
+        "intro-ia"
+      ],
+      "cuatrimestre": null,
+      "requiereCBC": false
+    }
+  ]
+}

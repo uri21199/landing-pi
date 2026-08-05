@@ -1,0 +1,976 @@
+{
+  "slug": "electronica",
+  "nombre": "Ingeniería Electrónica",
+  "planVigente": "Plan 2023 (RESCD-2023-727-Electronica)",
+  "fuente": "https://www.fi.uba.ar/grado/carreras/ingenieria-electronica/plan-de-estudios",
+  "totalCreditos": 228,
+  "duracionCuatrimestres": 10,
+  "creditosElectivosRequeridos": 24,
+  "cbc": {
+    "nombreCorto": "CBC",
+    "creditos": 38,
+    "materias": [
+      {
+        "id": "icse",
+        "nombre": "Introducción al Conocimiento de la Sociedad y el Estado",
+        "tipo": "obligatoria",
+        "cuatrimestre": 1,
+        "creditos": 4,
+        "horasSemanales": 4,
+        "horasTotales": 64,
+        "correlativas": []
+      },
+      {
+        "id": "ipc",
+        "nombre": "Introducción al Pensamiento Científico",
+        "tipo": "obligatoria",
+        "cuatrimestre": 1,
+        "creditos": 4,
+        "horasSemanales": 4,
+        "horasTotales": 64,
+        "correlativas": []
+      },
+      {
+        "id": "am-a",
+        "nombre": "Análisis Matemático A",
+        "tipo": "obligatoria",
+        "cuatrimestre": 1,
+        "creditos": 9,
+        "horasSemanales": 9,
+        "horasTotales": 144,
+        "correlativas": []
+      },
+      {
+        "id": "algebra-a",
+        "nombre": "Álgebra A",
+        "tipo": "obligatoria",
+        "cuatrimestre": 1,
+        "creditos": 9,
+        "horasSemanales": 9,
+        "horasTotales": 144,
+        "correlativas": []
+      },
+      {
+        "id": "fisica",
+        "nombre": "Física",
+        "tipo": "obligatoria",
+        "cuatrimestre": 1,
+        "creditos": 6,
+        "horasSemanales": 6,
+        "horasTotales": 96,
+        "correlativas": []
+      },
+      {
+        "id": "pc",
+        "nombre": "Pensamiento Computacional",
+        "tipo": "obligatoria",
+        "cuatrimestre": 1,
+        "creditos": 6,
+        "horasSemanales": 6,
+        "horasTotales": 96,
+        "correlativas": []
+      }
+    ]
+  },
+  "cuatrimestres": [
+    {
+      "numero": 3,
+      "materias": [
+        {
+          "id": "am-ii",
+          "nombre": "Análisis Matemático II",
+          "tipo": "obligatoria",
+          "cuatrimestre": 3,
+          "creditos": 8,
+          "horasSemanales": 8,
+          "horasTotales": 128,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "fsp",
+          "nombre": "Física de los Sistemas de Partículas",
+          "tipo": "obligatoria",
+          "cuatrimestre": 3,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "intro-ing-electronica",
+          "nombre": "Introducción a la Ingeniería Electrónica",
+          "tipo": "obligatoria",
+          "cuatrimestre": 3,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [],
+          "requiereCBC": true,
+          "nota": "Proyecto Inicial de la carrera."
+        },
+        {
+          "id": "algoritmos-prog",
+          "nombre": "Algoritmos y Programación",
+          "tipo": "obligatoria",
+          "cuatrimestre": 3,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [],
+          "requiereCBC": true
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "materias": [
+        {
+          "id": "algebra-lineal",
+          "nombre": "Álgebra Lineal",
+          "tipo": "obligatoria",
+          "cuatrimestre": 4,
+          "creditos": 8,
+          "horasSemanales": 8,
+          "horasTotales": 128,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "electr-mag-calor",
+          "nombre": "Electricidad, Magnetismo y Calor",
+          "tipo": "obligatoria",
+          "cuatrimestre": 4,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "am-ii",
+            "fsp"
+          ]
+        },
+        {
+          "id": "intro-dispositivos",
+          "nombre": "Introducción a los Dispositivos Electrónicos",
+          "tipo": "obligatoria",
+          "cuatrimestre": 4,
+          "creditos": 4,
+          "horasSemanales": 4,
+          "horasTotales": 64,
+          "correlativas": [
+            "intro-ing-electronica"
+          ]
+        },
+        {
+          "id": "sistemas-digitales",
+          "nombre": "Sistemas Digitales",
+          "tipo": "obligatoria",
+          "cuatrimestre": 4,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "intro-ing-electronica"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "materias": [
+        {
+          "id": "pye",
+          "nombre": "Probabilidad y Estadística",
+          "tipo": "obligatoria",
+          "cuatrimestre": 5,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "am-ii",
+            "algebra-lineal"
+          ]
+        },
+        {
+          "id": "senales-sistemas",
+          "nombre": "Señales y Sistemas",
+          "tipo": "obligatoria",
+          "cuatrimestre": 5,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "am-ii",
+            "algebra-lineal"
+          ]
+        },
+        {
+          "id": "analisis-circuitos",
+          "nombre": "Análisis de Circuitos",
+          "tipo": "obligatoria",
+          "cuatrimestre": 5,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "intro-ing-electronica",
+            "electr-mag-calor"
+          ]
+        },
+        {
+          "id": "redes-comunicaciones",
+          "nombre": "Redes de Comunicaciones",
+          "tipo": "obligatoria",
+          "cuatrimestre": 5,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [],
+          "requiereCBC": true
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "materias": [
+        {
+          "id": "planificacion-proyectos",
+          "nombre": "Planificación de Proyectos",
+          "tipo": "obligatoria",
+          "cuatrimestre": 6,
+          "creditos": 2,
+          "horasSemanales": 2,
+          "horasTotales": 32,
+          "correlativas": [
+            "intro-ing-electronica"
+          ]
+        },
+        {
+          "id": "circuitos-microelectronicos",
+          "nombre": "Circuitos Microelectrónicos",
+          "tipo": "obligatoria",
+          "cuatrimestre": 6,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "intro-dispositivos",
+            "analisis-circuitos"
+          ]
+        },
+        {
+          "id": "procesos-estocasticos",
+          "nombre": "Procesos Estocásticos",
+          "tipo": "obligatoria",
+          "cuatrimestre": 6,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "pye",
+            "senales-sistemas"
+          ]
+        },
+        {
+          "id": "control-automatico",
+          "nombre": "Control Automático",
+          "tipo": "obligatoria",
+          "cuatrimestre": 6,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "electr-mag-calor",
+            "senales-sistemas"
+          ]
+        },
+        {
+          "id": "taller-sistemas-embebidos",
+          "nombre": "Taller de Sistemas Embebidos",
+          "tipo": "obligatoria",
+          "cuatrimestre": 6,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "algoritmos-prog",
+            "intro-dispositivos",
+            "sistemas-digitales"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "materias": [
+        {
+          "id": "quimica-electroquimica",
+          "nombre": "Química y Electroquímica",
+          "tipo": "obligatoria",
+          "cuatrimestre": 7,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "electr-mag-calor"
+          ]
+        },
+        {
+          "id": "electromagnetismo-aplicado",
+          "nombre": "Electromagnetismo Aplicado",
+          "tipo": "obligatoria",
+          "cuatrimestre": 7,
+          "creditos": 4,
+          "horasSemanales": 4,
+          "horasTotales": 64,
+          "correlativas": [
+            "analisis-circuitos"
+          ]
+        },
+        {
+          "id": "taller-automatizacion",
+          "nombre": "Taller de Automatización y Control",
+          "tipo": "obligatoria",
+          "cuatrimestre": 7,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "algoritmos-prog",
+            "control-automatico",
+            "sistemas-digitales"
+          ]
+        },
+        {
+          "id": "taller-proc-senales",
+          "nombre": "Taller de Procesamiento de Señales",
+          "tipo": "obligatoria",
+          "cuatrimestre": 7,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "procesos-estocasticos"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 8,
+      "materias": [
+        {
+          "id": "dispositivos-semiconductores",
+          "nombre": "Dispositivos Semiconductores",
+          "tipo": "obligatoria",
+          "cuatrimestre": 8,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "intro-dispositivos",
+            "analisis-circuitos"
+          ]
+        },
+        {
+          "id": "taller-com-digitales",
+          "nombre": "Taller de Comunicaciones Digitales",
+          "tipo": "obligatoria",
+          "cuatrimestre": 8,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "senales-sistemas",
+            "redes-comunicaciones"
+          ]
+        },
+        {
+          "id": "taller-diseno-circuitos",
+          "nombre": "Taller de Diseño de Circuitos Electrónicos",
+          "tipo": "obligatoria",
+          "cuatrimestre": 8,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "circuitos-microelectronicos",
+            "electromagnetismo-aplicado"
+          ]
+        },
+        {
+          "id": "higiene-seguridad",
+          "nombre": "Higiene y Seguridad",
+          "tipo": "obligatoria",
+          "cuatrimestre": 8,
+          "creditos": 2,
+          "horasSemanales": 2,
+          "horasTotales": 32,
+          "correlativas": [],
+          "correlativasCreditos": 100
+        }
+      ]
+    },
+    {
+      "numero": 9,
+      "materias": [
+        {
+          "id": "legislacion-ejercicio",
+          "nombre": "Legislación y Ejercicio Profesional",
+          "tipo": "obligatoria",
+          "cuatrimestre": 9,
+          "creditos": 2,
+          "horasSemanales": 2,
+          "horasTotales": 32,
+          "correlativas": [],
+          "correlativasCreditos": 100
+        },
+        {
+          "id": "gestion-proyectos-electronicos",
+          "nombre": "Gestión de Proyectos Electrónicos",
+          "tipo": "obligatoria",
+          "cuatrimestre": 9,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "planificacion-proyectos"
+          ]
+        },
+        {
+          "id": "tif",
+          "nombre": "Trabajo Integrador Final de Ingeniería Electrónica",
+          "tipo": "tif",
+          "cuatrimestre": 9,
+          "creditos": 12,
+          "horasSemanales": 6,
+          "horasTotales": 192,
+          "correlativas": [
+            "planificacion-proyectos",
+            "taller-sistemas-embebidos",
+            "taller-automatizacion",
+            "taller-proc-senales"
+          ],
+          "nota": "Se desarrolla a lo largo del 9º y 10º cuatrimestre. Incluye 192 hs de práctica profesional supervisada."
+        }
+      ]
+    },
+    {
+      "numero": 10,
+      "materias": [
+        {
+          "id": "impacto-social-ambiental",
+          "nombre": "Impacto Social, Ambiental y Desarrollo Sustentable",
+          "tipo": "obligatoria",
+          "cuatrimestre": 10,
+          "creditos": 4,
+          "horasSemanales": 4,
+          "horasTotales": 64,
+          "correlativas": [],
+          "correlativasCreditos": 100,
+          "nota": "Se recomienda haber cursado Química y Electroquímica."
+        }
+      ]
+    }
+  ],
+  "electivas": [
+    {
+      "id": "comunicaciones-inalambricas",
+      "nombre": "Comunicaciones Inalámbricas",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "electromagnetismo-aplicado",
+        "taller-com-digitales"
+      ],
+      "area": "Comunicaciones"
+    },
+    {
+      "id": "internet-cosas",
+      "nombre": "Internet de las Cosas",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "taller-com-digitales"
+      ],
+      "area": "Comunicaciones"
+    },
+    {
+      "id": "infraestructura-redes",
+      "nombre": "Infraestructura de Redes",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "taller-com-digitales"
+      ],
+      "area": "Comunicaciones"
+    },
+    {
+      "id": "propagacion-irradiantes",
+      "nombre": "Propagación y Sistemas Irradiantes",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "electromagnetismo-aplicado"
+      ],
+      "area": "Comunicaciones"
+    },
+    {
+      "id": "laboratorio-comunicaciones",
+      "nombre": "Laboratorio de Comunicaciones",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "taller-com-digitales"
+      ],
+      "area": "Comunicaciones"
+    },
+    {
+      "id": "ciberseguridad",
+      "nombre": "Ciberseguridad de Redes e Infraestructuras Críticas",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "algoritmos-prog",
+        "taller-com-digitales"
+      ],
+      "area": "Comunicaciones"
+    },
+    {
+      "id": "redes-neuronales",
+      "nombre": "Redes Neuronales y Aprendizaje Profundo",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "taller-proc-senales"
+      ],
+      "area": "Señales e IA"
+    },
+    {
+      "id": "aprendizaje-refuerzo",
+      "nombre": "Aprendizaje por Refuerzo",
+      "tipo": "electiva",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "horasTotales": 96,
+      "correlativas": [
+        "taller-proc-senales"
+      ],
+      "area": "Señales e IA"
+    },
+    {
+      "id": "vision-computadora",
+      "nombre": "Visión por Computadora",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "taller-proc-senales"
+      ],
+      "area": "Señales e IA"
+    },
+    {
+      "id": "procesamiento-habla",
+      "nombre": "Procesamiento del Habla",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "taller-proc-senales"
+      ],
+      "area": "Señales e IA"
+    },
+    {
+      "id": "optimizacion-convexa",
+      "nombre": "Optimización Convexa",
+      "tipo": "electiva",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "horasTotales": 96,
+      "correlativas": [
+        "procesos-estocasticos"
+      ],
+      "area": "Señales e IA"
+    },
+    {
+      "id": "proc-estadistico-senales",
+      "nombre": "Procesamiento Estadístico de Señales",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "procesos-estocasticos"
+      ],
+      "area": "Señales e IA"
+    },
+    {
+      "id": "taller-sistemas-digitales",
+      "nombre": "Taller de Sistemas Digitales",
+      "tipo": "electiva",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "horasTotales": 96,
+      "correlativas": [
+        "sistemas-digitales",
+        "senales-sistemas"
+      ],
+      "area": "Sistemas Digitales"
+    },
+    {
+      "id": "diseno-verificacion-digital",
+      "nombre": "Diseño y Verificación Digital",
+      "tipo": "electiva",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "horasTotales": 96,
+      "correlativas": [
+        "taller-sistemas-embebidos"
+      ],
+      "area": "Sistemas Digitales"
+    },
+    {
+      "id": "sistemas-operativos",
+      "nombre": "Sistemas Operativos",
+      "tipo": "electiva",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "horasTotales": 96,
+      "correlativas": [
+        "taller-sistemas-embebidos"
+      ],
+      "area": "Sistemas Digitales"
+    },
+    {
+      "id": "algoritmos-estructuras-datos",
+      "nombre": "Algoritmos y Estructuras de Datos",
+      "tipo": "electiva",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "horasTotales": 96,
+      "correlativas": [
+        "algoritmos-prog"
+      ],
+      "area": "Sistemas Digitales"
+    },
+    {
+      "id": "sis-operativos-embebidos",
+      "nombre": "Sistemas Operativos Embebidos",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "taller-sistemas-embebidos"
+      ],
+      "area": "Sistemas Digitales"
+    },
+    {
+      "id": "sistemas-graficos",
+      "nombre": "Sistemas Gráficos",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "algoritmos-prog"
+      ],
+      "area": "Sistemas Digitales"
+    },
+    {
+      "id": "instrumentacion-control",
+      "nombre": "Instrumentación y Control de Procesos Industriales",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "taller-automatizacion"
+      ],
+      "area": "Control"
+    },
+    {
+      "id": "control-automatico-avanzado",
+      "nombre": "Control Automático Avanzado",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "taller-automatizacion"
+      ],
+      "area": "Control"
+    },
+    {
+      "id": "control-multivariable",
+      "nombre": "Control Automático Multivariable",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "taller-automatizacion"
+      ],
+      "area": "Control"
+    },
+    {
+      "id": "identificacion-control-adapt",
+      "nombre": "Identificación y Control Adaptativo",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "taller-automatizacion"
+      ],
+      "area": "Control"
+    },
+    {
+      "id": "robotica-movil",
+      "nombre": "Robótica Móvil",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "procesos-estocasticos",
+        "algoritmos-prog"
+      ],
+      "area": "Control"
+    },
+    {
+      "id": "robotica-industrial",
+      "nombre": "Robótica Industrial",
+      "tipo": "electiva",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "horasTotales": 96,
+      "correlativas": [
+        "taller-automatizacion"
+      ],
+      "area": "Control"
+    },
+    {
+      "id": "electronica-de-potencia",
+      "nombre": "Electrónica de Potencia",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "circuitos-microelectronicos"
+      ],
+      "area": "Microelectrónica"
+    },
+    {
+      "id": "accionamientos-variables",
+      "nombre": "Accionamientos Variables",
+      "tipo": "electiva",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "horasTotales": 96,
+      "correlativas": [
+        "circuitos-microelectronicos",
+        "control-automatico"
+      ],
+      "area": "Microelectrónica"
+    },
+    {
+      "id": "microelectronica",
+      "nombre": "Microelectrónica",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "circuitos-microelectronicos",
+        "dispositivos-semiconductores"
+      ],
+      "area": "Microelectrónica"
+    },
+    {
+      "id": "lab-microelectronica",
+      "nombre": "Laboratorio de Microelectrónica",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "microelectronica"
+      ],
+      "area": "Microelectrónica"
+    },
+    {
+      "id": "dispositivos-optoelectronicos",
+      "nombre": "Dispositivos Optoelectrónicos Avanzados",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "dispositivos-semiconductores"
+      ],
+      "area": "Microelectrónica"
+    },
+    {
+      "id": "optoelectronica",
+      "nombre": "Optoelectrónica",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "dispositivos-semiconductores"
+      ],
+      "area": "Microelectrónica"
+    },
+    {
+      "id": "instrumentos-metrologia",
+      "nombre": "Instrumentos Electrónicos y Metrología",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "taller-diseno-circuitos"
+      ],
+      "area": "Microelectrónica"
+    },
+    {
+      "id": "electronica-alta-frec",
+      "nombre": "Electrónica de Alta Frecuencia",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "taller-diseno-circuitos"
+      ],
+      "area": "Microelectrónica"
+    },
+    {
+      "id": "compatibilidad-electromag",
+      "nombre": "Compatibilidad Electromagnética",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "taller-diseno-circuitos"
+      ],
+      "area": "Microelectrónica"
+    },
+    {
+      "id": "intro-ing-acustica",
+      "nombre": "Introducción a la Ingeniería Acústica",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "senales-sistemas"
+      ],
+      "area": "Acústica"
+    },
+    {
+      "id": "acustica-recintos",
+      "nombre": "Acústica de Recintos",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "senales-sistemas"
+      ],
+      "area": "Acústica"
+    },
+    {
+      "id": "electroacustica",
+      "nombre": "Electroacústica",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "circuitos-microelectronicos"
+      ],
+      "area": "Acústica"
+    },
+    {
+      "id": "audio-profesional",
+      "nombre": "Audio Profesional",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "taller-diseno-circuitos"
+      ],
+      "area": "Acústica"
+    },
+    {
+      "id": "computacion-cuantica",
+      "nombre": "Comunicación y Computación Cuántica",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "taller-sistemas-embebidos"
+      ],
+      "area": "Sistemas Digitales"
+    },
+    {
+      "id": "intro-aeroespace",
+      "nombre": "Introducción a la Industria, los Sistemas y el Negocio Aeroespacial",
+      "tipo": "electiva",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "horasTotales": 96,
+      "correlativas": [],
+      "correlativasCreditos": 120,
+      "area": "Aeroespacial"
+    },
+    {
+      "id": "tec-materiales-aerospace",
+      "nombre": "Tecnología de Materiales para la Industria Aeroespacial",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "electr-mag-calor",
+        "quimica-electroquimica"
+      ],
+      "area": "Aeroespacial"
+    },
+    {
+      "id": "comunicaciones-aerospace",
+      "nombre": "Comunicaciones Aeroespaciales",
+      "tipo": "electiva",
+      "creditos": 2,
+      "horasSemanales": 2,
+      "horasTotales": 32,
+      "correlativas": [
+        "taller-com-digitales"
+      ],
+      "area": "Aeroespacial"
+    }
+  ]
+}

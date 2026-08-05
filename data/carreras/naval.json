@@ -1,0 +1,751 @@
+{
+  "slug": "naval",
+  "nombre": "Ingeniería Naval",
+  "resolucion": "ACS-2024-371-Naval-Plan-2024",
+  "totalCreditos": 260,
+  "duracionCuatrimestres": 11,
+  "creditosElectivosRequeridos": 18,
+  "cbc": {
+    "materias": [
+      {
+        "id": "icse",
+        "nombre": "Introducción al Conocimiento de la Sociedad y el Estado",
+        "creditos": 4,
+        "horasSemanales": 4,
+        "correlativas": [],
+        "cuatrimestre": 0
+      },
+      {
+        "id": "ipc",
+        "nombre": "Introducción al Pensamiento Científico",
+        "creditos": 4,
+        "horasSemanales": 4,
+        "correlativas": [],
+        "cuatrimestre": 0
+      },
+      {
+        "id": "am-a",
+        "nombre": "Análisis Matemático A",
+        "creditos": 9,
+        "horasSemanales": 9,
+        "correlativas": [],
+        "cuatrimestre": 0
+      },
+      {
+        "id": "algebra-a",
+        "nombre": "Álgebra A",
+        "creditos": 9,
+        "horasSemanales": 9,
+        "correlativas": [],
+        "cuatrimestre": 0
+      },
+      {
+        "id": "fisica",
+        "nombre": "Física",
+        "creditos": 6,
+        "horasSemanales": 6,
+        "correlativas": [],
+        "cuatrimestre": 0
+      },
+      {
+        "id": "pc",
+        "nombre": "Pensamiento Computacional",
+        "creditos": 6,
+        "horasSemanales": 6,
+        "correlativas": [],
+        "cuatrimestre": 0
+      }
+    ]
+  },
+  "cuatrimestres": [
+    {
+      "numero": 3,
+      "materias": [
+        {
+          "id": "am-ii",
+          "nombre": "Análisis Matemático II",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "fisica-sist-part",
+          "nombre": "Física de los Sistemas de Partículas",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "optica",
+          "nombre": "Óptica",
+          "creditos": 2,
+          "horasSemanales": 2,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "intro-ing-naval",
+          "nombre": "Introducción a la Ingeniería Naval",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "medios-rep",
+          "nombre": "Medios de Representación",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [],
+          "requiereCBC": true
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "materias": [
+        {
+          "id": "algebra-lineal",
+          "nombre": "Álgebra Lineal",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "elec-mag",
+          "nombre": "Electricidad y Magnetismo",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "am-ii",
+            "fisica-sist-part"
+          ]
+        },
+        {
+          "id": "quim-basica",
+          "nombre": "Química Básica",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "estatica",
+          "nombre": "Estática",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "fisica-sist-part"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "materias": [
+        {
+          "id": "dibujo-naval-mec",
+          "nombre": "Dibujo Naval y Mecánico",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "medios-rep",
+            "intro-ing-naval"
+          ]
+        },
+        {
+          "id": "intro-cd",
+          "nombre": "Introducción a la Ciencia de Datos",
+          "creditos": 3,
+          "horasSemanales": 3,
+          "correlativas": [
+            "algebra-lineal"
+          ]
+        },
+        {
+          "id": "modelacion-numerica",
+          "nombre": "Modelación Numérica",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "am-ii",
+            "algebra-lineal"
+          ]
+        },
+        {
+          "id": "res-materiales",
+          "nombre": "Resistencia de Materiales",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [
+            "am-ii",
+            "estatica"
+          ]
+        },
+        {
+          "id": "termodinamica",
+          "nombre": "Termodinámica",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "quim-basica"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "materias": [
+        {
+          "id": "conoc-materiales",
+          "nombre": "Conocimiento de Materiales",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "quim-basica"
+          ]
+        },
+        {
+          "id": "electrotecnia-maq-inst",
+          "nombre": "Electrotecnia, Máquinas e Instalaciones Eléctricas",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "elec-mag",
+            "intro-ing-naval"
+          ]
+        },
+        {
+          "id": "estab-buque",
+          "nombre": "Estabilidad del Buque",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "estatica",
+            "dibujo-naval-mec"
+          ]
+        },
+        {
+          "id": "higiene-seg",
+          "nombre": "Higiene y Seguridad",
+          "creditos": 2,
+          "horasSemanales": 2,
+          "correlativas": [
+            "quim-basica"
+          ]
+        },
+        {
+          "id": "mec-fluidos",
+          "nombre": "Mecánica de Fluidos",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "algebra-lineal",
+            "termodinamica",
+            "res-materiales"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "materias": [
+        {
+          "id": "teoria-estructuras",
+          "nombre": "Teoría de Estructuras",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "algebra-lineal",
+            "res-materiales"
+          ]
+        },
+        {
+          "id": "dis-est-buques",
+          "nombre": "Diseño de Estructuras de Buques",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "res-materiales",
+            "estab-buque"
+          ]
+        },
+        {
+          "id": "prob-estadistica",
+          "nombre": "Probabilidad y Estadística",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "am-ii",
+            "algebra-lineal"
+          ]
+        },
+        {
+          "id": "sist-aux-navales",
+          "nombre": "Sistemas Auxiliares Navales",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "mec-fluidos",
+            "dibujo-naval-mec"
+          ]
+        },
+        {
+          "id": "impacto-social-amb",
+          "nombre": "Impacto Social, Ambiental y Desarrollo Sustentable",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [],
+          "correlativasCreditos": 100
+        }
+      ]
+    },
+    {
+      "numero": 8,
+      "materias": [
+        {
+          "id": "taller-electronica",
+          "nombre": "Taller de Electrónica",
+          "creditos": 3,
+          "horasSemanales": 3,
+          "correlativas": [
+            "elec-mag",
+            "intro-ing-naval"
+          ]
+        },
+        {
+          "id": "mec-elem-maq",
+          "nombre": "Mecanismos y Elementos de Máquinas",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "res-materiales"
+          ]
+        },
+        {
+          "id": "res-prop-buques",
+          "nombre": "Resistencia y Propulsión de Buques",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "estab-buque",
+            "mec-fluidos"
+          ]
+        },
+        {
+          "id": "sist-oper-buque",
+          "nombre": "Sistemas Inherentes a la Operación del Buque",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "dis-est-buques",
+            "sist-aux-navales"
+          ]
+        },
+        {
+          "id": "tecnol-astilleros",
+          "nombre": "Tecnología de Astilleros",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "sist-aux-navales",
+            "dis-est-buques",
+            "conoc-materiales"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 9,
+      "materias": [
+        {
+          "id": "anal-est-buques",
+          "nombre": "Análisis Estructural de Buques",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "dis-est-buques",
+            "teoria-estructuras",
+            "prob-estadistica",
+            "modelacion-numerica"
+          ]
+        },
+        {
+          "id": "economia-org",
+          "nombre": "Economía y Organización",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "intro-ing-naval"
+          ]
+        },
+        {
+          "id": "mec-clasica",
+          "nombre": "Mecánica Clásica del Cuerpo Rígido",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "fisica-sist-part",
+            "am-ii"
+          ]
+        },
+        {
+          "id": "plantas-propulsoras",
+          "nombre": "Plantas Propulsoras",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "mec-elem-maq",
+            "sist-aux-navales",
+            "electrotecnia-maq-inst"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 10,
+      "materias": [
+        {
+          "id": "proy-buques-mercantes",
+          "nombre": "Proyecto de Buques Mercantes",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "sist-oper-buque",
+            "plantas-propulsoras",
+            "res-prop-buques"
+          ]
+        },
+        {
+          "id": "practicas-astilleros",
+          "nombre": "Prácticas en Astilleros",
+          "creditos": 6,
+          "horasSemanales": 6,
+          "correlativas": [
+            "tecnol-astilleros",
+            "economia-org",
+            "higiene-seg"
+          ]
+        },
+        {
+          "id": "tif-i",
+          "nombre": "Trabajo Integrador Final I",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [],
+          "correlativasCreditos": 180,
+          "tipo": "tif"
+        }
+      ]
+    },
+    {
+      "numero": 11,
+      "materias": [
+        {
+          "id": "legislacion-ep",
+          "nombre": "Legislación y Ejercicio Profesional",
+          "creditos": 2,
+          "horasSemanales": 2,
+          "correlativas": [],
+          "correlativasCreditos": 100
+        },
+        {
+          "id": "din-est-buques",
+          "nombre": "Dinámica de Estructuras de Buques",
+          "creditos": 4,
+          "horasSemanales": 4,
+          "correlativas": [
+            "teoria-estructuras",
+            "mec-clasica"
+          ]
+        },
+        {
+          "id": "tif-ii",
+          "nombre": "Trabajo Integrador Final II",
+          "creditos": 8,
+          "horasSemanales": 8,
+          "correlativas": [],
+          "correlativasCreditos": 180,
+          "tipo": "tif"
+        }
+      ]
+    }
+  ],
+  "electivas": [
+    {
+      "id": "comport-artef-ocean",
+      "nombre": "Comportamiento de Artefactos Oceánicos",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "res-prop-buques",
+        "prob-estadistica"
+      ]
+    },
+    {
+      "id": "maniob-ctrl-embarcac",
+      "nombre": "Maniobrabilidad y Control de Embarcaciones",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "res-prop-buques",
+        "prob-estadistica"
+      ]
+    },
+    {
+      "id": "aprov-viento",
+      "nombre": "Aprovechamiento del Viento para la Propulsión",
+      "creditos": 2,
+      "horasSemanales": 2,
+      "correlativas": [
+        "res-prop-buques"
+      ]
+    },
+    {
+      "id": "mec-fluidos-comp-naval",
+      "nombre": "Mecánica de Fluidos Computacional Aplicada a Hidrodinámica Naval",
+      "creditos": 2,
+      "horasSemanales": 2,
+      "correlativas": [
+        "res-prop-buques",
+        "modelacion-numerica"
+      ]
+    },
+    {
+      "id": "maq-propulsoras-nav",
+      "nombre": "Máquinas Propulsoras Navales",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "plantas-propulsoras"
+      ]
+    },
+    {
+      "id": "dis-av-sist-aux",
+      "nombre": "Diseño Avanzado de Sistemas Auxiliares Navales",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [
+        "sist-aux-navales"
+      ]
+    },
+    {
+      "id": "trans-energ-propulsion",
+      "nombre": "Transición Energética de la Propulsión",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [
+        "plantas-propulsoras"
+      ]
+    },
+    {
+      "id": "proy-buques-trabajo",
+      "nombre": "Proyecto de Buques de Trabajo, Servicio y Militares",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "proy-buques-mercantes"
+      ]
+    },
+    {
+      "id": "habitabilidad",
+      "nombre": "Habitabilidad",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [
+        "sist-oper-buque"
+      ]
+    },
+    {
+      "id": "dis-puente-nav",
+      "nombre": "Diseño de Puente de Navegación",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [],
+      "correlativasCreditos": 180
+    },
+    {
+      "id": "gerenm-calidad",
+      "nombre": "Gerenciamiento de la Calidad",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "economia-org"
+      ]
+    },
+    {
+      "id": "capital-humano",
+      "nombre": "Capital Humano y Comportamiento Organizacional",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "economia-org"
+      ]
+    },
+    {
+      "id": "comercializ-prod-serv",
+      "nombre": "Comercialización de Productos y Servicios",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "economia-org"
+      ]
+    },
+    {
+      "id": "emprendimientos",
+      "nombre": "Emprendimientos en Ingeniería",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "economia-org"
+      ]
+    },
+    {
+      "id": "gestion-financiera",
+      "nombre": "Gestión Financiera y Presupuestaria",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "economia-org"
+      ]
+    },
+    {
+      "id": "logistica-sc",
+      "nombre": "Logística y Supply Chain",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "economia-org"
+      ]
+    },
+    {
+      "id": "innov-gestion-proy",
+      "nombre": "Innovación y Gestión de Proyectos",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "economia-org"
+      ]
+    },
+    {
+      "id": "intro-trans-energ",
+      "nombre": "Introducción a la Transición Energética",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "correlativasCreditos": 120
+    },
+    {
+      "id": "energias-renovables",
+      "nombre": "Energías Renovables",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "correlativasCreditos": 120
+    },
+    {
+      "id": "uso-efic-energia",
+      "nombre": "Uso Eficiente de la Energía",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "correlativasCreditos": 120
+    },
+    {
+      "id": "fuentes-conv-trans",
+      "nombre": "Fuentes Convencionales en la Transición Energética",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "correlativasCreditos": 120
+    },
+    {
+      "id": "tecnol-emerg-trans",
+      "nombre": "Tecnologías Emergentes en la Transición Energética",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [],
+      "correlativasCreditos": 120
+    },
+    {
+      "id": "intro-aeroespacio",
+      "nombre": "Introducción a la Industria, Sistemas y Negocio Aeroespacial",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [],
+      "correlativasCreditos": 120
+    },
+    {
+      "id": "tecnol-mat-aeroespacio",
+      "nombre": "Tecnología de Materiales para la Industria Aeroespacial",
+      "creditos": 2,
+      "horasSemanales": 2,
+      "correlativas": [
+        "conoc-materiales"
+      ]
+    },
+    {
+      "id": "com-aeroespaciales",
+      "nombre": "Comunicaciones Aeroespaciales",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "correlativas": [
+        "prob-estadistica",
+        "elec-mag"
+      ]
+    },
+    {
+      "id": "intro-ia",
+      "nombre": "Introducción a Inteligencia Artificial",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [
+        "prob-estadistica",
+        "intro-cd"
+      ]
+    },
+    {
+      "id": "analisis-datos",
+      "nombre": "Análisis de Datos",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [
+        "prob-estadistica",
+        "intro-cd"
+      ]
+    },
+    {
+      "id": "aprendizaje-maquina",
+      "nombre": "Aprendizaje de Máquina",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [
+        "analisis-datos",
+        "intro-ia"
+      ]
+    },
+    {
+      "id": "aprendizaje-maquina-prof",
+      "nombre": "Aprendizaje de Máquina Profundo",
+      "creditos": 3,
+      "horasSemanales": 3,
+      "correlativas": [
+        "analisis-datos",
+        "intro-ia"
+      ]
+    },
+    {
+      "id": "am-iii",
+      "nombre": "Análisis Matemático III",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "correlativas": [
+        "am-ii",
+        "algebra-lineal"
+      ]
+    }
+  ]
+}

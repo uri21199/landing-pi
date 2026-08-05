@@ -1,0 +1,745 @@
+{
+  "slug": "alimentos",
+  "nombre": "Ingeniería en Alimentos",
+  "planVigente": "Plan 2020 actualización 2024 (RESCS-2024-399-E-UBA-REC)",
+  "fuente": "https://www.fi.uba.ar/grado/carreras/ingenieria-en-alimentos/plan-de-estudios",
+  "totalCreditos": 243,
+  "duracionCuatrimestres": 11,
+  "creditosElectivosRequeridos": 12,
+  "cbc": {
+    "nombreCorto": "CBC",
+    "creditos": 38,
+    "materias": [
+      {
+        "id": "icse",
+        "nombre": "Introducción al Conocimiento de la Sociedad y el Estado",
+        "tipo": "obligatoria",
+        "cuatrimestre": 1,
+        "creditos": 4,
+        "horasSemanales": 4,
+        "horasTotales": 64,
+        "correlativas": []
+      },
+      {
+        "id": "ipc",
+        "nombre": "Introducción al Pensamiento Científico",
+        "tipo": "obligatoria",
+        "cuatrimestre": 1,
+        "creditos": 4,
+        "horasSemanales": 4,
+        "horasTotales": 64,
+        "correlativas": []
+      },
+      {
+        "id": "am-a",
+        "nombre": "Análisis Matemático A",
+        "tipo": "obligatoria",
+        "cuatrimestre": 1,
+        "creditos": 9,
+        "horasSemanales": 9,
+        "horasTotales": 144,
+        "correlativas": []
+      },
+      {
+        "id": "algebra-a",
+        "nombre": "Álgebra A",
+        "tipo": "obligatoria",
+        "cuatrimestre": 1,
+        "creditos": 9,
+        "horasSemanales": 9,
+        "horasTotales": 144,
+        "correlativas": []
+      },
+      {
+        "id": "fisica",
+        "nombre": "Física",
+        "tipo": "obligatoria",
+        "cuatrimestre": 1,
+        "creditos": 6,
+        "horasSemanales": 6,
+        "horasTotales": 96,
+        "correlativas": []
+      },
+      {
+        "id": "pc",
+        "nombre": "Pensamiento Computacional",
+        "tipo": "obligatoria",
+        "cuatrimestre": 1,
+        "creditos": 6,
+        "horasSemanales": 6,
+        "horasTotales": 96,
+        "correlativas": []
+      }
+    ]
+  },
+  "cuatrimestres": [
+    {
+      "numero": 3,
+      "materias": [
+        {
+          "id": "am-ii",
+          "nombre": "Análisis Matemático II",
+          "tipo": "obligatoria",
+          "cuatrimestre": 3,
+          "creditos": 8,
+          "horasSemanales": 8,
+          "horasTotales": 128,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "quim-basica",
+          "nombre": "Química Básica",
+          "tipo": "obligatoria",
+          "cuatrimestre": 3,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "fsp",
+          "nombre": "Física de los Sistemas de Partículas",
+          "tipo": "obligatoria",
+          "cuatrimestre": 3,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "intro-ing-alimentos",
+          "nombre": "Introducción a la Ingeniería en Alimentos",
+          "tipo": "obligatoria",
+          "cuatrimestre": 3,
+          "creditos": 4,
+          "horasSemanales": 4,
+          "horasTotales": 64,
+          "correlativas": [],
+          "requiereCBC": true,
+          "nota": "Proyecto Inicial de la carrera."
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "materias": [
+        {
+          "id": "electr-mag",
+          "nombre": "Electricidad y Magnetismo",
+          "tipo": "obligatoria",
+          "cuatrimestre": 4,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "am-ii",
+            "fsp"
+          ]
+        },
+        {
+          "id": "optica",
+          "nombre": "Óptica",
+          "tipo": "obligatoria",
+          "cuatrimestre": 4,
+          "creditos": 2,
+          "horasSemanales": 2,
+          "horasTotales": 32,
+          "correlativas": [],
+          "requiereCBC": true
+        },
+        {
+          "id": "fund-proc-quim",
+          "nombre": "Fundamentos de Procesos Químicos",
+          "tipo": "obligatoria",
+          "cuatrimestre": 4,
+          "creditos": 4,
+          "horasSemanales": 4,
+          "horasTotales": 64,
+          "correlativas": [
+            "quim-basica",
+            "intro-ing-alimentos"
+          ]
+        },
+        {
+          "id": "lab-quimica",
+          "nombre": "Laboratorio de Química",
+          "tipo": "obligatoria",
+          "cuatrimestre": 4,
+          "creditos": 2,
+          "horasSemanales": 2,
+          "horasTotales": 32,
+          "correlativas": [
+            "quim-basica"
+          ]
+        },
+        {
+          "id": "algebra-lineal",
+          "nombre": "Álgebra Lineal",
+          "tipo": "obligatoria",
+          "cuatrimestre": 4,
+          "creditos": 8,
+          "horasSemanales": 8,
+          "horasTotales": 128,
+          "correlativas": [],
+          "requiereCBC": true
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "materias": [
+        {
+          "id": "quim-organica",
+          "nombre": "Química de los Compuestos Orgánicos",
+          "tipo": "obligatoria",
+          "cuatrimestre": 5,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "quim-basica"
+          ]
+        },
+        {
+          "id": "termodinamica",
+          "nombre": "Termodinámica de los Procesos",
+          "tipo": "obligatoria",
+          "cuatrimestre": 5,
+          "creditos": 8,
+          "horasSemanales": 8,
+          "horasTotales": 128,
+          "correlativas": [
+            "fund-proc-quim",
+            "am-ii"
+          ]
+        },
+        {
+          "id": "pye",
+          "nombre": "Probabilidad y Estadística",
+          "tipo": "obligatoria",
+          "cuatrimestre": 5,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "am-ii",
+            "algebra-lineal"
+          ]
+        },
+        {
+          "id": "intro-cd",
+          "nombre": "Introducción a la Ciencia de Datos",
+          "tipo": "obligatoria",
+          "cuatrimestre": 5,
+          "creditos": 3,
+          "horasSemanales": 3,
+          "horasTotales": 48,
+          "correlativas": [
+            "algebra-lineal"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "materias": [
+        {
+          "id": "fenomenos-transporte",
+          "nombre": "Fenómenos de Transporte",
+          "tipo": "obligatoria",
+          "cuatrimestre": 6,
+          "creditos": 8,
+          "horasSemanales": 8,
+          "horasTotales": 128,
+          "correlativas": [
+            "termodinamica"
+          ]
+        },
+        {
+          "id": "modelacion-numerica",
+          "nombre": "Modelación Numérica",
+          "tipo": "obligatoria",
+          "cuatrimestre": 6,
+          "creditos": 4,
+          "horasSemanales": 4,
+          "horasTotales": 64,
+          "correlativas": [
+            "am-ii",
+            "algebra-lineal"
+          ]
+        },
+        {
+          "id": "quim-fisica",
+          "nombre": "Química Física",
+          "tipo": "obligatoria",
+          "cuatrimestre": 6,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "termodinamica",
+            "electr-mag"
+          ]
+        },
+        {
+          "id": "quim-biologica",
+          "nombre": "Química Biológica y de Alimentos",
+          "tipo": "obligatoria",
+          "cuatrimestre": 6,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "quim-organica",
+            "lab-quimica"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "materias": [
+        {
+          "id": "microbiologia",
+          "nombre": "Microbiología General y de Alimentos",
+          "tipo": "obligatoria",
+          "cuatrimestre": 7,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "quim-biologica"
+          ]
+        },
+        {
+          "id": "ou-mov-energia",
+          "nombre": "Operaciones Unitarias de Transferencia de Cantidad de Movimiento y Energía",
+          "tipo": "obligatoria",
+          "cuatrimestre": 7,
+          "creditos": 8,
+          "horasSemanales": 8,
+          "horasTotales": 128,
+          "correlativas": [
+            "fenomenos-transporte",
+            "modelacion-numerica"
+          ],
+          "nota": "Proyecto Intermedio de la carrera."
+        },
+        {
+          "id": "ou-trans-materia",
+          "nombre": "Operaciones Unitarias de Transferencia de Materia",
+          "tipo": "obligatoria",
+          "cuatrimestre": 7,
+          "creditos": 8,
+          "horasSemanales": 8,
+          "horasTotales": 128,
+          "correlativas": [
+            "fenomenos-transporte"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 8,
+      "materias": [
+        {
+          "id": "fund-preservacion-i",
+          "nombre": "Fundamentos de la Preservación de Alimentos I",
+          "tipo": "obligatoria",
+          "cuatrimestre": 8,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "microbiologia",
+            "ou-mov-energia",
+            "ou-trans-materia"
+          ]
+        },
+        {
+          "id": "quim-analitica",
+          "nombre": "Química Analítica Instrumental",
+          "tipo": "obligatoria",
+          "cuatrimestre": 8,
+          "creditos": 4,
+          "horasSemanales": 4,
+          "horasTotales": 64,
+          "correlativas": [
+            "quim-organica",
+            "optica",
+            "pye"
+          ]
+        },
+        {
+          "id": "lab-op-procesos",
+          "nombre": "Laboratorio de Operaciones y Procesos",
+          "tipo": "obligatoria",
+          "cuatrimestre": 8,
+          "creditos": 4,
+          "horasSemanales": 4,
+          "horasTotales": 64,
+          "correlativas": [
+            "ou-mov-energia"
+          ]
+        },
+        {
+          "id": "instalaciones-plantas",
+          "nombre": "Instalaciones de Plantas de Procesos",
+          "tipo": "obligatoria",
+          "cuatrimestre": 8,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "ou-mov-energia"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 9,
+      "materias": [
+        {
+          "id": "fund-preservacion-ii",
+          "nombre": "Fundamentos de la Preservación de Alimentos II",
+          "tipo": "obligatoria",
+          "cuatrimestre": 9,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "fund-preservacion-i"
+          ]
+        },
+        {
+          "id": "tec-alimentos-i",
+          "nombre": "Tecnología de Alimentos I",
+          "tipo": "obligatoria",
+          "cuatrimestre": 9,
+          "creditos": 4,
+          "horasSemanales": 4,
+          "horasTotales": 64,
+          "correlativas": [
+            "fund-preservacion-i",
+            "quim-analitica"
+          ]
+        },
+        {
+          "id": "proc-planta-piloto",
+          "nombre": "Procesamiento de Alimentos en Planta Piloto",
+          "tipo": "obligatoria",
+          "cuatrimestre": 9,
+          "creditos": 4,
+          "horasSemanales": 2,
+          "horasTotales": 64,
+          "correlativas": [
+            "fund-preservacion-i",
+            "ou-trans-materia"
+          ],
+          "nota": "Se desarrolla a lo largo del 9º y 10º cuatrimestre (2 h/sem cada uno)."
+        },
+        {
+          "id": "din-control-procesos",
+          "nombre": "Dinámica y Control de Procesos de Alimentos",
+          "tipo": "obligatoria",
+          "cuatrimestre": 9,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "ou-mov-energia",
+            "ou-trans-materia"
+          ]
+        },
+        {
+          "id": "legislacion-ejercicio",
+          "nombre": "Legislación y Ejercicio Profesional",
+          "tipo": "obligatoria",
+          "cuatrimestre": 9,
+          "creditos": 2,
+          "horasSemanales": 2,
+          "horasTotales": 32,
+          "correlativas": [],
+          "correlativasCreditos": 100
+        }
+      ]
+    },
+    {
+      "numero": 10,
+      "materias": [
+        {
+          "id": "tec-alimentos-ii",
+          "nombre": "Tecnología de Alimentos II",
+          "tipo": "obligatoria",
+          "cuatrimestre": 10,
+          "creditos": 2,
+          "horasSemanales": 2,
+          "horasTotales": 32,
+          "correlativas": [
+            "fund-preservacion-i",
+            "quim-analitica"
+          ],
+          "nota": "Asignatura bimestral."
+        },
+        {
+          "id": "tec-alimentos-iii",
+          "nombre": "Tecnología de Alimentos III",
+          "tipo": "obligatoria",
+          "cuatrimestre": 10,
+          "creditos": 2,
+          "horasSemanales": 2,
+          "horasTotales": 32,
+          "correlativas": [
+            "fund-preservacion-i",
+            "quim-analitica"
+          ],
+          "nota": "Asignatura bimestral."
+        },
+        {
+          "id": "legislacion-alimentaria",
+          "nombre": "Legislación Alimentaria",
+          "tipo": "obligatoria",
+          "cuatrimestre": 10,
+          "creditos": 4,
+          "horasSemanales": 4,
+          "horasTotales": 64,
+          "correlativas": [
+            "microbiologia"
+          ]
+        },
+        {
+          "id": "economia-org",
+          "nombre": "Economía y Organización",
+          "tipo": "obligatoria",
+          "cuatrimestre": 10,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "intro-ing-alimentos"
+          ]
+        },
+        {
+          "id": "tif",
+          "nombre": "Trabajo Integrador Final de Ingeniería en Alimentos",
+          "tipo": "tif",
+          "cuatrimestre": 10,
+          "creditos": 12,
+          "horasSemanales": 6,
+          "horasTotales": 192,
+          "correlativas": [
+            "fund-preservacion-i",
+            "instalaciones-plantas"
+          ],
+          "nota": "Se desarrolla a lo largo del 10º y 11º cuatrimestre. Incluye 192 hs de práctica profesional supervisada."
+        }
+      ]
+    },
+    {
+      "numero": 11,
+      "materias": [
+        {
+          "id": "biotecnologia",
+          "nombre": "Biotecnología y Reactores para la Industria de Alimentos",
+          "tipo": "obligatoria",
+          "cuatrimestre": 11,
+          "creditos": 6,
+          "horasSemanales": 6,
+          "horasTotales": 96,
+          "correlativas": [
+            "quim-fisica",
+            "microbiologia",
+            "ou-trans-materia"
+          ]
+        },
+        {
+          "id": "gestion-trabajo-ambiente",
+          "nombre": "Gestión del Trabajo y del Ambiente en la Industria Alimentaria",
+          "tipo": "obligatoria",
+          "cuatrimestre": 11,
+          "creditos": 4,
+          "horasSemanales": 4,
+          "horasTotales": 64,
+          "correlativas": [
+            "microbiologia"
+          ]
+        }
+      ]
+    }
+  ],
+  "electivas": [
+    {
+      "id": "revalorizacion-subproductos",
+      "nombre": "Revalorización de Subproductos en la Industria Agroalimentaria",
+      "tipo": "electiva",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "horasTotales": 96,
+      "correlativas": [
+        "fund-preservacion-ii"
+      ],
+      "area": "Tecnología"
+    },
+    {
+      "id": "diseno-producto",
+      "nombre": "Diseño de Producto",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "fund-preservacion-ii",
+        "economia-org"
+      ],
+      "area": "Tecnología"
+    },
+    {
+      "id": "analisis-avanzado-alimentos",
+      "nombre": "Análisis Avanzado de Alimentos",
+      "tipo": "electiva",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "horasTotales": 96,
+      "correlativas": [
+        "fund-preservacion-ii"
+      ],
+      "area": "Tecnología"
+    },
+    {
+      "id": "bioprocesos",
+      "nombre": "Bioprocesos Industriales",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "biotecnologia"
+      ],
+      "area": "Tecnología"
+    },
+    {
+      "id": "microbiologia-alimentos",
+      "nombre": "Microbiología de Alimentos",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "microbiologia"
+      ],
+      "area": "Tecnología"
+    },
+    {
+      "id": "toxicologia",
+      "nombre": "Toxicología de Alimentos",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "quim-biologica",
+        "quim-analitica"
+      ],
+      "area": "Tecnología"
+    },
+    {
+      "id": "nutricion-aplicada",
+      "nombre": "Nutrición Aplicada a Tecnología de Alimentos",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "quim-biologica"
+      ],
+      "area": "Tecnología"
+    },
+    {
+      "id": "control-estadistico",
+      "nombre": "Control Estadístico de Procesos",
+      "tipo": "electiva",
+      "creditos": 6,
+      "horasSemanales": 6,
+      "horasTotales": 96,
+      "correlativas": [
+        "pye"
+      ],
+      "area": "Estadística"
+    },
+    {
+      "id": "estadistica-aplicada",
+      "nombre": "Estadística Aplicada",
+      "tipo": "electiva",
+      "creditos": 8,
+      "horasSemanales": 8,
+      "horasTotales": 128,
+      "correlativas": [
+        "pye"
+      ],
+      "area": "Estadística"
+    },
+    {
+      "id": "emprendimientos",
+      "nombre": "Emprendimientos en Ingeniería",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "economia-org"
+      ],
+      "area": "Gestión"
+    },
+    {
+      "id": "logistica",
+      "nombre": "Logística y Supply Chain",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "economia-org"
+      ],
+      "area": "Gestión"
+    },
+    {
+      "id": "comercializacion",
+      "nombre": "Comercialización de Productos y Servicios",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "economia-org"
+      ],
+      "area": "Gestión"
+    },
+    {
+      "id": "capital-humano",
+      "nombre": "Capital Humano y Comportamiento Organizacional",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "economia-org"
+      ],
+      "area": "Gestión"
+    },
+    {
+      "id": "gerenciamiento-calidad",
+      "nombre": "Gerenciamiento de la Calidad",
+      "tipo": "electiva",
+      "creditos": 4,
+      "horasSemanales": 4,
+      "horasTotales": 64,
+      "correlativas": [
+        "economia-org"
+      ],
+      "area": "Gestión"
+    }
+  ]
+}
