@@ -212,9 +212,8 @@ export default function MapaView({ plan, focusId, onFocusConsumed, progreso, onS
     const el = containerRef.current;
     if (!el) return;
     function inPanel(e: TouchEvent) {
-      return e.composedPath().some(
-        node => node instanceof Element && node.getAttribute('data-scrollable-panel') === 'true',
-      );
+      const target = e.target as Element | null;
+      return !!target?.closest('[data-scrollable-panel="true"]');
     }
     function onTouchStart(e: TouchEvent) {
       if (e.touches.length >= 2 && !inPanel(e)) e.preventDefault();

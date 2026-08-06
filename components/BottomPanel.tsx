@@ -25,9 +25,9 @@ export default function BottomPanel({
   const hayFaltantes = prerequisitosFaltantes.size > 0;
 
   const borderColor =
-    estadoActual === 'aprobada'    ? 'rgba(30,80,112,0.75)' :
-    estadoActual === 'regularizada'? 'rgba(180,120,32,0.75)' :
-                                     'rgba(45,82,105,0.55)';
+    estadoActual === 'aprobada'     ? 'rgba(30,80,112,0.75)' :
+    estadoActual === 'regularizada' ? 'rgba(180,120,32,0.75)' :
+                                      'rgba(45,82,105,0.55)';
 
   function guardarNota(val: string) {
     setNotaInput(val);
@@ -48,33 +48,35 @@ export default function BottomPanel({
       onTouchMove={(e) => e.stopPropagation()}
       onTouchEnd={(e) => e.stopPropagation()}
       style={{
-        position: 'absolute', bottom: 0, left: 0, right: 0,
+        // fixed so it escapes MapaView's overflow:hidden and touch-action context
+        position: 'fixed', bottom: 0, left: 0, right: 0,
         background: 'rgba(8,18,26,0.97)',
         borderTop: `2px solid ${borderColor}`,
         backdropFilter: 'blur(20px)',
-        zIndex: 100,
-        maxHeight: '78vh',
-        overflowY: 'auto',
-        touchAction: 'pan-y',
-        WebkitOverflowScrolling: 'touch',
-        overscrollBehavior: 'contain',
+        zIndex: 200,
         animation: 'slide-up-panel 0.32s cubic-bezier(0.22, 1, 0.36, 1) both',
+        // flex column so mobile header stays fixed and body scrolls
+        display: 'flex',
+        flexDirection: 'column',
+        maxHeight: '72vh',
       }}
     >
-      {/* ── Mobile layout ── */}
-      <div className="flex flex-col sm:hidden">
-        {/* Drag handle */}
-        <div style={{ display: 'flex', justifyContent: 'center', padding: '10px 0 6px' }}>
+      {/* ── Mobile layout: sticky header + scrollable body ── */}
+      <div className="flex flex-col sm:hidden" style={{ flex: 1, minHeight: 0 }}>
+
+        {/* Drag handle — always visible */}
+        <div style={{ flexShrink: 0, display: 'flex', justifyContent: 'center', padding: '10px 0 6px' }}>
           <div style={{ width: 36, height: 4, borderRadius: 2, background: 'rgba(255,255,255,0.13)' }} />
         </div>
 
-        <div style={{ paddingTop: 4, paddingRight: 48, paddingBottom: 'max(20px, env(safe-area-inset-bottom))', paddingLeft: 16, display: 'flex', flexDirection: 'column', gap: 14 }}>
+        {/* Fixed header: title + actions */}
+        <div style={{ flexShrink: 0, padding: '2px 48px 12px 16px', display: 'flex', flexDirection: 'column', gap: 12 }}>
           {/* Nombre + meta */}
           <div>
             <p style={{
               fontFamily: 'var(--font-mono)', fontSize: 10,
               color: 'rgba(255,255,255,0.3)', textTransform: 'uppercase',
-              letterSpacing: '0.07em', marginBottom: 5,
+              letterSpacing: '0.07em', marginBottom: 4,
             }}>
               {materia.cuatrimestre ? `${materia.cuatrimestre}° cuatrimestre` : 'Electiva'}
               <span style={{ color: 'rgba(255,255,255,0.18)' }}> · </span>
@@ -158,47 +160,45 @@ export default function BottomPanel({
               </>
             )}
           </div>
+        </div>
 
-          {/* Correlativas */}
+        {/* Scrollable body: correlativas — gets all remaining height */}
+        <div
+          data-scrollable-panel="true"
+          style={{
+            flex: 1, minHeight: 0,
+            overflowY: 'auto',
+            touchAction: 'pan-y',
+            WebkitOverflowScrolling: 'touch',
+            overscrollBehavior: 'contain',
+            borderTop: '1px solid rgba(255,255,255,0.07)',
+          }}
+        >
           <div style={{
-            background: 'rgba(255,255,255,0.03)',
-            border: '1px solid rgba(255,255,255,0.07)',
-            borderRadius: 8,
-            padding: '12px 14px',
+            margin: '12px 16px',
+            marginBottom: 0,
+            paddingBottom: 'max(20px, env(safe-area-inset-bottom))',
           }}>
             <p style={{
               fontFamily: 'var(--font-mono)', fontSize: 10, color: '#E07040',
               textTransform: 'uppercase', letterSpacing: '0.07em', marginBottom: 10,
               display: 'flex', alignItems: 'center', gap: 6,
             }}>
-              <span style={{
-                display: 'inline-block', width: 3, height: 12,
-                background: '#E07040', borderRadius: 2,
-              }} />
+              <span style={{ display: 'inline-block', width: 3, height: 12, background: '#E07040', borderRadius: 2 }} />
               Para cursarla
             </p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 7 }}>
               {materia.requiereCBC && (
-                <CorrelativaItem
-                  ok={!prerequisitosFaltantes.has('__cbc__')}
-                  label="CBC completo aprobado"
-                />
+                <CorrelativaItem ok={!prerequisitosFaltantes.has('__cbc__')} label="CBC completo aprobado" />
               )}
               {tieneUmbral && (
-                <CorrelativaItem
-                  ok={!prerequisitosFaltantes.has('__creditos__')}
-                  label={`${materia.correlativasCreditos} créditos acumulados`}
-                />
+                <CorrelativaItem ok={!prerequisitosFaltantes.has('__creditos__')} label={`${materia.correlativasCreditos} créditos acumulados`} />
               )}
               {tieneCorrelativas && materia.correlativas.map((id) => (
-                <CorrelativaItem
-                  key={id}
-                  ok={!prerequisitosFaltantes.has(id)}
-                  label={nombrePorId(plan, id)}
-                />
+                <CorrelativaItem key={id} ok={!prerequisitosFaltantes.has(id)} label={nombrePorId(plan, id)} />
               ))}
               {sinRequisitos && (
-                <span style={{ fontFamily: 'var(--font-body)', fontSize: 12, color: 'rgba(255,255,255,0.28)', fontStyle: 'italic' }}>
+                <span style={{ fontFamily: 'var(--font-body)', fontSize: 13, color: 'rgba(255,255,255,0.28)', fontStyle: 'italic' }}>
                   Sin correlativas previas
                 </span>
               )}
@@ -212,7 +212,7 @@ export default function BottomPanel({
         </div>
       </div>
 
-      {/* ── Desktop layout ── */}
+      {/* ── Desktop layout: horizontal (unchanged) ── */}
       <div
         className="hidden sm:flex sm:flex-row sm:items-start"
         style={{ gap: 24, padding: '14px 44px 18px 20px' }}
