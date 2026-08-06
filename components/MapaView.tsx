@@ -205,6 +205,31 @@ export default function MapaView({ plan, focusId, onFocusConsumed, progreso, onS
     return () => el.removeEventListener('wheel', handler);
   }, []);
 
+  // Prevent default touch behaviors (scroll/zoom) on the map but NOT inside scrollable panels.
+  // touch-action:none on the container would block native scroll in child panels even with touch-action:pan-y,
+  // so we use native listeners with preventDefault() and skip panels detected via data-scrollable-panel.
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+    function inPanel(e: TouchEvent) {
+      return e.composedPath().some(
+        node => node instanceof Element && node.getAttribute('data-scrollable-panel') === 'true',
+      );
+    }
+    function onTouchStart(e: TouchEvent) {
+      if (e.touches.length >= 2 && !inPanel(e)) e.preventDefault();
+    }
+    function onTouchMove(e: TouchEvent) {
+      if (!inPanel(e)) e.preventDefault();
+    }
+    el.addEventListener('touchstart', onTouchStart, { passive: false });
+    el.addEventListener('touchmove', onTouchMove, { passive: false });
+    return () => {
+      el.removeEventListener('touchstart', onTouchStart);
+      el.removeEventListener('touchmove', onTouchMove);
+    };
+  }, []);
+
   const handleMouseDown = useCallback((e: React.MouseEvent) => {
     if (e.button !== 0) return;
     isPanning.current = true;
@@ -420,7 +445,7 @@ export default function MapaView({ plan, focusId, onFocusConsumed, progreso, onS
         width: '100%', height: '100%', position: 'relative', overflow: 'hidden',
         cursor: isDragging ? 'grabbing' : 'grab',
         backgroundColor: '#0d1c24',
-        userSelect: 'none', touchAction: 'none',
+        userSelect: 'none',
       }}
       onMouseDown={handleMouseDown}
       onMouseMove={handleMouseMove}
@@ -675,6 +700,7 @@ export default function MapaView({ plan, focusId, onFocusConsumed, progreso, onS
       {/* Bottom panel — CBC virtual node */}
       {cbcVirtualSelected && !cbcExpanded && (
         <div
+          data-scrollable-panel="true"
           onMouseDown={(e) => e.stopPropagation()}
           onClick={(e) => e.stopPropagation()}
           onTouchStart={(e) => e.stopPropagation()}
@@ -685,6 +711,7 @@ export default function MapaView({ plan, focusId, onFocusConsumed, progreso, onS
             background: 'rgba(8,18,26,0.96)',
             borderTop: '1px solid rgba(193,98,46,0.38)',
             backdropFilter: 'blur(14px)', zIndex: 100,
+            touchAction: 'pan-y',
           }}
         >
           {/* Mobile CBC panel */}

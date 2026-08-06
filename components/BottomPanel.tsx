@@ -36,6 +36,7 @@ export default function BottomPanel({
 
   return (
     <div
+      data-scrollable-panel="true"
       onMouseDown={(e) => e.stopPropagation()}
       onClick={(e) => e.stopPropagation()}
       onTouchStart={(e) => e.stopPropagation()}
@@ -48,6 +49,7 @@ export default function BottomPanel({
         backdropFilter: 'blur(14px)', zIndex: 100,
         maxHeight: '72vh',
         overflowY: 'auto',
+        touchAction: 'pan-y',
         WebkitOverflowScrolling: 'touch',
         overscrollBehavior: 'contain',
       }}
