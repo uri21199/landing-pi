@@ -24,103 +24,119 @@ export default function CarreraSelector({ onSelect }: Props) {
   return (
     <div style={{
       position: 'fixed', inset: 0,
-      background: '#080f16',
+      background: 'radial-gradient(ellipse 120% 45% at 50% 0%, rgba(45,82,105,0.28) 0%, transparent 65%), #080f16',
       display: 'flex', flexDirection: 'column',
-      alignItems: 'center', justifyContent: 'center',
-      padding: '24px 16px',
-      zIndex: 100,
+      alignItems: 'center',
       overflowY: 'auto',
+      WebkitOverflowScrolling: 'touch',
+      zIndex: 100,
     }}>
-      <div style={{ maxWidth: 680, width: '100%' }}>
-        {/* Header */}
-        <div style={{ textAlign: 'center', marginBottom: 40 }}>
+      {/* Header */}
+      <div style={{
+        textAlign: 'center',
+        padding: '52px 24px 32px',
+        animation: 'fade-in-up 0.45s cubic-bezier(0.22, 1, 0.36, 1) both',
+      }}>
+        <div style={{ position: 'relative', display: 'inline-block', marginBottom: 20 }}>
+          <div style={{
+            position: 'absolute', inset: -12,
+            background: 'radial-gradient(circle, rgba(45,82,105,0.35) 0%, transparent 70%)',
+            borderRadius: '50%',
+          }} />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/logo.svg"
             alt="Proyecto Ingeniería"
-            width={36}
-            height={44}
-            style={{ opacity: 0.85, margin: '0 auto 20px' }}
+            width={40}
+            height={49}
+            style={{ opacity: 0.9, position: 'relative', display: 'block' }}
           />
-          <h1 style={{
-            fontFamily: 'var(--font-display)',
-            fontSize: 26,
-            fontWeight: 700,
-            color: '#EEF3F5',
-            letterSpacing: '-0.02em',
-            margin: 0,
-          }}>
-            ¿Qué carrera cursás?
-          </h1>
-          <p style={{
-            marginTop: 8,
-            fontFamily: 'var(--font-mono)',
-            fontSize: 12,
-            color: 'rgba(255,255,255,0.35)',
-          }}>
-            Seleccioná tu carrera para ver el mapa de materias
-          </p>
         </div>
-
-        {/* Grid */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(190px, 1fr))',
-          gap: 10,
+        <h1 style={{
+          fontFamily: 'var(--font-display)',
+          fontSize: 'clamp(22px, 5vw, 28px)',
+          fontWeight: 700,
+          color: '#EEF3F5',
+          letterSpacing: '-0.025em',
+          margin: '0 0 8px',
+          lineHeight: 1.2,
         }}>
-          {CARRERAS.map(c => (
-            <button
-              key={c.slug}
-              onClick={() => onSelect(c.slug)}
-              style={{
-                background: 'rgba(13,28,36,0.8)',
-                border: '1px solid rgba(45,82,105,0.35)',
-                borderRadius: 8,
-                padding: '14px 16px',
-                textAlign: 'left',
-                cursor: 'pointer',
-                transition: 'border-color 0.15s, background 0.15s',
-                display: 'flex',
-                alignItems: 'center',
-                gap: 10,
-              }}
-              onMouseEnter={e => {
-                e.currentTarget.style.borderColor = 'rgba(45,82,105,0.8)';
-                e.currentTarget.style.background = 'rgba(45,82,105,0.15)';
-              }}
-              onMouseLeave={e => {
-                e.currentTarget.style.borderColor = 'rgba(45,82,105,0.35)';
-                e.currentTarget.style.background = 'rgba(13,28,36,0.8)';
-              }}
-            >
-              <span style={{
-                width: 6, height: 6,
-                borderRadius: '50%',
-                background: '#2d5269',
-                flexShrink: 0,
-              }} />
-              <span style={{
-                fontFamily: 'var(--font-body)',
-                fontSize: 13,
-                color: 'rgba(255,255,255,0.82)',
-                lineHeight: 1.3,
-              }}>
-                {c.nombre}
-              </span>
-            </button>
-          ))}
-        </div>
-
+          ¿Qué carrera cursás?
+        </h1>
         <p style={{
-          textAlign: 'center',
-          marginTop: 28,
           fontFamily: 'var(--font-mono)',
-          fontSize: 11,
-          color: 'rgba(255,255,255,0.2)',
+          fontSize: 12,
+          color: 'rgba(255,255,255,0.35)',
+          margin: 0,
         }}>
-          Podés cambiar de carrera en cualquier momento desde la barra superior
+          Seleccioná tu carrera para ver el mapa de materias
         </p>
       </div>
+
+      {/* Grid */}
+      <div
+        className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 sm:gap-3 w-full"
+        style={{
+          maxWidth: 680,
+          padding: '0 16px',
+          animation: 'fade-in-up 0.5s 0.08s cubic-bezier(0.22, 1, 0.36, 1) both',
+        }}
+      >
+        {CARRERAS.map(c => (
+          <button
+            key={c.slug}
+            className="career-card"
+            onClick={() => onSelect(c.slug)}
+            style={{
+              background: 'rgba(255,255,255,0.04)',
+              border: '1px solid rgba(45,82,105,0.3)',
+              borderRadius: 10,
+              padding: '14px 14px',
+              textAlign: 'left',
+              cursor: 'pointer',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: 8,
+              minHeight: 72,
+            }}
+          >
+            <div style={{
+              width: 22, height: 22, borderRadius: 6,
+              background: 'rgba(45,82,105,0.25)',
+              border: '1px solid rgba(45,82,105,0.4)',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              flexShrink: 0,
+            }}>
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <path d="M2 5h6M5 2l3 3-3 3" stroke="rgba(255,255,255,0.55)" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </div>
+            <span style={{
+              fontFamily: 'var(--font-body)',
+              fontSize: 13,
+              fontWeight: 500,
+              color: 'rgba(255,255,255,0.85)',
+              lineHeight: 1.35,
+              display: 'block',
+            }}>
+              {c.nombre}
+            </span>
+          </button>
+        ))}
+      </div>
+
+      {/* Footer */}
+      <p style={{
+        textAlign: 'center',
+        padding: '24px 24px 36px',
+        fontFamily: 'var(--font-mono)',
+        fontSize: 11,
+        color: 'rgba(255,255,255,0.18)',
+        animation: 'fade-in 0.5s 0.25s both',
+        lineHeight: 1.6,
+      }}>
+        Podés cambiar de carrera en cualquier momento desde la barra superior
+      </p>
     </div>
   );
 }

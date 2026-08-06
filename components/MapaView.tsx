@@ -683,6 +683,7 @@ export default function MapaView({ plan, focusId, onFocusConsumed, progreso, onS
       {/* Bottom panel — regular materia */}
       {seleccion && (
         <BottomPanel
+          key={seleccion.id}
           materia={seleccion}
           plan={plan}
           estadoActual={progreso.get(seleccion.id)?.estado ?? null}
@@ -849,7 +850,7 @@ export default function MapaView({ plan, focusId, onFocusConsumed, progreso, onS
               key={label} title={title}
               onMouseDown={(e) => e.stopPropagation()}
               onClick={(e) => { e.stopPropagation(); zoomAt(centerFromRef(), factor); }}
-              className="flex h-7 w-7 items-center justify-center rounded-sm font-mono text-[15px] transition-colors hover:bg-white/20"
+              className="map-zoom-btn flex h-10 w-10 sm:h-7 sm:w-7 items-center justify-center rounded-sm font-mono text-[18px] sm:text-[15px] hover:bg-white/20"
               style={{ background: 'rgba(13,28,36,0.88)', border: '1px solid rgba(255,255,255,0.15)', color: 'rgba(255,255,255,0.6)', backdropFilter: 'blur(8px)' }}
             >
               {label}
@@ -859,7 +860,7 @@ export default function MapaView({ plan, focusId, onFocusConsumed, progreso, onS
             title="Restablecer vista"
             onMouseDown={(e) => e.stopPropagation()}
             onClick={(e) => { e.stopPropagation(); resetView(); }}
-            className="flex h-7 w-7 items-center justify-center rounded-sm font-mono text-[11px] transition-colors hover:bg-white/20"
+            className="map-zoom-btn flex h-10 w-10 sm:h-7 sm:w-7 items-center justify-center rounded-sm font-mono text-[13px] sm:text-[11px] hover:bg-white/20"
             style={{ background: 'rgba(13,28,36,0.88)', border: '1px solid rgba(255,255,255,0.15)', color: 'rgba(255,255,255,0.5)', backdropFilter: 'blur(8px)' }}
           >
             ⊡
