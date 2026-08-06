@@ -3,6 +3,7 @@
 import { useState, useCallback, useEffect, useMemo } from 'react';
 import Navbar from '@/components/Navbar';
 import MapaView from '@/components/MapaView';
+import CarreraSelector from '@/components/CarreraSelector';
 import { PlanCarrera, ProgresoMateria, EstadoProgreso } from '@/lib/types';
 import civil from '@/data/carreras/civil.json';
 import alimentos from '@/data/carreras/alimentos.json';
@@ -54,16 +55,18 @@ function guardarProgreso(slug: string, p: Map<string, ProgresoMateria>) {
 }
 
 export default function Home() {
-  const [slug, setSlug] = useState<string>('civil');
+  const [slug, setSlug] = useState<string | null>(null);
   const [focusId, setFocusId] = useState<string | null>(null);
   const handleFocusConsumed = useCallback(() => setFocusId(null), []);
   const [progreso, setProgreso] = useState<Map<string, ProgresoMateria>>(new Map());
 
   useEffect(() => {
     const saved = localStorage.getItem(SLUG_KEY);
-    const initial = saved && PLANES[saved] ? saved : 'civil';
-    setSlug(initial);
-    setProgreso(cargarProgreso(initial));
+    if (saved && PLANES[saved]) {
+      setSlug(saved);
+      setProgreso(cargarProgreso(saved));
+    }
+    // si no hay nada guardado, slug queda null → muestra CarreraSelector
   }, []);
 
   const handleSelectCarrera = useCallback((newSlug: string) => {
@@ -74,7 +77,7 @@ export default function Home() {
     setProgreso(cargarProgreso(newSlug));
   }, []);
 
-  const plan = PLANES[slug] ?? PLANES.civil;
+  const plan = PLANES[slug ?? 'civil'] ?? PLANES.civil;
 
   const handleSetProgreso = useCallback((
     id: string,
@@ -84,7 +87,7 @@ export default function Home() {
       const next = new Map(prev);
       if (entrada === null) next.delete(id);
       else next.set(id, entrada);
-      guardarProgreso(slug, next);
+      guardarProgreso(slug ?? 'civil', next);
       return next;
     });
   }, [slug]);
@@ -114,6 +117,18 @@ export default function Home() {
 
   const pct = Math.round((creditosAprobados / plan.totalCreditos) * 100);
   const progressColor = pct < 33 ? '#C1622E' : pct < 67 ? '#c49030' : '#5C8A72';
+
+  if (slug === null) {
+    return (
+      <CarreraSelector
+        onSelect={(s) => {
+          localStorage.setItem(SLUG_KEY, s);
+          setSlug(s);
+          setProgreso(cargarProgreso(s));
+        }}
+      />
+    );
+  }
 
   return (
     <div className="flex h-screen flex-col overflow-hidden">
