@@ -38,14 +38,18 @@ export default function BottomPanel({
     <div
       onMouseDown={(e) => e.stopPropagation()}
       onClick={(e) => e.stopPropagation()}
+      onTouchStart={(e) => e.stopPropagation()}
+      onTouchMove={(e) => e.stopPropagation()}
+      onTouchEnd={(e) => e.stopPropagation()}
       style={{
         position: 'absolute', bottom: 0, left: 0, right: 0,
         background: 'rgba(8,18,26,0.97)',
         borderTop: '1px solid rgba(45,82,105,0.55)',
         backdropFilter: 'blur(14px)', zIndex: 100,
-        maxHeight: '70vh',
+        maxHeight: '72vh',
         overflowY: 'auto',
         WebkitOverflowScrolling: 'touch',
+        overscrollBehavior: 'contain',
       }}
     >
       {/* ── Mobile layout: stacked ── */}
