@@ -682,63 +682,79 @@ export default function MapaView({ plan, focusId, onFocusConsumed, progreso, onS
             background: 'rgba(8,18,26,0.96)',
             borderTop: '1px solid rgba(193,98,46,0.38)',
             backdropFilter: 'blur(14px)', zIndex: 100,
-            padding: '14px 20px 18px',
-            display: 'flex', gap: 24, alignItems: 'flex-start',
           }}
         >
-          <div style={{ flex: '0 0 auto', minWidth: 180, maxWidth: 240 }}>
-            <p style={{
-              fontFamily: 'var(--font-mono)', fontSize: 10, color: '#C1622E',
-              textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 5,
-            }}>
-              Ciclo Básico Común · {plan.cbc.creditos} cr
+          {/* Mobile CBC panel */}
+          <div className="flex flex-col sm:hidden" style={{ padding: '12px 44px 14px 16px', gap: 10 }}>
+            <div>
+              <p style={{ fontFamily: 'var(--font-mono)', fontSize: 10, color: '#C1622E', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 3 }}>
+                Ciclo Básico Común · {plan.cbc.creditos} cr
+              </p>
+              <p style={{ fontFamily: 'var(--font-display)', fontSize: 16, fontWeight: 700, color: '#FFFFFF', lineHeight: 1.25, margin: 0 }}>
+                CBC Completo
+              </p>
+            </div>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: 12, color: 'rgba(255,255,255,0.55)', lineHeight: 1.5, margin: 0 }}>
+              {requiereCBCCount} materias del plan requieren CBC aprobado.
             </p>
-            <p style={{
-              fontFamily: 'var(--font-display)', fontSize: 17, fontWeight: 700,
-              color: '#FFFFFF', lineHeight: 1.25,
-            }}>
-              CBC Completo
-            </p>
+            <button
+              onClick={(e) => { e.stopPropagation(); setCbcExpanded(true); setSeleccionId(null); }}
+              onMouseDown={(e) => e.stopPropagation()}
+              style={{
+                background: 'rgba(193,98,46,0.12)', border: '1px solid rgba(193,98,46,0.38)',
+                borderRadius: 4, padding: '8px 14px',
+                fontFamily: 'var(--font-mono)', fontSize: 12, color: '#C1622E',
+                cursor: 'pointer', alignSelf: 'flex-start',
+              }}
+            >
+              Ver materias del CBC
+            </button>
           </div>
 
-          <div style={{ width: 1, background: 'rgba(255,255,255,0.08)', alignSelf: 'stretch', flexShrink: 0 }} />
-
-          <div style={{ flex: 1, minWidth: 0 }}>
-            <p style={{
-              fontFamily: 'var(--font-mono)', fontSize: 10, color: '#7CAB8A',
-              textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 7,
-            }}>
-              Habilita
-            </p>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: 12, color: 'rgba(255,255,255,0.6)', lineHeight: 1.5 }}>
-              {requiereCBCCount} materias del plan requieren CBC aprobado. Están resaltadas en verde.
-            </p>
+          {/* Desktop CBC panel */}
+          <div className="hidden sm:flex" style={{ gap: 24, alignItems: 'flex-start', padding: '14px 20px 18px' }}>
+            <div style={{ flex: '0 0 auto', minWidth: 180, maxWidth: 240 }}>
+              <p style={{ fontFamily: 'var(--font-mono)', fontSize: 10, color: '#C1622E', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 5 }}>
+                Ciclo Básico Común · {plan.cbc.creditos} cr
+              </p>
+              <p style={{ fontFamily: 'var(--font-display)', fontSize: 17, fontWeight: 700, color: '#FFFFFF', lineHeight: 1.25 }}>
+                CBC Completo
+              </p>
+            </div>
+            <div style={{ width: 1, background: 'rgba(255,255,255,0.08)', alignSelf: 'stretch', flexShrink: 0 }} />
+            <div style={{ flex: 1, minWidth: 0 }}>
+              <p style={{ fontFamily: 'var(--font-mono)', fontSize: 10, color: '#7CAB8A', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 7 }}>
+                Habilita
+              </p>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: 12, color: 'rgba(255,255,255,0.6)', lineHeight: 1.5 }}>
+                {requiereCBCCount} materias del plan requieren CBC aprobado. Están resaltadas en verde.
+              </p>
+            </div>
+            <div style={{ width: 1, background: 'rgba(255,255,255,0.08)', alignSelf: 'stretch', flexShrink: 0 }} />
+            <button
+              onClick={(e) => { e.stopPropagation(); setCbcExpanded(true); setSeleccionId(null); }}
+              onMouseDown={(e) => e.stopPropagation()}
+              style={{
+                flexShrink: 0, alignSelf: 'center',
+                background: 'rgba(193,98,46,0.12)', border: '1px solid rgba(193,98,46,0.38)',
+                borderRadius: 4, padding: '6px 14px',
+                fontFamily: 'var(--font-mono)', fontSize: 11, color: '#C1622E',
+                cursor: 'pointer', transition: 'background 0.15s', whiteSpace: 'nowrap',
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.background = 'rgba(193,98,46,0.26)')}
+              onMouseLeave={(e) => (e.currentTarget.style.background = 'rgba(193,98,46,0.12)')}
+            >
+              Ver materias del CBC
+            </button>
           </div>
 
-          <div style={{ width: 1, background: 'rgba(255,255,255,0.08)', alignSelf: 'stretch', flexShrink: 0 }} />
-
-          <button
-            onClick={(e) => { e.stopPropagation(); setCbcExpanded(true); setSeleccionId(null); }}
-            onMouseDown={(e) => e.stopPropagation()}
-            style={{
-              flexShrink: 0, alignSelf: 'center',
-              background: 'rgba(193,98,46,0.12)', border: '1px solid rgba(193,98,46,0.38)',
-              borderRadius: 4, padding: '6px 14px',
-              fontFamily: 'var(--font-mono)', fontSize: 11, color: '#C1622E',
-              cursor: 'pointer', transition: 'background 0.15s', whiteSpace: 'nowrap',
-            }}
-            onMouseEnter={(e) => (e.currentTarget.style.background = 'rgba(193,98,46,0.26)')}
-            onMouseLeave={(e) => (e.currentTarget.style.background = 'rgba(193,98,46,0.12)')}
-          >
-            Ver materias del CBC
-          </button>
-
+          {/* Close button */}
           <button
             onClick={(e) => { e.stopPropagation(); setSeleccionId(null); }}
             onMouseDown={(e) => e.stopPropagation()}
             style={{
-              flexShrink: 0, alignSelf: 'flex-start',
-              background: 'none', border: 'none', padding: '2px 4px',
+              position: 'absolute', top: 10, right: 10,
+              background: 'none', border: 'none', padding: '4px 6px',
               color: 'rgba(255,255,255,0.28)', fontSize: 22, cursor: 'pointer',
               lineHeight: 1, transition: 'color 0.1s',
             }}
@@ -752,7 +768,7 @@ export default function MapaView({ plan, focusId, onFocusConsumed, progreso, onS
 
       {/* Legend + electivas toggle */}
       {!seleccionId && (
-        <div style={{ position: 'absolute', bottom: 12, left: 12, display: 'flex', alignItems: 'center', gap: 8 }}>
+        <div style={{ position: 'absolute', bottom: 12, left: 12, display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap', maxWidth: 'calc(100% - 80px)' }}>
           <div style={{
             pointerEvents: 'none',
             background: 'rgba(13,28,36,0.88)', border: '1px solid rgba(255,255,255,0.1)',
@@ -828,7 +844,7 @@ function LeyendaDot({ color, label, labelColor }: { color: string; label: string
   return (
     <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontFamily: 'var(--font-mono)', fontSize: 10, color: labelColor ?? color }}>
       <span style={{ display: 'inline-block', width: 8, height: 8, borderRadius: '50%', background: color, flexShrink: 0 }} />
-      <span className="hidden sm:inline">{label}</span>
+      {label}
     </span>
   );
 }
