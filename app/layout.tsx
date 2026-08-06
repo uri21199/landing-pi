@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Space_Grotesk, Inter, IBM_Plex_Mono } from 'next/font/google';
 import './globals.css';
 
@@ -22,6 +22,12 @@ export const metadata: Metadata = {
   title: 'Proyecto Ingeniería FIUBA',
   description:
     'Herramientas para estudiantes de la Facultad de Ingeniería (UBA): planes de estudio y mapa de la sede.',
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

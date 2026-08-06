@@ -68,7 +68,7 @@ export default function BottomPanel({
           <div style={{ width: 36, height: 4, borderRadius: 2, background: 'rgba(255,255,255,0.13)' }} />
         </div>
 
-        <div style={{ padding: '4px 48px 20px 16px', display: 'flex', flexDirection: 'column', gap: 14 }}>
+        <div style={{ paddingTop: 4, paddingRight: 48, paddingBottom: 'max(20px, env(safe-area-inset-bottom))', paddingLeft: 16, display: 'flex', flexDirection: 'column', gap: 14 }}>
           {/* Nombre + meta */}
           <div>
             <p style={{
