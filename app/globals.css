@@ -26,6 +26,11 @@ body {
   to   { transform: translateY(0);    opacity: 1; }
 }
 
+@keyframes slide-down-panel {
+  from { transform: translateY(-20px); opacity: 0; }
+  to   { transform: translateY(0);     opacity: 1; }
+}
+
 @keyframes fade-in-up {
   from { opacity: 0; transform: translateY(18px); }
   to   { opacity: 1; transform: translateY(0); }

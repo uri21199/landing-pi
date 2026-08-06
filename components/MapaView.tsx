@@ -438,23 +438,102 @@ export default function MapaView({ plan, focusId, onFocusConsumed, progreso, onS
   );
 
   return (
-    <div
-      ref={containerRef}
-      style={{
-        width: '100%', height: '100%', position: 'relative', overflow: 'hidden',
-        cursor: isDragging ? 'grabbing' : 'grab',
-        backgroundColor: '#0d1c24',
-        userSelect: 'none',
-      }}
-      onMouseDown={handleMouseDown}
-      onMouseMove={handleMouseMove}
-      onMouseUp={handleMouseUp}
-      onMouseLeave={handleMouseUp}
-      onClick={deselect}
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={handleTouchEnd}
-    >
+    <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%' }}>
+
+      {/* Mobile: panel de materia encima del canvas */}
+      {seleccion && (
+        <div className="sm:hidden" style={{ flexShrink: 0 }}>
+          <BottomPanel
+            key={`mobile-${seleccion.id}`}
+            mobileInline
+            materia={seleccion}
+            plan={plan}
+            estadoActual={progreso.get(seleccion.id)?.estado ?? null}
+            nota={progreso.get(seleccion.id)?.nota}
+            prerequisitosFaltantes={faltantesSeleccion}
+            onSetEstado={(estado, nota) =>
+              estado === null
+                ? onSetProgreso(seleccion.id, null)
+                : onSetProgreso(seleccion.id, { estado, nota })
+            }
+            onClose={() => setSeleccionId(null)}
+          />
+        </div>
+      )}
+
+      {/* Mobile: panel CBC encima del canvas */}
+      {cbcVirtualSelected && !cbcExpanded && (
+        <div
+          className="sm:hidden"
+          onMouseDown={(e) => e.stopPropagation()}
+          onClick={(e) => e.stopPropagation()}
+          onTouchStart={(e) => e.stopPropagation()}
+          onTouchMove={(e) => e.stopPropagation()}
+          onTouchEnd={(e) => e.stopPropagation()}
+          style={{
+            flexShrink: 0, position: 'relative',
+            background: 'rgba(8,18,26,0.96)',
+            borderBottom: '2px solid rgba(193,98,46,0.5)',
+            backdropFilter: 'blur(14px)',
+            animation: 'slide-down-panel 0.32s cubic-bezier(0.22, 1, 0.36, 1) both',
+            padding: '12px 44px 14px 16px',
+            display: 'flex', flexDirection: 'column', gap: 10,
+          }}
+        >
+          <div>
+            <p style={{ fontFamily: 'var(--font-mono)', fontSize: 10, color: '#C1622E', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 3 }}>
+              Ciclo Básico Común · {plan.cbc.creditos} cr
+            </p>
+            <p style={{ fontFamily: 'var(--font-display)', fontSize: 16, fontWeight: 700, color: '#FFFFFF', lineHeight: 1.25, margin: 0 }}>
+              CBC Completo
+            </p>
+          </div>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 12, color: 'rgba(255,255,255,0.55)', lineHeight: 1.5, margin: 0 }}>
+            {requiereCBCCount} materias del plan requieren CBC aprobado.
+          </p>
+          <button
+            onClick={(e) => { e.stopPropagation(); setCbcExpanded(true); setSeleccionId(null); }}
+            onMouseDown={(e) => e.stopPropagation()}
+            style={{
+              background: 'rgba(193,98,46,0.12)', border: '1px solid rgba(193,98,46,0.38)',
+              borderRadius: 4, padding: '8px 14px',
+              fontFamily: 'var(--font-mono)', fontSize: 12, color: '#C1622E',
+              cursor: 'pointer', alignSelf: 'flex-start',
+            }}
+          >
+            Ver materias del CBC
+          </button>
+          <button
+            onClick={(e) => { e.stopPropagation(); setSeleccionId(null); }}
+            onMouseDown={(e) => e.stopPropagation()}
+            style={{
+              position: 'absolute', top: 10, right: 10,
+              background: 'none', border: 'none', padding: '4px 6px',
+              color: 'rgba(255,255,255,0.28)', fontSize: 22, cursor: 'pointer', lineHeight: 1,
+            }}
+          >
+            ×
+          </button>
+        </div>
+      )}
+
+      <div
+        ref={containerRef}
+        style={{
+          flex: 1, minHeight: 0, position: 'relative', overflow: 'hidden',
+          cursor: isDragging ? 'grabbing' : 'grab',
+          backgroundColor: '#0d1c24',
+          userSelect: 'none',
+        }}
+        onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+        onMouseLeave={handleMouseUp}
+        onClick={deselect}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
       {/* Blueprint grid */}
       <div
         aria-hidden
@@ -697,50 +776,19 @@ export default function MapaView({ plan, focusId, onFocusConsumed, progreso, onS
         />
       )}
 
-      {/* Bottom panel — CBC virtual node */}
+      {/* Panel CBC — desktop only (mobile version está encima del canvas) */}
       {cbcVirtualSelected && !cbcExpanded && (
         <div
-          data-scrollable-panel="true"
+          className="hidden sm:block"
           onMouseDown={(e) => e.stopPropagation()}
           onClick={(e) => e.stopPropagation()}
-          onTouchStart={(e) => e.stopPropagation()}
-          onTouchMove={(e) => e.stopPropagation()}
-          onTouchEnd={(e) => e.stopPropagation()}
           style={{
             position: 'absolute', bottom: 0, left: 0, right: 0,
             background: 'rgba(8,18,26,0.96)',
             borderTop: '1px solid rgba(193,98,46,0.38)',
             backdropFilter: 'blur(14px)', zIndex: 100,
-            touchAction: 'pan-y',
           }}
         >
-          {/* Mobile CBC panel */}
-          <div className="flex flex-col sm:hidden" style={{ padding: '12px 44px 14px 16px', gap: 10 }}>
-            <div>
-              <p style={{ fontFamily: 'var(--font-mono)', fontSize: 10, color: '#C1622E', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 3 }}>
-                Ciclo Básico Común · {plan.cbc.creditos} cr
-              </p>
-              <p style={{ fontFamily: 'var(--font-display)', fontSize: 16, fontWeight: 700, color: '#FFFFFF', lineHeight: 1.25, margin: 0 }}>
-                CBC Completo
-              </p>
-            </div>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: 12, color: 'rgba(255,255,255,0.55)', lineHeight: 1.5, margin: 0 }}>
-              {requiereCBCCount} materias del plan requieren CBC aprobado.
-            </p>
-            <button
-              onClick={(e) => { e.stopPropagation(); setCbcExpanded(true); setSeleccionId(null); }}
-              onMouseDown={(e) => e.stopPropagation()}
-              style={{
-                background: 'rgba(193,98,46,0.12)', border: '1px solid rgba(193,98,46,0.38)',
-                borderRadius: 4, padding: '8px 14px',
-                fontFamily: 'var(--font-mono)', fontSize: 12, color: '#C1622E',
-                cursor: 'pointer', alignSelf: 'flex-start',
-              }}
-            >
-              Ver materias del CBC
-            </button>
-          </div>
-
           {/* Desktop CBC panel */}
           <div className="hidden sm:flex" style={{ gap: 24, alignItems: 'flex-start', padding: '14px 20px 18px' }}>
             <div style={{ flex: '0 0 auto', minWidth: 180, maxWidth: 240 }}>
@@ -866,6 +914,7 @@ export default function MapaView({ plan, focusId, onFocusConsumed, progreso, onS
           </button>
         </div>
       )}
+    </div>
     </div>
   );
 }
