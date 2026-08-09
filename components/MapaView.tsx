@@ -846,7 +846,7 @@ export default function MapaView({ plan, focusId, onFocusConsumed, progreso, onS
 
       {/* Legend + electivas toggle */}
       {!seleccionId && (
-        <div style={{ position: 'absolute', bottom: 'max(12px, env(safe-area-inset-bottom))', left: 'max(12px, env(safe-area-inset-left))', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap', maxWidth: 'calc(100% - 80px)' }}>
+        <div className="hidden sm:flex" style={{ position: 'absolute', bottom: 'max(12px, env(safe-area-inset-bottom))', left: 'max(12px, env(safe-area-inset-left))', alignItems: 'center', gap: 8, flexWrap: 'wrap', maxWidth: 'calc(100% - 80px)' }}>
           <div style={{
             pointerEvents: 'none',
             background: 'rgba(13,28,36,0.88)', border: '1px solid rgba(255,255,255,0.1)',
@@ -888,7 +888,7 @@ export default function MapaView({ plan, focusId, onFocusConsumed, progreso, onS
 
       {/* Zoom controls */}
       {!seleccionId && (
-        <div style={{ position: 'absolute', bottom: 'max(12px, env(safe-area-inset-bottom))', right: 'max(12px, env(safe-area-inset-right))', display: 'flex', flexDirection: 'column', gap: 4 }}>
+        <div className="hidden sm:flex" style={{ position: 'absolute', bottom: 'max(12px, env(safe-area-inset-bottom))', right: 'max(12px, env(safe-area-inset-right))', flexDirection: 'column', gap: 4 }}>
           {[
             { label: '+', factor: 1.2, title: 'Acercar' },
             { label: '−', factor: 1 / 1.2, title: 'Alejar' },
